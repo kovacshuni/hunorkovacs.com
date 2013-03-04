@@ -1,8 +1,8 @@
 
 div.topFrame {
-    background-image: url("../image/windmill-red.jpg");
     width: 500px;
     height: 96px;
+    background-image: url("../image/windmill-red.jpg");
     opacity: 0;
 
     -webkit-transition: 2s ease;
@@ -20,4 +20,11 @@ div.topFrameBg {
     background-image: url("../image/windmill-grey.jpg");
     width: 500px;
     height: 96px;
+}
+
+.masking {
+    width: 500px;
+    height: 500px;
+    background-image: url("../image/windmill-full.jpg");
+    -webkit-mask-box-image : url("../image/mask-400x96.png") 96;
 }
