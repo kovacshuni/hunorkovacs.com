@@ -1,0 +1,23 @@
+
+div.topFrame {
+    background-image: url("../image/windmill-red.jpg");
+    width: 500px;
+    height: 96px;
+    opacity: 0;
+
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+div.topFrame:hover {
+    opacity: 1;
+}
+
+div.topFrameBg {
+    background-image: url("../image/windmill-grey.jpg");
+    width: 500px;
+    height: 96px;
+}
