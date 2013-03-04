@@ -1,5 +1,10 @@
 
-div.topFrame {
+.defaultstuff {
+    visibility: visible;
+    opacity: 1;
+}
+
+.topFrame {
     width: 500px;
     height: 96px;
     background-image: url("../image/windmill-red.jpg");
@@ -12,11 +17,11 @@ div.topFrame {
     transition: 2s ease;
 }
 
-div.topFrame:hover {
+.topFrame:hover {
     opacity: 1;
 }
 
-div.topFrameBg {
+.topFrameBg {
     background-image: url("../image/windmill-grey.jpg");
     width: 500px;
     height: 96px;
@@ -27,4 +32,18 @@ div.topFrameBg {
     height: 500px;
     background-image: url("../image/windmill-full.jpg");
     -webkit-mask-box-image : url("../image/mask-400x96.png") 96;
+}
+
+.moving {
+    width: 400px;
+    height: 96px;
+    background-image: url("../image/mask-400x96.png");
+}
+
+.moving:hover {
+    -webkit-transform:rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+    -ms-transform:rotate(12deg);
+    transform:rotate(12deg)
 }
