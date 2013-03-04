@@ -28,10 +28,7 @@
 }
 
 .masking {
-    width: 500px;
-    height: 500px;
-    background-image: url("../image/windmill-full.jpg");
-    -webkit-mask-box-image : url("../image/mask-400x96.png") 96;
+    -webkit-mask-box-image: url("../image/mask-3.png");
 }
 
 .moving {
