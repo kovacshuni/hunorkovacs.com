@@ -7,5 +7,6 @@
 
     <static-files>
         <include path="/*.html"/>
+        <include path="/static/**"/>
     </static-files>
 </appengine-web-app>
