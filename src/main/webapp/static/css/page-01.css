@@ -3,6 +3,8 @@ body {
     margin: 0 0 0 0;
     overflow-y: scroll;
     text-align: center;
+    font-family: unmasked_bb_italic;
+    font-size: 15pt;
 }
 
 .page {
@@ -105,12 +107,14 @@ img {
     position: absolute;
     top: 855px;
     left: 106px;
-    width: 103px;
+    width: 95px;
     height: 65px;
-    color: #f5f5f5;
-    background-color: #2f4f4f;
-    border: #a9a9a9 solid thin;
+    color: #f4d15c;
+    background-color: #76530e;
+    border: #000000 solid 2px;
+    vertical-align: middle;
     opacity: 0;
+    padding: 0 0 0 0;
 
     animation: fadein 4s;
     -moz-animation: fadein 4s;
@@ -188,4 +192,9 @@ img {
     background-color: #2f4f4f;
     border: #a9a9a9 solid thin;
     opacity: 0;
+}
+
+@font-face {
+    font-family: unmasked_bb_italic;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
 }
