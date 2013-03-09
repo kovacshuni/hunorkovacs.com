@@ -47,7 +47,7 @@ img {
     top: -43px;
     width: 250px;
     height: 610px;
-    background-image: url("../comics%20pages/assembly-02/lamp-01-02.jpg");
+    background-image: url("../image/lamp-01-02.jpg");
 
     -webkit-transition: 3s ease-in-out;
     -moz-transition: 3s ease-in-out;
@@ -76,7 +76,7 @@ img {
     left: -12px;
     width: 250px;
     height: 610px;
-    background-image: url("../comics%20pages/assembly-02/lamp-02-02.jpg");
+    background-image: url("../image/lamp-02-02.jpg");
 
     -webkit-transition: 2s ease-in-out;
     -moz-transition: 2s ease-in-out;
@@ -105,7 +105,7 @@ img {
     left: -15px;
     width: 250px;
     height: 607px;
-    background-image: url("../comics%20pages/assembly-02/lamp-03-02.jpg");
+    background-image: url("../image/lamp-03-02.jpg");
 
     -webkit-transition: 3s ease-in-out;
     -moz-transition: 3s ease-in-out;
@@ -134,7 +134,7 @@ img {
     left: 0px;
     width: 1362px;
     height: 950px;
-    background-image: url("../comics%20pages/assembly-02/skyscraper-03.jpg");
+    background-image: url("../image/skyscraper-03.jpg");
 
     animation: circle 4s;
     -moz-animation: circle 4s;
@@ -174,7 +174,7 @@ img {
     left: 0;
     width: 1174px;
     height: 648px;
-    background-image: url("../comics%20pages/assembly-02/window-02.jpg");
+    background-image: url("../image/window-02.jpg");
 
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -213,7 +213,7 @@ img {
     left: 82px;
     width: 485px;
     height: 502px;
-    background-image: url("../comics%20pages/assembly-02/sleepy-face-02.jpg");
+    background-image: url("../image/sleepy-face-02.jpg");
     border: #d3d3d3 5px solid;
     opacity: 0.3;
 
