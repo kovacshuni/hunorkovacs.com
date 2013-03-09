@@ -3,64 +3,49 @@
     top: 855px;
     left: 106px;
     width: 95px;
-    height: 65px;
-
     background-color: inherit;
-
     border: black solid 2px;
-    vertical-align: middle;
-}
-
-.B-i-wish-padded {
-    padding: 3px 5px 0 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-goddamn-hard {
     position: absolute;
     top: 1086px;
     left: 121px;
-    width: 178px;
-    height: 98px;
-
-    border: black solid 2px;
-
+    width: 122px;
     background-color: inherit;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-feeding-me {
     position: absolute;
     top: 1464px;
     left: 81px;
-    width: 200px;
-    height: 198px;
-
+    width: 191px;
     border: black solid 2px;
-
     background-color: inherit;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-changed {
     position: absolute;
     top: 1692px;
     left: 114px;
-    width: 218px;
-    height: 165px;
-
+    width: 246px;
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-remember {
     position: absolute;
     top: 196px;
-    left: 699px;
-    width: 182px;
-    height: 72px;
-
+    left: 711px;
+    width: 148px;
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-every-night {
@@ -68,11 +53,9 @@
     top: 2076px;
     left: 102px;
     width: 254px;
-    height: 115px;
-
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-barely-sleep {
@@ -80,11 +63,9 @@
     top: 2261px;
     left: 212px;
     width: 267px;
-    height: 106px;
-
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-like-others {
@@ -92,53 +73,89 @@
     top: 2634px;
     left: 996px;
     width: 173px;
-    height: 23px;
-
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-burning-hole {
     position: absolute;
     top: 785px;
-    left: 458px;
-    width: 174px;
-    height: 125px;
-
+    left: 480px;
+    width: 135px;
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-stops {
     position: absolute;
     top: 1084px;
     left: 727px;
-    width: 127px;
-    height: 147px;
-
+    width: 124px;
     background-color: inherit;
-
     border: black solid 2px;
+    padding: 5px 5px 5px 5px;
 }
 
 .B-oh-man {
     position: absolute;
-    top: 3154px;
+    top: 3159px;
     left: 960px;
     width: 69px;
-    height: 42px;
-
     color: black;
+    font-family: unmasked_bb;
+    font-size: 12pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .B-not-again {
     position: absolute;
-    top: 3247px;
+    top: 3251px;
     left: 1030px;
     width: 69px;
-    height: 42px;
-
     color: black;
+    font-family: unmasked_bb;
+    font-size: 13pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.B-more-sleep {
+    position: absolute;
+    top: 3666px;
+    left: 243px;
+    width: 188px;
+    height: 115px;
+    background-image: url("../comics%20pages/assembly-02/bubble-oh-man-02.png");
+}
+
+.B-more-sleep-text {
+    position: relative;
+    top: 25px;
+    left: 50px;
+    width: 128px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 13pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.B-doctors-suggestion {
+    position: relative;
+    top: 263px;
+    left: 400px;
+    width: 188px;
+    height: 246px;
+    background-image: url("../comics%20pages/assembly-02/bubble-doctors-02.png");
+}
+
+.B-doctors-suggestion-text {
+    position: relative;
+    top: 154px;
+    left: 29px;
+    width: 128px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 13pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }

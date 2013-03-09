@@ -1,6 +1,16 @@
 @font-face {
     font-family: unmasked_bb_italic;
-    src: local(unmasked_bb), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
+    src: local(unmasked_bb_italic), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: unmasked_bb;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: bsttrial;
+    src: local(bsttrial), url('../fonts/BSTTRIAL.ttf') format('opentype');
 }
 
 body {
@@ -22,6 +32,14 @@ body {
 
 img {
     z-index: -1;
+}
+
+.text-area-01 {
+    position: absolute;
+    top: 43px;
+    left: 42px;
+    width: 372px;
+    height: 1875px;
 }
 
 .lamp-01 {
@@ -198,7 +216,8 @@ img {
     width: 485px;
     height: 502px;
     background-image: url("../comics%20pages/assembly-02/sleepy-face-02.jpg");
-    opacity: 0;
+    border: #d3d3d3 5px solid;
+    opacity: 0.15;
 
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
