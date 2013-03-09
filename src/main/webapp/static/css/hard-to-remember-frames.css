@@ -6,15 +6,17 @@
 body {
     background-color: black;
     margin: 0 0 0 0;
-    overflow-y: scroll;
-    text-align: center;
+    color: #f4d15c;
     font-family: unmasked_bb_italic;
     font-size: 15pt;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(244, 209, 92, 0.5);
 }
 
 .page {
-    position: relative;
     width: 1280px;
+    background-color: #76530e;
+    position: relative;
     margin: 0 auto 0 auto;
 }
 
