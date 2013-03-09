@@ -3,11 +3,9 @@
 <head>
     <title>Oh hi.</title>
     <link rel="stylesheet" type="text/css" href="static/css/page-01.css"/>
-    <!--<script type="text/javascript" src="static/js/SOTC-Fade_Example.js"></script>-->
-    <!--<script type="text/javascript" src="static/js/stack-fade.js"></script>-->
     <script type="text/javascript" src="static/js/script.js"></script>
 </head>
-<body>
+<body onload="fadeEffect.delayed('bubble-05', 1, 100, 10)">
     <div class="page">
         <img src="static/comics%20pages/assembly-02/page-01-1280-02.jpg"/>
 
@@ -16,8 +14,7 @@
             </div>
         </div>
 
-        <div class="lamp-02-mask" onmouseover="fadeEffect.init('bubble-05', 1, 100)"
-             onmouseout="fadeEffect.init('bubble-05', 0)">
+        <div class="lamp-02-mask" onmouseover="fadeEffect.init('bubble-05', 1, 100)">
             <div class="lamp-02">
             </div>
         </div>
