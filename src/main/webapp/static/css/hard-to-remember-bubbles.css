@@ -1,4 +1,4 @@
-.bubble-01 {
+.B-i-wish {
     position: absolute;
     top: 855px;
     left: 106px;
@@ -23,7 +23,7 @@
     100% { opacity: 1; }
 }
 
-.bubble-02 {
+.B-goddamn-hard {
     position: absolute;
     top: 1086px;
     left: 121px;
@@ -41,7 +41,7 @@
     -o-animation: fadein 4s;
 }
 
-.bubble-03 {
+.B-feeding-me {
     position: absolute;
     top: 1464px;
     left: 81px;
@@ -59,7 +59,7 @@
     -o-animation: fadein 4s;
 }
 
-.bubble-04 {
+.B-changed {
     position: absolute;
     top: 1692px;
     left: 114px;
@@ -77,7 +77,7 @@
     -o-animation: fadein 4s;
 }
 
-.bubble-05 {
+.B-remember {
     position: absolute;
     top: 196px;
     left: 699px;
@@ -89,7 +89,7 @@
     opacity: 0;
 }
 
-.bubble-06 {
+.B-every-night {
     position: absolute;
     top: 2076px;
     left: 102px;
@@ -103,7 +103,7 @@
     text-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
-.bubble-07 {
+.B-barely-sleep {
     position: absolute;
     top: 2261px;
     left: 212px;
@@ -114,7 +114,7 @@
     border: #a9a9a9 solid thin;
 }
 
-.bubble-08 {
+.B-like-others {
     position: absolute;
     top: 2634px;
     left: 996px;
@@ -125,7 +125,7 @@
     border: #a9a9a9 solid thin;
 }
 
-.bubble-09 {
+.B-burning-hole {
     position: absolute;
     top: 785px;
     left: 458px;
@@ -136,7 +136,7 @@
     border: #a9a9a9 solid thin;
 }
 
-.bubble-10 {
+.B-stops {
     position: absolute;
     top: 1084px;
     left: 727px;
@@ -147,7 +147,7 @@
     border: #a9a9a9 solid thin;
 }
 
-.bubble-oh-man {
+.B-oh-man {
     position: absolute;
     top: 3154px;
     left: 960px;
@@ -158,7 +158,7 @@
     border: #a9a9a9 solid thin;
 }
 
-.bubble-not-again {
+.B-not-again {
     position: absolute;
     top: 3247px;
     left: 1030px;
