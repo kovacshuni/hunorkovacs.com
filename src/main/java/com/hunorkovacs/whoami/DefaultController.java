@@ -9,8 +9,8 @@ import org.springframework.web.servlet.view.RedirectView;
 @Controller
 public class DefaultController {
 
-    @RequestMapping(value = "/*", method = RequestMethod.GET)
+    @RequestMapping(value = "/**", method = RequestMethod.GET)
     public View get() {
-        return new RedirectView("/hard-to-remember.html");
+        return new RedirectView("/static/hard-to-remember.html");
     }
 }
