@@ -189,11 +189,12 @@ img {
 
 .window-01-mask {
     position: absolute;
-    top: 4075px;
-    left: 49px;
-    width: 1177px;
+    top: 4070px;
+    left: 48px;
+    width: 1164px;
     height: 200px;
     overflow: hidden;
+    border: white 8px solid;
 
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -203,9 +204,6 @@ img {
 }
 
 .window-01-mask:hover {
-    top: 4076px;
-    left: 49px;
-    width: 1177px;
     height: 649px;
 }
 
