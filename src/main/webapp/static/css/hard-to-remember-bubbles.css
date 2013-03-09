@@ -1,0 +1,170 @@
+.bubble-01 {
+    position: absolute;
+    top: 855px;
+    left: 106px;
+    width: 95px;
+    height: 65px;
+    color: #f4d15c;
+    background-color: #76530e;
+    border: #000000 solid 2px;
+    vertical-align: middle;
+    opacity: 0;
+    padding: 0 0 0 0;
+
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -webkit-animation: fadein 4s 1s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.bubble-02 {
+    position: absolute;
+    top: 1086px;
+    left: 121px;
+    width: 178px;
+    height: 98px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+    opacity: 0;
+
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -webkit-animation: fadein 4s 3s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadein 4s;
+}
+
+.bubble-03 {
+    position: absolute;
+    top: 1464px;
+    left: 81px;
+    width: 200px;
+    height: 198px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+    opacity: 0;
+
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -webkit-animation: fadein 4s 5s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadein 4s;
+}
+
+.bubble-04 {
+    position: absolute;
+    top: 1692px;
+    left: 114px;
+    width: 218px;
+    height: 165px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+    opacity: 0;
+
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    -webkit-animation: fadein 4s 7s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadein 4s;
+}
+
+.bubble-05 {
+    position: absolute;
+    top: 196px;
+    left: 699px;
+    width: 182px;
+    height: 72px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+    opacity: 0;
+}
+
+.bubble-06 {
+    position: absolute;
+    top: 2076px;
+    left: 102px;
+    width: 254px;
+    height: 115px;
+    color: #f5f5f5;
+    background-color: #7f5d38;
+    border: #a9a9a9 solid thin;
+
+
+    text-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.bubble-07 {
+    position: absolute;
+    top: 2261px;
+    left: 212px;
+    width: 267px;
+    height: 106px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}
+
+.bubble-08 {
+    position: absolute;
+    top: 2634px;
+    left: 996px;
+    width: 173px;
+    height: 23px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}
+
+.bubble-09 {
+    position: absolute;
+    top: 785px;
+    left: 458px;
+    width: 174px;
+    height: 125px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}
+
+.bubble-10 {
+    position: absolute;
+    top: 1084px;
+    left: 727px;
+    width: 127px;
+    height: 147px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}
+
+.bubble-oh-man {
+    position: absolute;
+    top: 3154px;
+    left: 960px;
+    width: 69px;
+    height: 42px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}
+
+.bubble-not-again {
+    position: absolute;
+    top: 3247px;
+    left: 1030px;
+    width: 69px;
+    height: 42px;
+    color: #f5f5f5;
+    background-color: #2f4f4f;
+    border: #a9a9a9 solid thin;
+}

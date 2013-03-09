@@ -1,0 +1,210 @@
+@font-face {
+    font-family: unmasked_bb_italic;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
+}
+
+body {
+    background-color: black;
+    margin: 0 0 0 0;
+    overflow-y: scroll;
+    text-align: center;
+    font-family: unmasked_bb_italic;
+    font-size: 15pt;
+}
+
+.page {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto 0 auto;
+}
+
+img {
+    z-index: -1;
+}
+
+.lamp-01 {
+    position: absolute;
+    top: -43px;
+    width: 250px;
+    height: 610px;
+    background-image: url("../comics%20pages/assembly-02/lamp-01-02.jpg");
+
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    -ms-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+}
+
+.lamp-01:hover {
+    top: 0px;
+    left: -13px;
+}
+
+.lamp-01-mask {
+    position: absolute;
+    top: 170px;
+    left: 426px;
+    width: 236px;
+    height: 565px;
+    overflow: hidden;
+}
+
+.lamp-02 {
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    width: 250px;
+    height: 610px;
+    background-image: url("../comics%20pages/assembly-02/lamp-02-02.jpg");
+
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    -o-transition: 2s ease-in-out;
+    -ms-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+}
+
+.lamp-02:hover {
+    top: -43px;
+    left: 0px;
+}
+
+.lamp-02-mask {
+    position: absolute;
+    top: 170px;
+    left: 669px;
+    width: 238px;
+    height: 565px;
+    overflow: hidden;
+}
+
+.lamp-03 {
+    position: absolute;
+    top: -43px;
+    left: -15px;
+    width: 250px;
+    height: 607px;
+    background-image: url("../comics%20pages/assembly-02/lamp-03-02.jpg");
+
+    -webkit-transition: 3s ease-in-out;
+    -moz-transition: 3s ease-in-out;
+    -o-transition: 3s ease-in-out;
+    -ms-transition: 3s ease-in-out;
+    transition: 3s ease-in-out;
+}
+
+.lamp-03:hover {
+    top: 0px;
+    left: 0px;
+}
+
+.lamp-03-mask {
+    position: absolute;
+    top: 170px;
+    left: 916px;
+    width: 234px;
+    height: 564px;
+    overflow: hidden;
+}
+
+.skyscraper-01 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1362px;
+    height: 950px;
+    background-image: url("../comics%20pages/assembly-02/skyscraper-03.jpg");
+
+    animation: circle 4s;
+    -moz-animation: circle 4s;
+    -webkit-animation: circle 60s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -o-animation: circle 4s;
+}
+
+@-webkit-keyframes circle {
+    0%  {
+        top: 0px;
+        left: 0px;
+    }
+    33% {
+        top: -30px;
+        left: -120px;
+    }
+    66% {
+        top: -118px;
+        left: -164px;
+    }
+}
+
+.skyscraper-01-mask {
+    position: absolute;
+    top: 1955px;
+    left: 40px;
+    width: 1195px;
+    height: 825px;
+    overflow: hidden;
+}
+
+.window-01 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 1174px;
+    height: 648px;
+    background-image: url("../comics%20pages/assembly-02/window-02.jpg");
+
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.window-01:hover {
+    top: 0;
+}
+
+.window-01-mask {
+    position: absolute;
+    top: 4075px;
+    left: 49px;
+    width: 1177px;
+    height: 200px;
+    overflow: hidden;
+
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.window-01-mask:hover {
+    top: 4075px;
+    left: 49px;
+    width: 1177px;
+    height: 649px;
+}
+
+.sleepy-face-01 {
+    position: absolute;
+    top: 2851px;
+    left: 82px;
+    width: 485px;
+    height: 502px;
+    background-image: url("../comics%20pages/assembly-02/sleepy-face-02.jpg");
+    opacity: 0;
+
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.sleepy-face-01:hover {
+    opacity: 1;
+}
