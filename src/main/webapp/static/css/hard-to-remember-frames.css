@@ -25,7 +25,7 @@ body {
 
 .page {
     width: 1280px;
-    background-color: #76530e;
+    background-color: black;
     position: relative;
     margin: 0 auto 0 auto;
 }
@@ -203,7 +203,7 @@ img {
 }
 
 .window-01-mask:hover {
-    top: 4075px;
+    top: 4076px;
     left: 49px;
     width: 1177px;
     height: 649px;
@@ -217,7 +217,7 @@ img {
     height: 502px;
     background-image: url("../comics%20pages/assembly-02/sleepy-face-02.jpg");
     border: #d3d3d3 5px solid;
-    opacity: 0.15;
+    opacity: 0.3;
 
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
