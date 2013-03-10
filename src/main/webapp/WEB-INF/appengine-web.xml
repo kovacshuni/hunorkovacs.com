@@ -7,5 +7,6 @@
 
     <static-files>
         <include path="/static/**"/>
+        <include path="/favicon.ico"/>
     </static-files>
 </appengine-web-app>
