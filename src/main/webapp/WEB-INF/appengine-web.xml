@@ -4,7 +4,7 @@
     <version>1</version>
     <threadsafe>true</threadsafe>
     <static-files>
-        <include path="/static/**"/>
+        <include path="/Who-Am-I-comics/**"/>
         <include path="/favicon.ico"/>
     </static-files>
 </appengine-web-app>

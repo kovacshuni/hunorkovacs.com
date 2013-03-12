@@ -14,7 +14,7 @@
     <context:component-scan base-package="com.hunorkovacs.whoami"/>
 
     <mvc:annotation-driven />
-    <mvc:resources mapping="/static/**" location="/static/"/>
+    <mvc:resources mapping="/Who-Am-I-comics/**" location="/Who-Am-I-comics/"/>
     <mvc:resources mapping="/favicon.ico" location="/"/>
 
 </beans>
