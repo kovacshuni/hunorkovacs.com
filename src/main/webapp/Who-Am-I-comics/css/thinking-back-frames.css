@@ -1,0 +1,53 @@
+.car-01 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 1200px;
+    height: 757px;
+    background-image: url("../image/car-02.jpg");
+}
+
+.finger-01 {
+    position: absolute;
+    top: 895px;
+    left: 40px;
+    width: 265px;
+    height: 439px;
+    background-image: url("../image/finger-01-01.jpg");
+}
+
+.finger-02 {
+    position: absolute;
+    top: 895px;
+    left: 318px;
+    width: 263px;
+    height: 439px;
+    background-image: url("../image/finger-02-01.jpg");
+}
+
+.finger-03 {
+    position: absolute;
+    top: 895px;
+    left: 593px;
+    width: 317px;
+    height: 439px;
+    background-image: url("../image/finger-03-01.jpg");
+}
+
+.finger-04 {
+    position: absolute;
+    top: 895px;
+    left: 922px;
+    width: 318px;
+    height: 439px;
+    background-image: url("../image/finger-04-01.jpg");
+}
+
+.fingerprint {
+    position: absolute;
+    top: 1367px;
+    left: 40px;
+    width: 1200px;
+    height: 1348px;
+    background-image: url("../image/fingerprint-01.jpg");
+}
