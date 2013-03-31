@@ -46,6 +46,7 @@
     width: 317px;
     height: 439px;
     background-image: url("../image/finger-03-01.jpg");
+    opacity: 0.5;
 }
 
 .finger-04 {
@@ -55,6 +56,7 @@
     width: 318px;
     height: 439px;
     background-image: url("../image/finger-04-01.jpg");
+    opacity: 0.2;
 }
 
 .fingerprint {
@@ -64,6 +66,16 @@
     width: 1200px;
     height: 1348px;
     background-image: url("../image/fingerprint-01.jpg");
+}
+
+.fingerprint-blur {
+    position: absolute;
+    top: 1447px;
+    left: 50px;
+    width: 1200px;
+    height: 1348px;
+    background-image: url("../image/fingerprint-01.jpg");
+    opacity: 0.3;
 }
 
 .thinking-01 {
