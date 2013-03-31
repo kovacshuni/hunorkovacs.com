@@ -1,0 +1,13 @@
+.page-who-am-i {
+    width: 1280px;
+    height: 2000px;
+}
+
+.car {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 1200px;
+    height: 757px;
+    background-image: url("../image/car-02.jpg");
+}
