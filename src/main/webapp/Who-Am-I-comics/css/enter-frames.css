@@ -3,11 +3,20 @@
     height: 2000px;
 }
 
-.car {
+.walking {
     position: absolute;
     top: 40px;
     left: 40px;
     width: 1200px;
-    height: 757px;
-    background-image: url("../image/car-02.jpg");
+    height: 1853px;
+    background-image: url("../image/walking-01.jpg");
+}
+
+.push {
+    position: absolute;
+    top: 1913px;
+    left: 40px;
+    width: 1200px;
+    height: 602px;
+    background-image: url("../image/push-01.jpg");
 }
