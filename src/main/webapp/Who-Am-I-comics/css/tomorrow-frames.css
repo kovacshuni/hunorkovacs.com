@@ -19,6 +19,11 @@
     width: 370px;
     height: 460px;
     background-image: url("../image/browsing-01-grey-01.jpg");
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
 }
 
 .browsing-01:hover {
@@ -32,6 +37,11 @@
     width: 358px;
     height: 461px;
     background-image: url("../image/browsing-02-grey.jpg");
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
 }
 
 .browsing-02:hover {
@@ -45,6 +55,11 @@
     width: 338px;
     height: 459px;
     background-image: url("../image/browsing-03-grey-01.jpg");
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
 }
 
 .browsing-03:hover {
@@ -58,6 +73,11 @@
     width: 351px;
     height: 555px;
     background-image: url("../image/browsing-04-grey-01.jpg");
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
 }
 
 .browsing-04:hover {
@@ -94,14 +114,19 @@
 .walk-out {
     position: relative;
     top: -71px;
-    left: 0;
+    left: -148px;
     width: 1348px;
     height: 604px;
     background-image: url("../image/walk-out-01.jpg");
+    -webkit-transition: 5s ease-out;
+    -moz-transition: 5s ease-out;
+    -o-transition: 5s ease-out;
+    -ms-transition: 5s ease-out;
+    transition: 5s ease-out;
 }
 
 .walk-out:hover {
-    left: -148px;
+    left: 0;
 }
 
 .new-beginning-frame {
@@ -124,13 +149,19 @@
 
 .new-beginning {
     position: relative;
-    top: 0;
+    top: -113px;
     left: -10px;
     width: 1192px;
     height: 600px;
     background-image: url("../image/new-beginning-01.jpg");
+    -webkit-transition: 15s ease-out;
+    -moz-transition: 15s ease-out;
+    -o-transition: 15s ease-out;
+    -ms-transition: 15s ease-out;
+    transition: 15s ease-out;
+
 }
 
 .new-beginning:hover {
-    top: -113px;
+    top: 0;
 }
