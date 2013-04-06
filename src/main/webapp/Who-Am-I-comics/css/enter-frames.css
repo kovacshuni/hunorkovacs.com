@@ -19,6 +19,23 @@
     width: 1200px;
     height: 602px;
     background-image: url("../image/push-01.jpg");
+    overflow: hidden;
+}
+
+.push-in {
+    width: 1200px;
+    height: 602px;
+    background-image: url("../image/push-02.jpg");
+    opacity: 0;
+    -webkit-transition: 0.8s ease-out;
+    -moz-transition: 0.8s ease-out;
+    -o-transition: 0.8s ease-out;
+    -ms-transition: 0.8s ease-out;
+    transition: 0.8s ease-out;
+}
+
+.push-in:hover {
+    opacity: 0.5;
 }
 
 .enter {
@@ -28,4 +45,39 @@
     width: 1200px;
     height: 422px;
     background-image: url("../image/enter-02.jpg");
+    overflow: hidden;
+}
+
+.shutter-01 {
+    position: relative;
+    width: 1569px;
+    height: 422px;
+    left: 50px;
+    background: url("../image/shutter-01.png") no-repeat;
+    -webkit-transition: 0.8s ease-out;
+    -moz-transition: 0.8s ease-out;
+    -o-transition: 0.8s ease-out;
+    -ms-transition: 0.8s ease-out;
+    transition: 0.8s ease-out;
+}
+
+.shutter-01:hover {
+    left: -369px;
+}
+
+.shutter-02 {
+    position: relative;
+    width: 1200px;
+    height: 422px;
+    left: -50px;
+    background: url("../image/shutter-02.png") no-repeat;
+    -webkit-transition: 0.8s ease-out;
+    -moz-transition: 0.8s ease-out;
+    -o-transition: 0.8s ease-out;
+    -ms-transition: 0.8s ease-out;
+    transition: 0.8s ease-out;
+}
+
+.shutter-02:hover {
+    left: 669px;
 }
