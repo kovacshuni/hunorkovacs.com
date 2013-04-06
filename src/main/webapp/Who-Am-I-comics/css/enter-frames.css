@@ -1,6 +1,6 @@
 .page-enter {
     width: 1280px;
-    height: 2000px;
+    height: 2962px;
 }
 
 .walking {
@@ -14,9 +14,18 @@
 
 .push {
     position: absolute;
-    top: 1913px;
+    top: 1895px;
     left: 40px;
     width: 1200px;
     height: 602px;
     background-image: url("../image/push-01.jpg");
+}
+
+.enter {
+    position: absolute;
+    top: 2500px;
+    left: 40px;
+    width: 1200px;
+    height: 422px;
+    background-image: url("../image/enter-02.jpg");
 }

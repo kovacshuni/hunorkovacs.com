@@ -1,13 +1,136 @@
-.page-enter {
+.page-tomorrow {
     width: 1280px;
-    height: 2000px;
+    height: 3251px;
 }
 
-.car {
+.standing {
     position: absolute;
     top: 40px;
     left: 40px;
     width: 1200px;
-    height: 757px;
-    background-image: url("../image/car-02.jpg");
+    height: 1269px;
+    background-image: url("../image/standing-01.jpg");
+}
+
+.browsing-01 {
+    position: absolute;
+    top: 53px;
+    left: 108px;
+    width: 370px;
+    height: 460px;
+    background-image: url("../image/browsing-01-grey-01.jpg");
+}
+
+.browsing-01:hover {
+    opacity: 0;
+}
+
+.browsing-02 {
+    position: absolute;
+    top: 53px;
+    left: 488px;
+    width: 358px;
+    height: 461px;
+    background-image: url("../image/browsing-02-grey.jpg");
+}
+
+.browsing-02:hover {
+    opacity: 0;
+}
+
+.browsing-03 {
+    position: absolute;
+    top: 55px;
+    left: 856px;
+    width: 338px;
+    height: 459px;
+    background-image: url("../image/browsing-03-grey-01.jpg");
+}
+
+.browsing-03:hover {
+    opacity: 0;
+}
+
+.browsing-04 {
+    position: absolute;
+    top: 544px;
+    left: 53px;
+    width: 351px;
+    height: 555px;
+    background-image: url("../image/browsing-04-grey-01.jpg");
+}
+
+.browsing-04:hover {
+    opacity: 0;
+}
+
+.eyes {
+    position: absolute;
+    top: 1325px;
+    left: 40px;
+    width: 1200px;
+    height: 842px;
+    background-image: url("../image/eyes-01.jpg");
+}
+
+.walk-out-frame {
+    position: absolute;
+    top: 2167px;
+    left: 40px;
+    width: 1200px;
+    height: 539px;
+    background-image: url("../image/walk-out-mask-01.png");
+}
+
+.walk-out-mask {
+    position: relative;
+    top: 4px;
+    left: 11px;
+    width: 1176px;
+    height: 530px;
+    overflow: hidden;
+}
+
+.walk-out {
+    position: relative;
+    top: -71px;
+    left: 0;
+    width: 1348px;
+    height: 604px;
+    background-image: url("../image/walk-out-01.jpg");
+}
+
+.walk-out:hover {
+    left: -148px;
+}
+
+.new-beginning-frame {
+    position: absolute;
+    top: 2706px;
+    left: 40px;
+    width: 1200px;
+    height: 505px;
+    background-image: url("../image/new-beginning-mask-01.png");
+}
+
+.new-beginning-mask {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 1179px;
+    height: 487px;
+    overflow: hidden;
+}
+
+.new-beginning {
+    position: relative;
+    top: 0;
+    left: -10px;
+    width: 1192px;
+    height: 600px;
+    background-image: url("../image/new-beginning-01.jpg");
+}
+
+.new-beginning:hover {
+    top: -113px;
 }
