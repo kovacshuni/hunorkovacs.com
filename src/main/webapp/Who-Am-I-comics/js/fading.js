@@ -25,3 +25,7 @@ var fade = function () {
         }
     }
 }();
+
+function ds(id) {
+    document.getElementById(id).set
+}

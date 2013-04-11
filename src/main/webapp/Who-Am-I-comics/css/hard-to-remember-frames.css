@@ -1,9 +1,17 @@
-.text-area-01 {
+.hover-area-01 {
     position: absolute;
     top: 43px;
     left: 42px;
     width: 372px;
     height: 1875px;
+}
+
+.hover-area-02 {
+    position: absolute;
+    top: 741px;
+    left: 423px;
+    width: 730px;
+    height: 565px;
 }
 
 .lamp-01 {
