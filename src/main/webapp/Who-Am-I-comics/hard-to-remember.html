@@ -8,14 +8,15 @@
     <script type="text/javascript" src="js/fading.js"></script>
 </head>
 <body onload="
-        fade.delayed('b-i-wish', 6);
-        fade.delayed('b-goddamn-hard', 8);
-        fade.delayed('b-feeding-me', 10);
-        fade.delayed('b-changed', 12);
-        fade.delayed('b-remember', 14);
-        fade.delayed('b-burning-hole', 16);
-        fade.delayed('b-stops', 18);
-        fade.delayed('b-more-sleep', 20);
+        fadeInDelayed('b-i-wish', 6);
+        fadeInDelayed('b-goddamn-hard', 8);
+        fadeInDelayed('b-feeding-me', 10);
+        fadeInDelayed('b-changed', 12);
+        fadeInDelayed('b-remember', 14);
+        fadeInDelayed('b-burning-hole', 16);
+        fadeInDelayed('b-stops', 18);
+        fadeInDelayed('b-more-sleep', 20);
+        fadeInDelayed('b-doctors-suggestion', 22);
         ">
     <div class="going-on">
         <a href="who-am-i.html">
@@ -25,18 +26,18 @@
     <div class="page">
         <img src="image/page-01-1280-06.jpg"/>
         <div class="hover-area-01" onmouseover="
-                fadeIt('b-i-wish');
-                fade.delayed('b-goddamn-hard', 2);
-                fade.delayed('b-feeding-me', 4);
-                fade.delayed('b-changed', 6)"></div>
+                fadeIn('b-i-wish');
+                fadeInDelayed('b-goddamn-hard', 2);
+                fadeInDelayed('b-feeding-me', 4);
+                fadeInDelayed('b-changed', 6)"></div>
         <div class="hover-area-02" onmouseover="
-                fadeIt('b-burning-hole');
-                fade.delayed('b-stops', 2)"></div>
+                fadeIn('b-burning-hole');
+                fadeInDelayed('b-stops', 2)"></div>
         <div class="lamp-01-mask">
             <div class="lamp-01">
             </div>
         </div>
-        <div class="lamp-02-mask" onmouseover="fadeIt('b-remember')">
+        <div class="lamp-02-mask" onmouseover="fadeIn('b-remember')">
             <div class="lamp-02">
             </div>
         </div>
@@ -45,9 +46,9 @@
             </div>
         </div>
         <div class="skyscraper-01-mask" onmouseover="
-                fadeIt('b-every-night');
-                fade.delayed('b-barely-sleep', 2);
-                fade.delayed('b-like-others', 4)">
+                fadeIn('b-every-night');
+                fadeInDelayed('b-barely-sleep', 2);
+                fadeInDelayed('b-like-others', 4)">
             <div class="skyscraper-01">
             </div>
         </div>
@@ -55,7 +56,7 @@
             <div class="sleepy-face-01">
             </div>
         </div>
-        <div class="window-01-mask" onmouseover="fade.delayed('b-doctors-suggestion', 1)">
+        <div class="window-01-mask" onmouseover="fadeInDelayed('b-doctors-suggestion', 1)">
             <div class="window-01">
                 <div id="b-doctors-suggestion" class="B-doctors-suggestion">
                     <div class="B-doctors-suggestion-text">
@@ -113,7 +114,7 @@
         <div id="b-not-again" class="B-not-again">
             Not again.
         </div>
-        <div class="hover-area-03" onmouseover="fadeIt('b-more-sleep')"></div>
+        <div class="hover-area-03" onmouseover="fadeIn('b-more-sleep')"></div>
         <div id="b-more-sleep" class="B-more-sleep">
             <div class="B-more-sleep-text">
                 I need to<br/>
