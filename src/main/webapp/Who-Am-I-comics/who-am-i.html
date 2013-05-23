@@ -4,6 +4,7 @@
     <title>who am i - page 2/5</title>
     <link rel="stylesheet" type="text/css" href="css/comics-pages.css"/>
     <link rel="stylesheet" type="text/css" href="css/who-am-i-frames.css"/>
+    <link rel="stylesheet" type="text/css" href="css/who-am-i-bubbles.css"/>
     <script type="text/javascript" src="js/fading.js"></script>
 </head>
 <body>
@@ -19,9 +20,32 @@
             </a>
         </div>
         <div class="page-who-am-i">
-            <div class="who-am-i"></div>
-            <div class="staring"></div>
-            <div class="leads-back"></div>
+            <div class="who-am-i" onmouseover="fadeIn('b-figure-out')">
+                <div id="b-figure-out" class="B-figure-out">
+                    <div class="B-figure-out-text">
+                        I just<br />
+                        have to figure out how to unlock them.
+                    </div>
+                </div>
+            </div>
+            <div class="staring" onmouseover="fadeIn('b-how-to-connect')">
+                <div class="staring-dark"></div>
+                <div id="b-how-to-connect" class="B-how-to-connect">
+                    <div class="B-how-to-connect-text">
+                        How to connect all these events and people.
+                    </div>
+                </div>
+            </div>
+            <div class="leads-back" onmouseover="fadeIn('b-leads-back')">
+                <div id="b-leads-back" class="B-leads-back">
+                    <div class="B-leads-back-text">
+                        Because<br />
+                        somehow<br />
+                        it all<br />
+                        leads back to me.
+                    </div>
+                </div>
+            </div>
             <div class="turn"></div>
         </div>
     </div>
