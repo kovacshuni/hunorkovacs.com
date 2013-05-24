@@ -21,9 +21,15 @@
     background-image: url("../image/bar-01-01.jpg");
 }
 
-.finger-01 {
+.fingers {
     position: absolute;
     top: 925px;
+    width: 1280px;
+    height: 439px;
+}
+
+.finger-01 {
+    position: absolute;
     left: 40px;
     width: 265px;
     height: 439px;
@@ -50,7 +56,6 @@
 
 .finger-02 {
     position: absolute;
-    top: 925px;
     left: 318px;
     width: 263px;
     height: 439px;
@@ -65,7 +70,6 @@
 
 .finger-03 {
     position: absolute;
-    top: 925px;
     left: 593px;
     width: 317px;
     height: 439px;
@@ -80,7 +84,6 @@
 
 .finger-04 {
     position: absolute;
-    top: 925px;
     left: 922px;
     width: 318px;
     height: 439px;
