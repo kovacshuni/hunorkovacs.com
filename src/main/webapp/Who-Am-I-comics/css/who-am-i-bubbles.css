@@ -1,7 +1,7 @@
 .B-who {
     position: absolute;
-    top: 444px;
-    left: 757px;
+    top: 204px;
+    left: 188px;
     width: 284px;
     background-color: white;
     color: black;
@@ -14,8 +14,8 @@
 
 .B-who-hovered {
     position: absolute;
-    top: 444px;
-    left: 757px;
+    top: 204px;
+    left: 188px;
     width: 284px;
     background-color: white;
     color: black;
@@ -48,7 +48,7 @@
     width: 200px;
     height: 374px;
     background-image: url("../image/bubble-figure-out.png");
-    opacity: 1;
+    opacity: 0.9;
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
     -o-transition: 2s ease;
@@ -141,8 +141,8 @@
 
 .B-doesnt {
     position: absolute;
-    top: 3px;
-    left: 823px;
+    top: 504px;
+    left: 623px;
     width: 193px;
     background-color: white;
     color: black;
@@ -155,8 +155,8 @@
 
 .B-doesnt-hovered {
     position: absolute;
-    top: 3px;
-    left: 823px;
+    top: 504px;
+    left: 623px;
     width: 193px;
     background-color: white;
     color: black;
