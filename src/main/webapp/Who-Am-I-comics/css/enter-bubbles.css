@@ -1,21 +1,21 @@
 .B-i-need {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 353px;
+    left: 297px;
+    width: 83px;
+    height: 91px;
     background-image: url("../image/bubble-i-need.png");
     opacity: 0;
 }
 
 .B-i-need-hovered {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 353px;
+    left: 297px;
+    width: 83px;
+    height: 91px;
     background-image: url("../image/bubble-i-need.png");
-    opacity: 0.9;
+    opacity: 1;
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
     -o-transition: 2s ease;
@@ -25,9 +25,8 @@
 
 .B-i-need-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 59px;
+    left: 4px;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
@@ -36,22 +35,22 @@
 
 .B-clear-my {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 388px;
+    left: 990px;
+    width: 107px;
+    height: 126px;
     background-image: url("../image/bubble-clear-my.png");
     opacity: 0;
 }
 
 .B-clear-my-hovered {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 388px;
+    left: 990px;
+    width: 107px;
+    height: 126px;
     background-image: url("../image/bubble-clear-my.png");
-    opacity: 0.9;
+    opacity: 1;
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
     -o-transition: 2s ease;
@@ -61,9 +60,10 @@
 
 .B-clear-my-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 51px;
+    left: 31px;
+    width: 73px;
+    line-height: 90%;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
@@ -72,22 +72,22 @@
 
 .B-nope {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 820px;
+    left: 868px;
+    width: 81px;
+    height: 40px;
     background-image: url("../image/bubble-nope.png");
     opacity: 0;
 }
 
 .B-nope-hovered {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 820px;
+    left: 868px;
+    width: 81px;
+    height: 40px;
     background-image: url("../image/bubble-nope.png");
-    opacity: 0.9;
+    opacity: 1;
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
     -o-transition: 2s ease;
@@ -97,9 +97,7 @@
 
 .B-nope-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 10px;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
@@ -108,22 +106,22 @@
 
 .B-keep-up {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 813px;
+    left: 860px;
+    width: 171px;
+    height: 267px;
     background-image: url("../image/bubble-keep-up.png");
     opacity: 0;
 }
 
 .B-keep-up-hovered {
     position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    top: 813px;
+    left: 860px;
+    width: 171px;
+    height: 267px;
     background-image: url("../image/bubble-keep-up.png");
-    opacity: 0.9;
+    opacity: 1;
     -webkit-transition: 2s ease;
     -moz-transition: 2s ease;
     -o-transition: 2s ease;
@@ -133,9 +131,9 @@
 
 .B-keep-up-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 15px;
+    left: 23px;
+    width: 129px;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
@@ -143,21 +141,22 @@
 }
 
 .B-damn-files {
-    position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    position: absolute;
+    top: 357px;
+    left: 859px;
+    width: 154px;
+    height: 175px;
     background-image: url("../image/bubble-damn-files.png");
     opacity: 0;
+    z-index: 1;
 }
 
 .B-damn-files-hovered {
-    position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    position: absolute;
+    top: 357px;
+    left: 859px;
+    width: 154px;
+    height: 175px;
     background-image: url("../image/bubble-damn-files.png");
     opacity: 0.9;
     -webkit-transition: 2s ease;
@@ -165,13 +164,14 @@
     -o-transition: 2s ease;
     -ms-transition: 2s ease;
     transition: 2s ease;
+    z-index: 1;
 }
 
 .B-damn-files-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 47px;
+    left: 25px;
+    width: 104px;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
@@ -179,21 +179,21 @@
 }
 
 .B-they-hold {
-    position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    position: absolute;
+    top: 259px;
+    left: 50px;
+    width: 234px;
+    height: 128px;
     background-image: url("../image/bubble-they-hold.png");
     opacity: 0;
 }
 
 .B-they-hold-hovered {
-    position: relative;
-    top: 489px;
-    left: 721px;
-    width: 200px;
-    height: 374px;
+    position: absolute;
+    top: 259px;
+    left: 50px;
+    width: 234px;
+    height: 128px;
     background-image: url("../image/bubble-they-hold.png");
     opacity: 0.9;
     -webkit-transition: 2s ease;
@@ -205,9 +205,9 @@
 
 .B-they-hold-text {
     position: relative;
-    top: 6px;
-    left: 75px;
-    width: 113px;
+    top: 22px;
+    left: 23px;
+    width: 119px;
     color: black;
     font-family: unmasked_bb;
     font-size: 14pt;
