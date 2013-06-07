@@ -39,7 +39,14 @@ img {
     z-index: -1;
 }
 
-.going-on {
+.next-wrapper {
+    position: absolute;
+    top: 550px;
+    right: 0;
+    z-index: 2;
+}
+
+.next {
     position: fixed;
     bottom: 40px;
     left: 1272px;
@@ -49,20 +56,27 @@ img {
     z-index: 2;
 }
 
-.going-on:hover {
+.next:hover {
     background-image: url("../image/going-on-hover-01.png");
 }
 
-.looking-back {
-    position: fixed;
-    bottom: 20px;
-    left: 38px;
-    width: 40px;
-    height: 150px;
-    background-image: url("../image/looking-back-01.png");
+.prev-wrapper {
+    position: absolute;
+    top: 550px;
+    left: 0;
     z-index: 2;
 }
 
-.looking-back:hover {
+.prev {
+    position: fixed;
+    width: 40px;
+    height: 150px;
+    background-image: url("../image/looking-back-01.png");
+}
+
+.prev:hover {
+    position: fixed;
+    width: 40px;
+    height: 150px;
     background-image: url("../image/looking-back-hover-01.png");
 }
