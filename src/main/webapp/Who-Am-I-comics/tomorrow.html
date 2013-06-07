@@ -4,6 +4,7 @@
     <title>who am i - page 5/5</title>
     <link rel="stylesheet" type="text/css" href="css/comics-pages.css"/>
     <link rel="stylesheet" type="text/css" href="css/tomorrow-frames.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tomorrow-bubbles.css"/>
     <script type="text/javascript" src="js/fading.js"></script>
 </head>
 <body>
@@ -19,15 +20,26 @@
             <div class="browsing-02"></div>
             <div class="browsing-03"></div>
             <div class="browsing-04"></div>
-            <div class="eyes"></div>
+            <div class="eyes" onmouseover="fadeInDelayed('b-tomorrow', 1)">
+                <div id="b-tomorrow" class="B-tomorrow">
+                    <div class="B-tomorrow-text">
+                        Tomorrow
+                    </div>
+                </div>
+            </div>
             <div class="walk-out-frame">
                 <div class="walk-out-mask">
                     <div class="walk-out"></div>
                 </div>
             </div>
-            <div class="new-beginning-frame">
+            <div class="new-beginning-frame" onmouseover="fadeInDelayed('b-becoming', 2)">
                 <div class="new-beginning-mask">
                     <div class="new-beginning"></div>
+                    <div id="b-becoming" class="B-becoming">
+                        <div class="B-becoming-text">
+                            I start becoming <span class="the-bold">the real</span> H.K.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

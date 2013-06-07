@@ -1,0 +1,74 @@
+.B-tomorrow {
+    position: relative;
+    top: 580px;
+    left: 159px;
+    width: 188px;
+    height: 103px;
+    background-image: url("../image/bubble-tomorrow.png");
+    opacity: 0;
+}
+
+.B-tomorrow-hovered {
+    position: relative;
+    top: 580px;
+    left: 159px;
+    width: 188px;
+    height: 103px;
+    background-image: url("../image/bubble-tomorrow.png");
+    opacity: 0.9;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-tomorrow-text {
+    position: relative;
+    top: 24px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 11pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.B-becoming {
+    position: absolute;
+    top: 267px;
+    left: 178px;
+    width: 184px;
+    height: 113px;
+    background-image: url("../image/bubble-start-becoming.png");
+    opacity: 0;
+}
+
+.B-becoming-hovered {
+    position: absolute;
+    top: 267px;
+    left: 178px;
+    width: 184px;
+    height: 113px;
+    background-image: url("../image/bubble-start-becoming.png");
+    opacity: 0.9;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-becoming-text {
+    position: relative;
+    top: 26px;
+    left: 24px;
+    width: 135px;
+    color: black;
+    line-height: 110%;
+    font-family: unmasked_bb;
+    font-size: 14pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.the-bold {
+    font-family: unmasked_bb_bold;
+}

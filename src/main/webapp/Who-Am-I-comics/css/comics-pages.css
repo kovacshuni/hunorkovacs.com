@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: unmasked_bb_bold;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB_bold.ttf') format('opentype');
+}
+
+@font-face {
     font-family: bsttrial;
     src: local(bsttrial), url('../fonts/BSTTRIAL.ttf') format('opentype');
 }
