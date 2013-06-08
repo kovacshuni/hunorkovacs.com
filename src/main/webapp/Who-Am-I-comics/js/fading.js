@@ -8,3 +8,11 @@ function fadeIn(id) {
 function fadeInDelayed(id, delay) {
     setTimeout(function() { fadeIn(id) }, delay * 1000);
 }
+
+function gotoLeftRightUrl(k, urlLeft, urlRight) {
+    if (k.keyCode == 37) {
+        window.location = urlLeft;
+    } else if (k.keyCode == 39) {
+        window.location = urlRight;
+    }
+}
