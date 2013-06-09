@@ -10,9 +10,9 @@ function fadeInDelayed(id, delay) {
 }
 
 function gotoLeftRightUrl(k, urlLeft, urlRight) {
-    if (k.keyCode == 37) {
+    if (urlLeft != '' && k.keyCode == 37) {
         window.location = urlLeft;
-    } else if (k.keyCode == 39) {
+    } else if (urlRight != '' && k.keyCode == 39) {
         window.location = urlRight;
     }
 }
