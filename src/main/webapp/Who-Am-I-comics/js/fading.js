@@ -1,3 +1,6 @@
+const COPYRIGHT_COOKIE_NAME = "copyright-acknowledgement";
+const COPYRIGHT_COOKIE_VALUE = "true";
+
 function fadeIn(id) {
     var element = document.getElementById(id)
     if (element.className.search("hovered") < 0) {
@@ -15,4 +18,43 @@ function gotoLeftRightUrl(k, urlLeft, urlRight) {
     } else if (urlRight != '' && k.keyCode == 39) {
         window.location = urlRight;
     }
+}
+
+function getCookie(c_name) {
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1) {
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1) {
+        c_value = null;
+    } else {
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1) {
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start, c_end));
+    }
+    return c_value;
+}
+
+function setCookie(c_name, value, exdays) {
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+    document.cookie = c_name + "=" + c_value;
+}
+
+function displayCopyrightAlertBasedOnCookie() {
+    var copyrightCookie = getCookie(COPYRIGHT_COOKIE_NAME);
+    if (copyrightCookie != null && copyrightCookie == COPYRIGHT_COOKIE_VALUE) {
+        var element = document.getElementById('copyright-alert')
+        element.style.visibility = "hidden";
+    }
+}
+
+function acknowledgeCopyright() {
+    setCookie(COPYRIGHT_COOKIE_NAME, COPYRIGHT_COOKIE_VALUE, 365);
+    displayCopyrightAlertBasedOnCookie();
 }

@@ -7,8 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/thinking-back-bubbles.css"/>
     <script type="text/javascript" src="js/fading.js"></script>
 </head>
-<body onkeyup="gotoLeftRightUrl(event, 'who-am-i.html', 'enter.html')">
+<body onload="displayCopyrightAlertBasedOnCookie()" onkeyup="gotoLeftRightUrl(event, 'who-am-i.html', 'enter.html');">
     <div class="page">
+        <div id="copyright-alert" class="Copyright-alert">
+            Spawn, its logo and its symbol are registered trademarks and copyrights of Todd McFarlane Productions, Inc.
+            <div class="Copyright-ok" onclick="acknowledgeCopyright()">Got it.
+            </div>
+        </div>
         <div class="page-thinking-back">
             <div class="prev-wrapper">
                 <div class="prev">

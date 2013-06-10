@@ -87,3 +87,30 @@ img {
     height: 150px;
     background-image: url("../image/looking-back-hover-01.png");
 }
+
+.Copyright-alert {
+    position: fixed;
+    width: 1280px;
+    top: 100px;
+    margin: 0 auto 0 auto;
+    background-color: cadetblue;
+    color: #191919;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.Copyright-ok {
+    float: right;
+    position: relative;
+    width: 100px;
+    margin: 0 auto 0 auto;
+    background-color: darkslategrey;
+    color: burlywood;
+    cursor: default;
+    opacity: 0.85;
+}
+
+.Copyright-ok:hover {
+    background-color: black;
+    color: white;
+}
