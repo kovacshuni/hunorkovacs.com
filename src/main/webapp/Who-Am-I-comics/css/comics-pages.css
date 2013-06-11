@@ -14,8 +14,13 @@
 }
 
 @font-face {
-    font-family: bsttrial;
-    src: local(bsttrial), url('../fonts/BSTTRIAL.ttf') format('opentype');
+    font-family: wurmics_bravado;
+    src: local(wurmics_bravado), url('../fonts/Wurmics Bravado.ttf');
+}
+
+@font-face {
+    font-family: straightjacketbb_bold;
+    src: local(straightjacketbb_bold), url('../fonts/straightjacketbb_bold.otf');
 }
 
 body {
@@ -88,31 +93,73 @@ img {
     background-image: url("../image/looking-back-hover-01.png");
 }
 
+.Copyright-blur {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(31, 53, 53);
+    z-index: 3;
+    height: 100%;
+    opacity: 0.8;
+    visibility: hidden;
+}
+
 .Copyright-alert {
     position: fixed;
-    width: 1280px;
-    top: 100px;
-    padding: 8px 0 8px 0;
+    width: 100%;
+    top: 200px;
+    padding: 30px 0 30px 0;
     margin: 0 auto 0 auto;
-    background-color: rgb(11, 58, 66);
-    color: rgb(181, 197, 96);
-    text-shadow: 0 0 1px rgb(146, 158, 83);
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: rgba(165, 184, 202, 0.8);
+    background-color: rgb(11, 42, 66);
+    color: rgb(245, 245, 60);
+    font-family: wurmics_bravado;
+    letter-spacing: 0.5px;
+    font-size: 14pt;
+    text-shadow: 0 0 0;
     opacity: 0.85;
-    z-index: 2;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.Copyright-link {
+    color: rgb(182, 198, 236);
+    font-family: wurmics_bravado;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-size: 14pt;
+    text-shadow: 0 0 0;
+}
+
+.Copyright-link:hover {
+    color: whitesmoke;
+    font-family: wurmics_bravado;
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+    font-size: 14pt;
+    text-shadow: 0 0 0;
 }
 
 .Copyright-ok {
-    float: right;
     position: relative;
-    width: 80px;
-    margin: 0 auto 0 auto;
-    background-color: darkslategrey;
-    color: burlywood;
+    width: 150px;
+    padding: 7px 0 5px 0;
+    margin: 20px auto 0 auto;
+    border: 1px solid rgb(74, 99, 99);
+    background-color: rgb(31, 93, 134);
+    color: white;
+    font-family: straightjacketbb_bold;
+    letter-spacing: 1px;
+    font-size: 13pt;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     cursor: default;
     opacity: 0.85;
 }
 
 .Copyright-ok:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    border: 1px solid rgba(74, 99, 99, 0);
+    color: black;
+    opacity: 1;
 }
