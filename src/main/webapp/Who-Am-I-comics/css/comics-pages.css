@@ -46,34 +46,47 @@ img {
 
 .next-wrapper {
     position: absolute;
-    top: 550px;
-    right: 0;
+    top: 200px;
+    right: 280px;
     z-index: 2;
 }
 
 .next {
     position: fixed;
-    top: 50%;
-    left: 1272px;
-    width: 40px;
-    height: 100px;
-    background-image: url("../image/going-on-01.png");
-    z-index: 2;
-
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+    width: 500px;
+    height: 150px;
+    padding-top: 110px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
-.next:hover {
-    background-image: url("../image/going-on-hover-01.png");
+.next a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: rgb(40, 47, 77);
+    text-shadow: 0 0 1px rgba(10, 21, 68, 0.5);
+    font-family: straightjacketbb_bold;
+    font-size: 20pt;
+    text-decoration: none;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
+
+.next a:hover {
+    color: white;
+}
+
 
 .prev-wrapper {
     position: absolute;
-    top: 10%;
+    top: 200px;
     left: -220px;
     z-index: 2;
 }
@@ -90,17 +103,14 @@ img {
     -o-transform: rotate(-90deg);
 }
 
-.prev:hover {
-    position: fixed;
-}
-
 .prev a {
     width: 100%;
     height: 100%;
     display: block;
-    color: rgb(80, 96, 179);
+    color: rgb(40, 47, 77);
+    text-shadow: 0 0 1px rgba(10, 21, 68, 0.5);
     font-family: straightjacketbb_bold;
-    font-size: 22pt;
+    font-size: 20pt;
     text-decoration: none;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
