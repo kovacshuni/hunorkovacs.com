@@ -23,6 +23,12 @@
     src: local(straightjacketbb_bold), url('../fonts/straightjacketbb_bold.otf');
 }
 
+@font-face {
+    font-family: Wurper_Comics;
+    src: local(Wurper_Comics), url('../fonts/Wurper Comics.ttf');
+}
+
+
 body {
     background-color: black;
     margin: 0 0 0 0;
@@ -82,7 +88,6 @@ img {
 .next a:hover {
     color: white;
 }
-
 
 .prev-wrapper {
     position: absolute;

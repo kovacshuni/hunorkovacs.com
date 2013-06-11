@@ -1,0 +1,45 @@
+.page-bio {
+    width: 1280px;
+
+    font-family: Wurper_Comics;
+    font-size: 13pt;
+}
+
+.bio {
+    width: 1280px;
+    /*background-color: darkgreen;*/
+}
+
+.bio-inner {
+    width: 1200px;
+    /*height: 800px; *//*the height of the portrait, bg picture*/
+    margin: 40px 40px 40px 40px;
+    background-image: url("../image/bio-darth-02.jpg");
+    text-align: left;
+}
+
+.bio-normal {
+    width: 100%;
+}
+
+.bio-text {
+    width: 560px;
+    margin-left: 600px;
+    padding: 40px 40px 0 0;
+    /*background-color: mediumpurple;*/
+    color: rgb(225, 225, 225);
+    text-shadow: 0 0 1px rgba(225, 225, 225, 0.5);
+}
+
+.bio-highlight {
+    width: 100%;
+    background-color: rgba(225, 225, 225, 0.85);
+}
+
+.bio-highlight-text {
+    width: 560px;
+    margin-left: 600px;
+    padding: 1px 40px 10px 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 1px rgba(0,  0, 0, 0.5);
+}
