@@ -102,6 +102,11 @@ img {
     font-family: straightjacketbb_bold;
     font-size: 22pt;
     text-decoration: none;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .prev a:hover {
@@ -154,6 +159,11 @@ img {
     text-decoration: underline;
     font-size: 14pt;
     text-shadow: 0 0 0;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .Copyright-ok {
@@ -170,6 +180,11 @@ img {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     cursor: default;
     opacity: 0.85;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .Copyright-ok:hover {
