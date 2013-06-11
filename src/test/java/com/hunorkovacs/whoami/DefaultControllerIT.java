@@ -38,14 +38,14 @@ public class DefaultControllerIT {
     public void testBlankGetRedirectsToFirstPage() throws Exception {
         mockMvc.perform(get("/").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isMovedTemporarily())
-                .andExpect(redirectedUrl("/Who-Am-I-comics/hard-to-remember.html"));
+                .andExpect(redirectedUrl("/Who-Am-I-comics/1-hard-to-remember.html"));
     }
 
     @Test
     public void testAnyUrlGetRedirectsToFirstPage() throws Exception {
         mockMvc.perform(get("/1/a/2/b/3/c/4d/5e/6f/anything").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isMovedTemporarily())
-                .andExpect(redirectedUrl("/Who-Am-I-comics/hard-to-remember.html"));
+                .andExpect(redirectedUrl("/Who-Am-I-comics/1-hard-to-remember.html"));
     }
 
     @Test

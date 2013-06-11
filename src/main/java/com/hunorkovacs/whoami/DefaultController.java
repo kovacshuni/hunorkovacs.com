@@ -11,6 +11,6 @@ public class DefaultController {
 
     @RequestMapping(value = "/**", method = RequestMethod.GET)
     public View get() {
-        return new RedirectView("/Who-Am-I-comics/hard-to-remember.html");
+        return new RedirectView("/Who-Am-I-comics/1-hard-to-remember.html");
     }
 }
