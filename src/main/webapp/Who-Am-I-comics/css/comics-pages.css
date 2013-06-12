@@ -28,6 +28,10 @@
     src: local(Wurper_Comics), url('../fonts/Wurper Comics.ttf');
 }
 
+@font-face {
+    font-family: ManlyMenBB;
+    src: local(ManlyMenBB), url('../fonts/ManlyMenBB.ttf');
+}
 
 body {
     background-color: black;
@@ -207,4 +211,68 @@ img {
     border: 1px solid rgba(74, 99, 99, 0);
     color: black;
     opacity: 1;
+}
+
+.Footer {
+    width: 1280px;
+    height: 22px;
+    padding-top: 14px;
+    color: white;
+    font-family: ManlyMenBB;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    font-size: 12pt;
+    background-image: url("../image/footer-bg-01.png");
+    opacity: 0.2;
+    margin-top: auto;
+    -webkit-transition: 13s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Footer:hover {
+    opacity: 1;
+}
+
+.Footer-first {
+    float: left;
+    width: 140px;
+    margin-left: 212px;
+}
+
+.Footer-first a {
+    color: rgb(169, 177, 187);
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.Footer-first a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Footer-other {
+    float: left;
+    width: 140px;
+    margin-left: 100px;
+}
+
+.Footer-other a{
+    color: rgb(169, 177, 187);
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.Footer-other a:hover {
+    color: white;
+    text-decoration: underline;
 }
