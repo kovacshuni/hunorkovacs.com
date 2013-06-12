@@ -12,6 +12,14 @@ function fadeInDelayed(id, delay) {
     setTimeout(function() { fadeIn(id) }, delay * 1000);
 }
 
+function fadeOut(id) {
+    var element = document.getElementById(id);
+    var index = element.className.search("-hovered");
+    if (index > 0) {
+        element.className = element.className.substr(0, index);
+    }
+}
+
 function gotoLeftRightUrl(k, urlLeft, urlRight) {
     if (urlLeft != '' && k.keyCode == 37) {
         window.location = urlLeft;

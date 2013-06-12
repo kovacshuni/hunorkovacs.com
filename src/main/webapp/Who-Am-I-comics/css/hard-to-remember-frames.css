@@ -1,3 +1,13 @@
+.Page-hard-to-remember {
+    width: 1280px;
+    height: 4330px;
+}
+
+.Page-hard-to-remember-hovered {
+    width: 1280px;
+    height: 4772px;
+}
+
 .hover-area-01 {
     position: absolute;
     top: 43px;
@@ -155,6 +165,7 @@
     width: 1174px;
     height: 648px;
     background-image: url("../image/window-02.jpg");
+    margin-bottom: 40px;
 
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -174,7 +185,8 @@
     width: 1164px;
     height: 200px;
     overflow: hidden;
-    border: white 8px solid;
+    border: rgb(248, 248, 248) 8px solid;
+    margin-bottom: 40px;
 
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
