@@ -12,7 +12,7 @@
 
 .bio-inner {
     width: 1200px;
-    background-image: url("../image/self-04.jpg");
+    background-image: url("../image/bio-darth-02.jpg");
     text-align: left;
 }
 
@@ -24,7 +24,6 @@
     width: 469px;
     margin-left: 691px;
     padding: 40px 40px 0 0;
-    /*background-color: mediumpurple;*/
     color: rgb(225, 225, 225);
     text-shadow: 0 0 1px rgba(225, 225, 225, 0.5);
 }

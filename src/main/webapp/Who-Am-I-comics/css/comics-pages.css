@@ -41,17 +41,29 @@ body {
     font-size: 15pt;
     text-align: center;
     text-shadow: 0 0 1px rgba(244, 209, 92, 0.5);
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    z-index: -1;
+}
+
+.push {
+    height: 36px;
 }
 
 .page {
     width: 1280px;
     background-color: black;
     position: relative;
-    margin: 0 auto 0 auto;
-}
-
-img {
-    z-index: -1;
+    margin: 0 auto -36px auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
 }
 
 .next-wrapper {
@@ -216,6 +228,7 @@ img {
 .Footer {
     width: 1280px;
     height: 22px;
+    margin: 0 auto 0 auto;
     padding-top: 14px;
     color: white;
     font-family: ManlyMenBB;
@@ -223,16 +236,15 @@ img {
     font-size: 12pt;
     background-image: url("../image/footer-bg-01.png");
     opacity: 0.2;
-    margin-top: auto;
-    -webkit-transition: 13s ease;
+    -webkit-transition: opacity 1s ease;
     -moz-transition: 1s ease;
     -o-transition: 1s ease;
     -ms-transition: 1s ease;
-    transition: 1s ease;
+    transition: opacity 1s ease;
 }
 
 .Footer:hover {
-    opacity: 1;
+    opacity: 1.0;
 }
 
 .Footer-first {
