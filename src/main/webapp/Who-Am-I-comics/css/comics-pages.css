@@ -222,7 +222,7 @@ img {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     font-size: 12pt;
     background-image: url("../image/footer-bg-01.png");
-    opacity: 0.2;
+    opacity: 0.5;
     margin-top: auto;
     -webkit-transition: 13s ease;
     -moz-transition: 1s ease;
