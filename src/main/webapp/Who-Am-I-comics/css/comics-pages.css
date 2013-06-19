@@ -33,6 +33,11 @@
     src: local(ManlyMenBB), url('../fonts/ManlyMenBB.ttf');
 }
 
+@font-face {
+    font-family: BuffaloStance;
+    src: local(BuffaloStance), url('../fonts/BSTTRIAL.ttf');
+}
+
 body {
     background-color: black;
     margin: 0 0 0 0;
@@ -214,65 +219,112 @@ img {
 }
 
 .Footer {
-    width: 1280px;
-    height: 22px;
-    padding-top: 14px;
-    color: white;
-    font-family: ManlyMenBB;
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-    font-size: 12pt;
-    background-image: url("../image/footer-bg-01.png");
+    position: relative;
+    width: 519px;
+    height: 37px;
+    margin-left: 761px;
+    background-image: url("../image/footer-bg-02.png");
     opacity: 0.5;
-    margin-top: auto;
-    -webkit-transition: 13s ease;
-    -moz-transition: 1s ease;
-    -o-transition: 1s ease;
-    -ms-transition: 1s ease;
-    transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .Footer:hover {
     opacity: 1;
 }
 
-.Footer-first {
+.Footer-at {
     float: left;
-    width: 140px;
-    margin-left: 212px;
+    margin-left: 35px;
+    width: 40px;
+    height: 22px;
+    margin-top: 12px;
+    opacity: 0.6;
 }
 
-.Footer-first a {
-    color: rgb(169, 177, 187);
+.Footer-at:hover {
+    opacity: 1;
+}
+
+.Footer-social {
+    float: left;
+    width: 40px;
+    height: 22px;
+    margin-top: 12px;
+}
+
+.Footer-social a {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.Footer-social a:hover {
+    opacity: 1;
+}
+
+.Footer-MyAddress {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    top: -20px;
+    left: -20px;
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Footer-MyAddress-hovered {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    top: -20px;
+    left: -20px;
+    opacity: 1;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Footer-policies a {
+    float: left;
+    width: 40px;
+    margin: 14px 0 0 12px;
+    font-family: BuffaloStance;
+    font-size: 11pt;
+    color: #BBBBBB;
     text-decoration: none;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    transition: 0.3s ease;
 }
 
-.Footer-first a:hover {
+.Footer-policies a:hover {
     color: white;
     text-decoration: underline;
 }
 
-.Footer-other {
+.Footer-signature {
+    position: relative;
     float: left;
-    width: 140px;
-    margin-left: 100px;
+    width: 40px;
+    height: 22px;
+    margin: 16px 0 0 66px;
+    font-family: BuffaloStance;
+    font-size: 11pt;
+    color: #BBBBBB;
 }
 
-.Footer-other a{
-    color: rgb(169, 177, 187);
-    text-decoration: none;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    transition: 0.3s ease;
-}
-
-.Footer-other a:hover {
-    color: white;
-    text-decoration: underline;
+.Footer-date {
+    position: relative;
+    float: left;
+    margin: 19px 0 0 16px;
+    font-family: Wurper_Comics;
+    font-size: 9pt;
+    color: whitesmoke;
 }
