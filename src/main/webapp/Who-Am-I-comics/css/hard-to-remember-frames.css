@@ -35,6 +35,7 @@
 .lamp-01 {
     position: absolute;
     top: -43px;
+    left: 0;
     width: 250px;
     height: 610px;
     background-image: url("../image/lamp-01-02.jpg");
@@ -77,7 +78,7 @@
 
 .lamp-02:hover {
     top: -43px;
-    left: 0px;
+    left: 0;
 }
 
 .lamp-02-mask {
@@ -105,8 +106,8 @@
 }
 
 .lamp-03:hover {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 .lamp-03-mask {
@@ -120,18 +121,33 @@
 
 .skyscraper-01 {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 1362px;
     height: 950px;
     background-image: url("../image/skyscraper-03.jpg");
 
-    animation: circle 4s;
-    -moz-animation: circle 4s;
-    -webkit-animation: circle 60s;
-    -webkit-animation-iteration-count: infinite;
+    animation: circle 60s infinite;
+    -moz-animation: circle 60s infinite;
+    -webkit-animation: circle 60s infinite;
+    -o-animation: circle 60s infinite;
+
     -webkit-animation-timing-function: linear;
-    -o-animation: circle 4s;
+}
+
+@keyframes circle {
+    0%  {
+        top: 0px;
+        left: 0px;
+    }
+    33% {
+        top: -30px;
+        left: -120px;
+    }
+    66% {
+        top: -118px;
+        left: -164px;
+    }
 }
 
 @-webkit-keyframes circle {

@@ -40,18 +40,22 @@
     -o-animation: blinking 5s infinite alternate;
     -ms-animation: blinking 5s infinite alternate;
     animation: blinking 5s infinite alternate;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+}
+
+@keyframes blinking {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1 }
 }
 
 @-webkit-keyframes blinking {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1 }
 }
 
 .finger-02 {
