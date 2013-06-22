@@ -1,9 +1,4 @@
 @font-face {
-    font-family: unmasked_bb_italic;
-    src: local(unmasked_bb_italic), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
-}
-
-@font-face {
     font-family: unmasked_bb;
     src: local(unmasked_bb), url('../fonts/UnmaskedBB.ttf') format('opentype');
 }
@@ -26,11 +21,6 @@
 @font-face {
     font-family: Wurper_Comics;
     src: local(Wurper_Comics), url('../fonts/Wurper Comics.ttf');
-}
-
-@font-face {
-    font-family: ManlyMenBB;
-    src: local(ManlyMenBB), url('../fonts/ManlyMenBB.ttf');
 }
 
 @font-face {
