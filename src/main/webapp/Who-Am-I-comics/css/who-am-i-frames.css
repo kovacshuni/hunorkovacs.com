@@ -26,9 +26,9 @@
     width: 1200px;
     height: 709px;
     background-image: url("../image/staring-dark-01.jpg");
+    animation: blinking 2s infinite;
     -moz-animation: blinking 2s infinite;
     -webkit-animation: blinking 2s infinite;
-    -webkit-animation-iteration-count: infinite;
     -o-animation: blinking 2s infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;

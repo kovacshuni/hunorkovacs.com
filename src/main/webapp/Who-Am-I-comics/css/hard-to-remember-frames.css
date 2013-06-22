@@ -126,19 +126,20 @@
     width: 1362px;
     height: 950px;
     background-image: url("../image/skyscraper-03.jpg");
-
-    animation: circle 60s infinite;
-    -moz-animation: circle 60s infinite;
-    -webkit-animation: circle 60s infinite;
-    -o-animation: circle 60s infinite;
-
+    animation: circle 50s infinite;
+    -moz-animation: circle 50s infinite;
+    -webkit-animation: circle 50s infinite;
+    -o-animation: circle 50s infinite;
+    animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
 }
 
 @keyframes circle {
     0%  {
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
     33% {
         top: -30px;
@@ -152,8 +153,8 @@
 
 @-webkit-keyframes circle {
     0%  {
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
     }
     33% {
         top: -30px;
