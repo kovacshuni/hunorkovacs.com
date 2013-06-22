@@ -29,11 +29,6 @@
 }
 
 @font-face {
-    font-family: ManlyMenBB;
-    src: local(ManlyMenBB), url('../fonts/ManlyMenBB.ttf');
-}
-
-@font-face {
     font-family: BuffaloStance;
     src: local(BuffaloStance), url('../fonts/BSTTRIAL.ttf');
 }
