@@ -59,26 +59,50 @@ img {
     z-index: -1;
 }
 
-.next-wrapper {
+.prev-wrapper {
     position: absolute;
     top: 200px;
-    right: 280px;
+    left: -220px;
     z-index: 2;
 }
 
-.next {
-    position: fixed;
+.prev {
+    position: absolute;
+    left: -285px;
     width: 500px;
     height: 150px;
-    padding-top: 110px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    background-color: blue;
+    opacity: 0.8;
+}
+
+.next {
+    position: absolute;
+    margin-left: 1055px;
+    width: 500px;
+    height: 150px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+    background-color: blue;
+    opacity: 0.8;
 }
 
-.next a {
+.prev-inner, .next-inner {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    margin-top: 110px;
+    background-color: blue;
+}
+
+.prev a, .next a {
     width: 100%;
     height: 100%;
     display: block;
@@ -96,41 +120,6 @@ img {
 
 .next a:hover {
     color: white;
-}
-
-.prev-wrapper {
-    position: absolute;
-    top: 200px;
-    left: -220px;
-    z-index: 2;
-}
-
-.prev {
-    position: fixed;
-    width: 500px;
-    height: 150px;
-    padding-top: 110px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-}
-
-.prev a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: rgb(124, 128, 148);
-    text-shadow: 0 0 1px rgba(10, 21, 68, 0.5);
-    font-family: straightjacketbb_bold;
-    font-size: 20pt;
-    text-decoration: none;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    transition: 0.5s ease;
 }
 
 .prev a:hover {
@@ -327,4 +316,14 @@ img {
     font-family: Wurper_Comics;
     font-size: 9pt;
     color: whitesmoke;
+}
+
+.prevnext-fixed {
+    position: fixed;
+    top: 200px;
+    width: 1280px;
+    height: 180px;
+    background-color: green;
+    opacity: 0.9;
+    z-index: 2;
 }
