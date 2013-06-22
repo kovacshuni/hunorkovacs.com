@@ -1,5 +1,5 @@
-const COPYRIGHT_COOKIE_NAME = "copyright-acknowledgement";
-const COPYRIGHT_COOKIE_VALUE = "true";
+var COPYRIGHT_COOKIE_NAME = "copyright-acknowledgement";
+var COPYRIGHT_COOKIE_VALUE = "true";
 
 function fadeIn(id) {
     var element = document.getElementById(id)
@@ -70,4 +70,15 @@ function displayCopyrightAlertBasedOnCookie() {
 function acknowledgeCopyright() {
     setCookie(COPYRIGHT_COOKIE_NAME, COPYRIGHT_COOKIE_VALUE, 365);
     displayCopyrightAlertBasedOnCookie();
+}
+
+function detectBrowser() {
+    var browser = navigator.userAgent;
+    if (browser.indexOf("Opera") == -1 &&
+            browser.indexOf("Firefox") == -1 &&
+            browser.indexOf("Chrome") == -1 &&
+            browser.indexOf("Safari") == -1) {
+        alert("This website doesn't support your browser and won't show correctly.\n\n" +
+            "Please use: Google Chrome, Apple Safari, Mozilla Firefox or Opera.");
+    }
 }
