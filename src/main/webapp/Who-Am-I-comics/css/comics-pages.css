@@ -273,6 +273,50 @@ img {
     transition: 1s ease;
 }
 
+.Footer-ShortBio {
+    position: absolute;
+    width: 180px;
+    top: -63px;
+    left: 300px;
+    padding: 5px 0 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #111111;
+    color: white;
+    font-family: wurmics_bravado;
+    font-size: 10pt;
+    opacity: 0;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+.Footer-ShortBio-hovered {
+    position: absolute;
+    width: 180px;
+    top: -63px;
+    left: 300px;
+    padding: 5px 0 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #111111;
+    color: white;
+    font-family: wurmics_bravado;
+    font-size: 10pt;
+    opacity: 1;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
 .Footer-policies a {
     float: left;
     width: 40px;
