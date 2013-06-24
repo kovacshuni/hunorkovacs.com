@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: wurmics_bravado;
-    src: local(wurmics_bravado), url('../fonts/Wurmics Bravado.ttf');
+    src: local(wurmics_bravado), url('../fonts/Wurmics_Bravado.ttf');
 }
 
 @font-face {
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: Wurper_Comics;
-    src: local(Wurper_Comics), url('../fonts/Wurper Comics.ttf');
+    src: local(Wurper_Comics), url('../fonts/Wurper_Comics.ttf');
 }
 
 @font-face {
