@@ -3,11 +3,6 @@
     height: 4330px;
 }
 
-.Page-hard-to-remember-hovered {
-    width: 1280px;
-    height: 4772px;
-}
-
 .hover-area-01 {
     position: absolute;
     top: 43px;
@@ -184,11 +179,11 @@
     background-image: url("../image/window-02.jpg");
     margin-bottom: 40px;
 
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -ms-transition: 1.5s ease;
+    transition: 1.5s ease;
 }
 
 .window-01:hover {
@@ -204,15 +199,17 @@
     overflow: hidden;
     border: rgb(248, 248, 248) 8px solid;
     margin-bottom: 40px;
+    z-index: 1;
 
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    -ms-transition: 1.5s ease;
+    transition: 1.5s ease;
 }
 
 .window-01-mask:hover {
+    top: 3621px;
     height: 649px;
 }
 
