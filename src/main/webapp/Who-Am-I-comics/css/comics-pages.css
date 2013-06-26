@@ -34,7 +34,8 @@
 }
 
 body {
-    background-color: black;
+    background-image: url("../image/collage-01.jpg");
+    background-attachment: fixed;
     margin: 0 0 0 0;
     color: #f4d15c;
     font-family: unmasked_bb_italic;
@@ -200,6 +201,7 @@ img {
     margin-left: 761px;
     background-image: url("../image/footer-bg-02.png");
     opacity: 0.5;
+    overflow: hidden;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
