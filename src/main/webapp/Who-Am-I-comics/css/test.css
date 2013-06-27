@@ -1,0 +1,38 @@
+body {
+    background-image: url("../image/collage-01.jpg");
+    background-attachment: fixed;
+    margin: 0 0 0 0;
+    color: #f4d15c;
+    font-size: 15pt;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(244, 209, 92, 0.5);
+}
+
+.page-surroundings-mask {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto 0 auto;
+    overflow: visible;
+}
+
+.page-surroundings {
+    position: relative;
+    left: -110px;
+    max-width: 1500px;
+    width: 1500px;
+    min-width: 1280px;
+    background-color: gray;
+}
+
+.page {
+    width: 1280px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.page-someact {
+    width: 1280px;
+    height: 2000px;
+    background-color: black;
+}

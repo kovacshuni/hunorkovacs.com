@@ -55,16 +55,16 @@ function setCookie(c_name, value, exdays) {
 }
 
 function displayCopyrightAlertBasedOnCookie() {
-    var cookie = getCookie(COPYRIGHT_COOKIE_NAME)
-    var copyrightAlert = document.getElementById('copyright-alert')
-    var copyrightBlur = document.getElementById('copyright-blur')
-    if (cookie == null || cookie != COPYRIGHT_COOKIE_VALUE) {
-        copyrightAlert.style.visibility = "visible";
-        copyrightBlur.style.visibility = "visible";
-    } else {
-        copyrightAlert.style.visibility = "hidden";
-        copyrightBlur.style.visibility = "hidden";
-    }
+//    var cookie = getCookie(COPYRIGHT_COOKIE_NAME)
+//    var copyrightAlert = document.getElementById('copyright-alert')
+//    var copyrightBlur = document.getElementById('copyright-blur')
+//    if (cookie == null || cookie != COPYRIGHT_COOKIE_VALUE) {
+//        copyrightAlert.style.visibility = "visible";
+//        copyrightBlur.style.visibility = "visible";
+//    } else {
+//        copyrightAlert.style.visibility = "hidden";
+//        copyrightBlur.style.visibility = "hidden";
+//    }
 }
 
 function acknowledgeCopyright() {
@@ -80,5 +80,23 @@ function detectBrowser() {
             browser.indexOf("Safari") == -1) {
         alert("This website doesn't support your browser and won't show correctly.\n\n" +
             "Please use: Google Chrome, Apple Safari, Mozilla Firefox or Opera.");
+    }
+}
+
+function resized() {
+    surroundings = document.getElementById('page-surroundings');
+    if (document.body.clientWidth < surroundings.offsetWidth) {
+        if (document.body.clientWidth > 1280) {
+            surroundings.style.width = document.body.clientWidth + "px";
+            console.info("left" + "-" + (Math.round((document.body.clientWidth - 1280) / 2)) + "px");
+            surroundings.style.left = "-" + (Math.round((document.body.clientWidth - 1280) / 2)) + "px";
+        } else {
+            surroundings.style.width = "1280px";
+            console.info("left 0 px");
+            surroundings.style.left = "0 px";
+        }
+    } else if (document.body.clientWidth > surroundings.offsetWidth && document.body.clientWidth > 1280) {
+//        surroundings.style.width = window.innerWidth + "px";
+//        surroundings.style.left = "-" + ((window.innerWidth - 1280) / 2) + "px";
     }
 }
