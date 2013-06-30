@@ -35,7 +35,7 @@ Setup and Run
 
 You could also just install the Google Appengine plugin in your favorite dev. environment tool like Eclipse or IntelliJ IDEA and hit the run button.
 
-Deploy to Appengine
+Deploy to AppEngine
 -------------------------
 
 From the project dir: `AppCfg --no_cookies update target\hunorkovacs.com-1.0-SNAPSHOT`
