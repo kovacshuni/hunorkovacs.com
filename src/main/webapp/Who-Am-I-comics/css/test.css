@@ -16,7 +16,6 @@ body {
 
 .page {
     width: 1280px;
-    /*background-color: black;*/
     position: relative;
     margin: 0 auto 0 auto;
     border: 4px solid rgba(0, 0, 0, 0.75)
@@ -82,7 +81,6 @@ body {
     height: 16px;
     background-image: url("../image/shadow-bottom-left.png");
     opacity: 0.65;
-    /*background-color: blue;*/
 }
 
 .bottom-middle {
@@ -91,7 +89,6 @@ body {
     margin: 0 auto 0 auto;
     background-image: url("../image/shadow-bottom.png");
     opacity: 0.65;
-    /*background-color: magenta;*/
 }
 
 
@@ -101,5 +98,4 @@ body {
     height: 16px;
     background-image: url("../image/shadow-bottom-right.png");
     opacity: 0.65;
-    /*background-color: green;*/
 }
