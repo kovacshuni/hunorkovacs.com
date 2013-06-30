@@ -11,10 +11,16 @@ My name is Hunor Kovács, find me at kovacshuni@yahoo.com .
 
 Requirements
 -------------------------
-1. "http://www.oracle.com/technetwork/java/javase/downloads/index.html" Java Developement Kit
-2. "http://maven.apache.org/download.cgi" Apache Maven
-3. "https://developers.google.com/appengine/docs/java/" Google Appengine (its Java Runtime Environment)
-4. "http://www.eclipse.org/jetty/" Jetty webserver [optional]
+
+1. [Java Developement Kit] [1]
+2. [Apache Maven] [2]
+3. [Google Appengine] [3] (its Java Runtime Environment)
+4. [Jetty webserver] [4] [optional]
+
+  [1]: http://www.oracle.com/technetwork/java/javase/downloads/index.html "Java Developement Kit"
+  [2]: http://maven.apache.org/download.cgi "Apache Maven"
+  [3]: https://developers.google.com/appengine/docs/java/ "Google Appengine"
+  [4]: http://www.eclipse.org/jetty/ "Jetty webserver"
 
 Setup and Run
 -------------------------
