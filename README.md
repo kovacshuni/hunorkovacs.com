@@ -28,10 +28,10 @@ Setup and Run
 1. Clone the project.
 
 2. Build with Maven:
-mvn clean install
+`mvn clean install`
 
 2. Start the Google Appengine webserver
-appengine-java-sdk\bin\dev_appserver.cmd hunorkovacs.com-1.0-SNAPSHOT.war
+`appengine-java-sdk\bin\dev_appserver.cmd hunorkovacs.com-1.0-SNAPSHOT.war`
 
 You could also just install the Google Appengine plugin in your favorite dev. environment tool like Eclipse or IntelliJ IDEA and hit the run button.
 
