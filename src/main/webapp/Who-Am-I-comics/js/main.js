@@ -87,16 +87,25 @@ function resized() {
     surroundings = document.getElementById('page-surroundings');
     if (document.body.clientWidth < surroundings.offsetWidth) {
         if (document.body.clientWidth > 1280) {
+            console.info("all" + document.body.clientWidth + "px");
             surroundings.style.width = document.body.clientWidth + "px";
             console.info("left" + "-" + (Math.round((document.body.clientWidth - 1280) / 2)) + "px");
             surroundings.style.left = "-" + (Math.round((document.body.clientWidth - 1280) / 2)) + "px";
         } else {
+            console.info("all 1280px");
             surroundings.style.width = "1280px";
             console.info("left 0 px");
-            surroundings.style.left = "0 px";
+            surroundings.style.left = "0px";
         }
-    } else if (document.body.clientWidth > surroundings.offsetWidth && document.body.clientWidth > 1280) {
-//        surroundings.style.width = window.innerWidth + "px";
-//        surroundings.style.left = "-" + ((window.innerWidth - 1280) / 2) + "px";
+    } else {
+        if (document.body.clientWidth > 1280) {
+            if (document.body.clientWidth < 1500) {
+                surroundings.style.width = document.body.clientWidth + "px";
+                surroundings.style.left = "-" + (Math.round((document.body.clientWidth - 1280) / 2)) + "px";
+            } else {
+                surroundings.style.width = "1500px";
+                surroundings.style.left = "-110px";
+            }
+        }
     }
 }
