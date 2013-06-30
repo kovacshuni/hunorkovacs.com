@@ -1,8 +1,11 @@
 hunorkovacs.com Personal Website
 ===============
 
-This is a minimalistic personal HTML website but it was built for being deployed to a Google Appengine server. It has no complicated back-end Java app logic, just some redirects.
-The website is a 5 page comic book, a story about an amnesiac person (which should be me) searching for his identity.
+This is a minimalistic, animated personal HTML website. It was built for being deployed to a Google Appengine server.
+There is no complicated back-end Java app logic or any database below, it's just a few static pages and redirects.
+
+The website is a 5 page comic book, a story about an amnesiac person (which should be me) searching for his identity. Now don't start to think about me as a deep-souled melancolic or childish comic book-nerd, i just didn't want to write a personal website where i write my own biography, i found that boring so just here's something else.
+
 Visuals and scripts were used from Spawn and Max Payne graphic novels. Please refer to the policies.html for licences or copyrights.
 My name is Hunor Kovács, find me at kovacshuni@yahoo.com .
 
