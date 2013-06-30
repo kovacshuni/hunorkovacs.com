@@ -8,16 +8,9 @@ body {
     text-shadow: 0 0 1px rgba(244, 209, 92, 0.5);
 }
 
-.page-surroundings-mask {
-    position: relative;
-    width: 1280px;
-    margin: 0 auto 0 auto;
-    overflow: visible;
-}
-
 .page-surroundings {
     position: relative;
-    left: -110px;
+    margin: 0 auto 0 auto;
     max-width: 1500px;
     width: 1500px;
     min-width: 1280px;
