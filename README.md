@@ -35,3 +35,8 @@ Setup and Run
 
 You could also just install the Google Appengine plugin in your favorite dev. environment tool like Eclipse or IntelliJ IDEA and hit the run button.
 
+Deploy to Appengine
+-------------------------
+
+From the project dir: `AppCfg --no_cookies update target\hunorkovacs.com-1.0-SNAPSHOT`
+Use your normal Google username and password. Usually the one you log in to Gmail.

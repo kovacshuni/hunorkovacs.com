@@ -1,3 +1,0 @@
-hunorkovacs.com>AppCfg --no_cookies update target\hunorkovacs.com-1.0-SNAPSHOT
-
-Use your normal kovacshuni@gmail.com username and password. The one you log in to Gmail.
