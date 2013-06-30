@@ -82,22 +82,3 @@ function detectBrowser() {
             "Please use: Google Chrome, Apple Safari, Mozilla Firefox or Opera.");
     }
 }
-
-function resized() {
-//    surroundings = document.getElementById('page-surroundings');
-//    if (document.body.clientWidth < surroundings.offsetWidth) {
-//        if (document.body.clientWidth > 1280) {
-//            surroundings.style.width = document.body.clientWidth + "px";
-//        } else {
-//            surroundings.style.width = "1280px";
-//        }
-//    } else {
-//        if (document.body.clientWidth > 1280) {
-//            if (document.body.clientWidth < 1500) {
-//                surroundings.style.width = document.body.clientWidth + "px";
-//            } else {
-//                surroundings.style.width = "1500px";
-//            }
-//        }
-//    }
-}
