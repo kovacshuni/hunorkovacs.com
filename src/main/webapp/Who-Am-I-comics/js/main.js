@@ -55,16 +55,16 @@ function setCookie(c_name, value, exdays) {
 }
 
 function displayCopyrightAlertBasedOnCookie() {
-    var cookie = getCookie(COPYRIGHT_COOKIE_NAME)
-    var copyrightAlert = document.getElementById('copyright-alert')
-    var copyrightBlur = document.getElementById('copyright-blur')
-    if (cookie == null || cookie != COPYRIGHT_COOKIE_VALUE) {
-        copyrightAlert.style.visibility = "visible";
-        copyrightBlur.style.visibility = "visible";
-    } else {
-        copyrightAlert.style.visibility = "hidden";
-        copyrightBlur.style.visibility = "hidden";
-    }
+//    var cookie = getCookie(COPYRIGHT_COOKIE_NAME)
+//    var copyrightAlert = document.getElementById('copyright-alert')
+//    var copyrightBlur = document.getElementById('copyright-blur')
+//    if (cookie == null || cookie != COPYRIGHT_COOKIE_VALUE) {
+//        copyrightAlert.style.visibility = "visible";
+//        copyrightBlur.style.visibility = "visible";
+//    } else {
+//        copyrightAlert.style.visibility = "hidden";
+//        copyrightBlur.style.visibility = "hidden";
+//    }
 }
 
 function acknowledgeCopyright() {
