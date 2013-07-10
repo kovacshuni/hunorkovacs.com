@@ -147,18 +147,6 @@ img {
     z-index: 2;
 }
 
-.next {
-    position: absolute;
-    margin-left: 1055px;
-    width: 500px;
-    height: 150px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
-
 .prev-inner {
      position: absolute;
      background-image: url("../image/looking-back.png");
@@ -175,14 +163,17 @@ img {
 
 .next-inner {
     position: absolute;
+    margin-left: 1244px;
+    background-image: url("../image/looking-back.png");
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
-.next a:hover {
-    color: white;
-}
-
-.prev a:hover {
-    color: white;
+.next-inner:hover {
+    background-image: url("../image/looking-back-hovered.png");
 }
 
 .Copyright-blur {
