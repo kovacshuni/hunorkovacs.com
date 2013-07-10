@@ -147,18 +147,6 @@ img {
     z-index: 2;
 }
 
-.prev {
-    position: absolute;
-    left: -285px;
-    width: 500px;
-    height: 150px;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-}
-
 .next {
     position: absolute;
     margin-left: 1055px;
@@ -171,27 +159,22 @@ img {
     -o-transform: rotate(90deg);
 }
 
-.prev-inner, .next-inner {
-    position: absolute;
-    width: 500px;
-    height: 150px;
-    margin-top: 110px;
-}
-
-.prev a, .next a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: rgb(124, 128, 148);
-    text-shadow: 0 0 1px rgba(10, 21, 68, 0.5);
-    font-family: straightjacketbb_bold;
-    font-size: 20pt;
-    text-decoration: none;
+.prev-inner {
+     position: absolute;
+     background-image: url("../image/looking-back.png");
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     transition: 0.5s ease;
+}
+
+.prev-inner:hover {
+    background-image: url("../image/looking-back-hovered.png");
+}
+
+.next-inner {
+    position: absolute;
 }
 
 .next a:hover {
