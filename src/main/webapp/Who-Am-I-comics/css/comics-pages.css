@@ -164,7 +164,7 @@ img {
 .next-inner {
     position: absolute;
     margin-left: 1244px;
-    background-image: url("../image/looking-back.png");
+    background-image: url("../image/going-on.png");
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
@@ -173,7 +173,7 @@ img {
 }
 
 .next-inner:hover {
-    background-image: url("../image/looking-back-hovered.png");
+    background-image: url("../image/going-on-hovered.png");
 }
 
 .Copyright-blur {
