@@ -253,11 +253,17 @@ img {
     opacity: 1;
 }
 
+.Footer-wrapper {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 1280px;
+}
+
 .Footer {
     position: relative;
     width: 519px;
     height: 37px;
-    margin-left: 761px;
+    margin-left: 661px;
     background-image: url("../image/footer-bg-02.png");
     opacity: 0.5;
     -webkit-transition: 0.5s ease;
