@@ -1,0 +1,27 @@
+
+.canvas-size {
+    padding: 0 0 0 0;
+}
+
+.billboard-size {
+    min-width: 14em;
+    margin: 0 0 0 0;
+    height: 21em;
+    padding: 0.5em 1.5em 1em 1.5em;
+}
+
+.billboard-image {
+    background-image: url("../image/barcelona-very-small-01.jpg");
+    /*background-image: url("../image/wallpaper-1015511.jpg");*/
+    background-position: 25% 0;
+}
+
+.billboard-container {
+    padding: 0 0 0 0;
+}
+
+.horizontal-line-top {
+    display: none;
+}
+
+.indicator-verysmall { display: block; }

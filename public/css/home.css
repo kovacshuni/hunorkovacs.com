@@ -1,0 +1,107 @@
+
+.header {
+    min-height: 2em;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-brand-size {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.canvas-size {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.billboard-image {
+    background-image: url("../image/barcelona-large-02.jpg");
+    /*background-image: url("../image/wallpaper-1015511.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 20%;
+}
+
+.billboard-size {
+    margin-top: 1.5em;
+    height: 25em;
+    padding: 1.5em 3em 3em 3em;
+}
+
+.container-narrow {
+    max-width: 30em;
+    padding: 0 0 0 0;
+    line-height: 1.75em;
+}
+
+.jumbotron-footer {
+    background-color: #ffffff;
+    padding: 0.1em 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+h1, p {
+    font-family: myriadpro-regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fixed-button-size {
+    width: 11em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.horizontal-line-top {
+    border-top: 1px lightgray solid;
+    margin-top: 1em;
+}
+
+.horizontal-line-bottom {
+    border-top: 1px lightgray solid;
+    margin-bottom: 1.25em;
+}
+
+
+.social-icon {
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 1em;
+}
+
+.social-icon a {
+    color: #1D0324;
+    text-decoration: none;
+    text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.4);
+}
+
+.social-icon a :hover {
+    color: #F0F0F0;
+    text-shadow: 0 0 0.2em rgba(255, 255, 255, 1);
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    background-image: none;
+}
+
+.indicator {
+    color: #17fb00;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 1);
+}
+.indicator-large { display: none; }
+.indicator-medium { display: none; }
+.indicator-small { display: none; }
+.indicator-verysmall { display: none; }
+
+@font-face {
+    font-family: myriadpro-regular;
+    src: local(myriadpro-regular), url('../font/MyriadPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: myriadpro-light;
+    src: local(myriadpro-light), url('../font/MyriadPro-Light.otf') format('opentype');
+}

@@ -1,3 +1,7 @@
-target
-*.iml
+*.gem
+*.rbc
+/tmp/
+Gemfile.lock
 .idea
+*.iml
+
