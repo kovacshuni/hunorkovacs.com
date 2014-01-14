@@ -1,7 +1,6 @@
 *.gem
 *.rbc
 /tmp/
-Gemfile.lock
 .idea
 *.iml
 log/*
