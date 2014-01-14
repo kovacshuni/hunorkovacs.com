@@ -1,0 +1,425 @@
+@font-face {
+    font-family: unmasked_bb_italic;
+    src: local(unmasked_bb_italic), url('../fonts/UnmaskedBB_ital.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: unmasked_bb;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: unmasked_bb_bold;
+    src: local(unmasked_bb), url('../fonts/UnmaskedBB_bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: wurmics_bravado;
+    src: local(wurmics_bravado), url('../fonts/Wurmics_Bravado.ttf');
+}
+
+@font-face {
+    font-family: straightjacketbb_bold;
+    src: local(straightjacketbb_bold), url('../fonts/straightjacketbb_bold.otf');
+}
+
+@font-face {
+    font-family: Wurper_Comics;
+    src: local(Wurper_Comics), url('../fonts/Wurper_Comics.ttf');
+}
+
+@font-face {
+    font-family: BuffaloStance;
+    src: local(BuffaloStance), url('../fonts/BSTTRIAL.ttf');
+}
+
+body {
+    background: url("../image/collage-06.jpg") fixed;
+    margin: 0 0 0 0;
+    color: #f4d15c;
+    font-family: unmasked_bb_italic;
+    font-size: 15pt;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(244, 209, 92, 0.5);
+}
+
+.page {
+    width: 1280px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    background-color: black;
+}
+
+.page-shadows {
+    position: relative;
+    margin: 0 auto 0 auto;
+    max-width: 1500px;
+    width: 1312px;
+}
+
+.middle {
+    display: block;
+    position: relative;
+}
+
+.middle-left {
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    background-image: url("../image/shadow-left.png");
+    opacity: 0.5;
+}
+
+.middle-right {
+    position: absolute;
+    float: right;
+    left: 1296px;
+    width: 16px;
+    height: 100%;
+    background-image: url("../image/shadow-right.png");
+    opacity: 0.5;
+}
+
+.top-left {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url("../image/shadow-top-left.png");
+    opacity: 0.5;
+}
+
+.top-middle {
+    width: 1280px;
+    height: 16px;
+    margin: 0 auto 0 auto;
+    background-image: url("../image/shadow-top.png");
+    opacity: 0.5;
+}
+
+.top-right {
+    float: right;
+    left: 1296px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../image/shadow-top-right.png");
+    opacity: 0.5;
+}
+
+.bottom-left {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url("../image/shadow-bottom-left.png");
+    opacity: 0.5;
+}
+
+.bottom-middle {
+    width: 1280px;
+    height: 16px;
+    margin: 0 auto 0 auto;
+    background-image: url("../image/shadow-bottom.png");
+    opacity: 0.5;
+}
+
+
+.bottom-right {
+    float: right;
+    width: 16px;
+    height: 16px;
+    background-image: url("../image/shadow-bottom-right.png");
+    opacity: 0.5;
+}
+
+img {
+    z-index: -1;
+}
+
+.prev-wrapper {
+    position: absolute;
+    top: 200px;
+    left: -220px;
+    z-index: 2;
+}
+
+.prev-inner {
+     position: absolute;
+     background-image: url("../image/looking-back.png");
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.prev-inner:hover {
+    background-image: url("../image/looking-back-hovered.png");
+}
+
+.next-inner {
+    position: absolute;
+    margin-left: 1244px;
+    background-image: url("../image/going-on.png");
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.next-inner:hover {
+    background-image: url("../image/going-on-hovered.png");
+}
+
+.Copyright-blur {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(31, 53, 53);
+    z-index: 3;
+    height: 100%;
+    opacity: 0.8;
+    visibility: hidden;
+}
+
+.Copyright-alert {
+    position: fixed;
+    width: 100%;
+    top: 200px;
+    padding: 30px 0 30px 0;
+    margin: 0 auto 0 auto;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: rgba(165, 184, 202, 0.8);
+    background-color: rgb(11, 42, 66);
+    color: rgb(245, 245, 60);
+    font-family: wurmics_bravado;
+    letter-spacing: 0.5px;
+    font-size: 11pt;
+    text-shadow: 0 0 0;
+    opacity: 0.85;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.Copyright-link {
+    color: rgb(182, 198, 236);
+    font-family: wurmics_bravado;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-size: 11pt;
+    text-shadow: 0 0 0;
+}
+
+.Copyright-link:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.Copyright-ok {
+    position: relative;
+    width: 150px;
+    padding: 7px 0 5px 0;
+    margin: 20px auto 0 auto;
+    border: 1px solid rgb(74, 99, 99);
+    background-color: rgb(31, 93, 134);
+    color: white;
+    font-family: straightjacketbb_bold;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    opacity: 0.85;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.Copyright-ok:hover {
+    background-color: white;
+    border: 1px solid rgba(74, 99, 99, 0);
+    color: black;
+    opacity: 1;
+}
+
+.Footer-wrapper {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 1280px;
+}
+
+.Footer {
+    position: relative;
+    width: 519px;
+    height: 37px;
+    margin-left: 661px;
+    background-image: url("../image/footer-bg-02.png");
+    opacity: 0.5;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.Footer:hover {
+    opacity: 1;
+}
+
+.Footer-at {
+    float: left;
+    margin-left: 35px;
+    width: 40px;
+    height: 22px;
+    margin-top: 12px;
+    opacity: 0.6;
+}
+
+.Footer-at:hover {
+    opacity: 1;
+}
+
+.Footer-social {
+    float: left;
+    width: 40px;
+    height: 22px;
+    margin-top: 12px;
+}
+
+.Footer-social a {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.Footer-social a:hover {
+    opacity: 1;
+}
+
+.Footer-MyAddress {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    top: -20px;
+    left: -20px;
+    opacity: 0;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Footer-MyAddress-hovered {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    top: -20px;
+    left: -20px;
+    opacity: 1;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+.Footer-ShortBio {
+    position: absolute;
+    width: 180px;
+    top: -63px;
+    left: 300px;
+    padding: 5px 0 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #111111;
+    color: white;
+    font-family: wurmics_bravado;
+    font-size: 10pt;
+    opacity: 0;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+.Footer-ShortBio-hovered {
+    position: absolute;
+    width: 180px;
+    top: -63px;
+    left: 300px;
+    padding: 5px 0 5px 0;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #111111;
+    color: white;
+    font-family: wurmics_bravado;
+    font-size: 10pt;
+    opacity: 1;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+.Footer-policies a {
+    float: left;
+    width: 40px;
+    margin: 14px 0 0 12px;
+    font-family: BuffaloStance;
+    font-size: 11pt;
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.Footer-policies a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.Footer-signature {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 18px;
+    margin: 16px 0 0 66px;
+    font-family: BuffaloStance;
+    font-size: 11pt;
+    color: #BBBBBB;
+}
+
+.Footer-date {
+    position: relative;
+    float: left;
+    margin: 19px 0 0 16px;
+    font-family: Wurper_Comics;
+    font-size: 9pt;
+    color: whitesmoke;
+}
+
+.prev-fixed {
+    position: absolute;
+    top: 200px;
+    width: 1280px;
+    height: 180px;
+    z-index: 2;
+}
+
+.next-fixed {
+    position: absolute;
+    bottom: 200px;
+    width: 1280px;
+    height: 180px;
+    z-index: 2;
+}

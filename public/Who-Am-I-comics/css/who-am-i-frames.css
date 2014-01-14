@@ -1,0 +1,86 @@
+.page-who-am-i {
+    width: 1280px;
+    height: 2871px;
+}
+
+.who-am-i {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 1200px;
+    height: 874px;
+    background-image: url("../image/who-am-i-01.jpg");
+}
+
+.staring {
+    position: absolute;
+    top: 957px;
+    left: 40px;
+    width: 1200px;
+    height: 709px;
+    background-image: url("../image/staring-01.jpg");
+}
+
+.staring-dark {
+    position: relative;
+    width: 1200px;
+    height: 709px;
+    background-image: url("../image/staring-dark-01.jpg");
+    animation: blinking 2s infinite;
+    -moz-animation: blinking 2s infinite;
+    -webkit-animation: blinking 2s infinite;
+    -o-animation: blinking 2s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+}
+
+@keyframes blinking {
+    0%  { opacity: 0; }
+    20% { opacity: 0; }
+    21% { opacity: 1; }
+    30% { opacity: 1; }
+    31% { opacity: 0; }
+    70% { opacity: 0; }
+    71% { opacity: 1; }
+    75% { opacity: 1; }
+    76% { opacity: 0; }
+    81% { opacity: 0; }
+    82% { opacity: 1; }
+    99% { opacity: 1; }
+}
+
+@-webkit-keyframes blinking {
+    0%  { opacity: 0; }
+    20% { opacity: 0; }
+    21% { opacity: 1; }
+    30% { opacity: 1; }
+    31% { opacity: 0; }
+    70% { opacity: 0; }
+    71% { opacity: 1; }
+    75% { opacity: 1; }
+    76% { opacity: 0; }
+    81% { opacity: 0; }
+    82% { opacity: 1; }
+    99% { opacity: 1; }
+}
+
+.leads-back {
+    position: absolute;
+    top: 1614px;
+    left: 40px;
+    width: 1200px;
+    height: 565px;
+    background-image: url("../image/leads-back-01.png");
+    z-index: 2;
+}
+
+.turn {
+    position: absolute;
+    top: 2116px;
+    left: 40px;
+    width: 1200px;
+    height: 715px;
+    background-image: url("../image/turn-01.jpg");
+}

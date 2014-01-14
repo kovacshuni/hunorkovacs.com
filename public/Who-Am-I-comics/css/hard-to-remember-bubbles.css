@@ -1,0 +1,363 @@
+.B-i-wish {
+    position: absolute;
+    top: 855px;
+    left: 106px;
+    width: 95px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-i-wish-hovered {
+    position: absolute;
+    top: 855px;
+    left: 106px;
+    width: 95px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -o-transition: 3s ease;
+    -ms-transition: 3s ease;
+    transition: 3s ease;
+}
+
+.B-goddamn-hard {
+    position: absolute;
+    top: 1086px;
+    left: 121px;
+    width: 122px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-goddamn-hard-hovered {
+    position: absolute;
+    top: 1086px;
+    left: 121px;
+    width: 122px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-feeding-me {
+    position: absolute;
+    top: 1464px;
+    left: 81px;
+    width: 191px;
+    border: black solid 2px;
+    background-color: #76530e;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-feeding-me-hovered {
+    position: absolute;
+    top: 1464px;
+    left: 81px;
+    width: 191px;
+    border: black solid 2px;
+    background-color: #76530e;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-changed {
+    position: absolute;
+    top: 1692px;
+    left: 114px;
+    width: 246px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-changed-hovered {
+    position: absolute;
+    top: 1692px;
+    left: 114px;
+    width: 246px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-remember {
+    position: absolute;
+    top: 196px;
+    left: 711px;
+    width: 148px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-remember-hovered {
+    position: absolute;
+    top: 196px;
+    left: 711px;
+    width: 148px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 3s ease;
+    -moz-transition: 3s ease;
+    -o-transition: 3s ease;
+    -ms-transition: 3s ease;
+    transition: 3s ease;
+}
+
+.B-every-night {
+    position: absolute;
+    top: 2076px;
+    left: 102px;
+    width: 254px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-every-night-hovered {
+    position: absolute;
+    top: 2076px;
+    left: 102px;
+    width: 254px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-barely-sleep {
+    position: absolute;
+    top: 2261px;
+    left: 212px;
+    width: 267px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-barely-sleep-hovered {
+    position: absolute;
+    top: 2261px;
+    left: 212px;
+    width: 267px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-like-others {
+    position: absolute;
+    top: 2634px;
+    left: 996px;
+    width: 173px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-like-others-hovered {
+    position: absolute;
+    top: 2634px;
+    left: 996px;
+    width: 173px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-burning-hole {
+    position: absolute;
+    top: 785px;
+    left: 480px;
+    width: 135px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-burning-hole-hovered {
+    position: absolute;
+    top: 785px;
+    left: 480px;
+    width: 135px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-stops {
+    position: absolute;
+    top: 1084px;
+    left: 727px;
+    width: 124px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 0;
+}
+
+.B-stops-hovered {
+    position: absolute;
+    top: 1084px;
+    left: 727px;
+    width: 124px;
+    background-color: #76530e;
+    border: black solid 2px;
+    padding: 5px 5px 5px 5px;
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-oh-man {
+    position: absolute;
+    top: 3159px;
+    left: 960px;
+    width: 69px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 12pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.B-not-again {
+    position: absolute;
+    top: 3249px;
+    left: 1030px;
+    width: 69px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 14pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.B-more-sleep {
+    position: absolute;
+    top: 3666px;
+    left: 243px;
+    width: 188px;
+    height: 115px;
+    background-image: url("../image/bubble-oh-man-02.png");
+    opacity: 0;
+}
+
+.B-more-sleep-hovered {
+    position: absolute;
+    top: 3666px;
+    left: 243px;
+    width: 188px;
+    height: 115px;
+    background-image: url("../image/bubble-oh-man-02.png");
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-more-sleep-text {
+    position: relative;
+    top: 22px;
+    left: 47px;
+    width: 138px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 14pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.B-doctors-suggestion {
+    position: relative;
+    top: 263px;
+    left: 400px;
+    width: 188px;
+    height: 246px;
+    background-image: url("../image/bubble-doctors-02.png");
+    opacity: 0;
+}
+
+.B-doctors-suggestion-hovered {
+    position: relative;
+    top: 263px;
+    left: 400px;
+    width: 188px;
+    height: 246px;
+    background-image: url("../image/bubble-doctors-02.png");
+    opacity: 1;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -o-transition: 2s ease;
+    -ms-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.B-doctors-suggestion-text {
+    position: relative;
+    top: 151px;
+    left: 29px;
+    width: 128px;
+    color: black;
+    font-family: unmasked_bb;
+    font-size: 14pt;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
