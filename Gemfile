@@ -26,6 +26,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Ensure applications get the most out of the Heroku platform. Learn more: https://devcenter.heroku.com/articles/ruby-support#injected-plugins
+gem 'rails_12factor'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
