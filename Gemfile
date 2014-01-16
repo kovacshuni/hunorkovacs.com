@@ -45,3 +45,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# For keeping the heroku app alive. (not fall asleep in every hour)
+gem 'newrelic_rpm'
