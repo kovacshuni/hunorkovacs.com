@@ -27,17 +27,8 @@
     <meta property="og:image:width" content="757"/>
     <meta property="og:image:height" content="757"/>
 </head>
-<body onload="displayCopyrightAlertBasedOnCookie()" onkeyup="gotoLeftRightUrl(event, '4-enter.html', '')">
-    <div id="copyright-blur" class="Copyright-blur"></div>
-    <div id="copyright-alert" class="Copyright-alert">
-        This website contains partial visuals, characters, script and other elements from the Spawn© and
-        Max Payne© graphic novels.<br />
-        The copyrights related to the contents are owned by their respective creators/companies. <br />
-        Cookies help us deliver our services. By using our services, you agree to our use of cookies.
-        See more on <a class="Copyright-link" href="policies.html">the policies</a> page--
-        <div class="Copyright-ok" onclick="acknowledgeCopyright()">Understood</div>
-    </div>
-
+<body onload="detectBrowser()"
+      onkeyup="gotoLeftRightUrl(event, '4-enter.html', '')">
     <div class="page-shadows">
         <div class="top">
             <div class="top-left"></div>
@@ -89,47 +80,6 @@
             <div class="bottom-left"></div>
             <div class="bottom-right"></div>
             <div class="bottom-middle"></div>
-        </div>
-    </div>
-
-    <div class="Footer-wrapper">
-        <div class="Footer">
-            <div id="footer-myaddress" class="Footer-MyAddress">
-                <img src="image/myaddress.png"/>
-            </div>
-            <div class="Footer-at" onmouseover="fadeIn('footer-myaddress')" onmouseout="fadeOut('footer-myaddress')">
-                <img src="image/icon-mail-01.png"/>
-            </div>
-            <div class="Footer-social">
-                <a href="http://www.facebook.com/kovacshuni" target="_blank"><img src="image/icon-facebookl-01.png"/></a>
-            </div>
-            <div class="Footer-social">
-                <a href="http://ro.linkedin.com/in/kovacshuni" target="_blank"><img src="image/icon-linkedin-01.png"/></a>
-            </div>
-            <div class="Footer-social">
-                <a href="http://plus.google.com/u/0/111573385318001350295" target="_blank"><img src="image/icon-plus-01.png"/></a>
-            </div>
-            <div class="Footer-social">
-                <a href="http://www.youtube.com/user/kovacshuni" target="_blank"><img src="image/icon-youtube-01.png"/></a>
-            </div>
-            <div class="Footer-social">
-                <a href="http://github.com/kovacshuni" target="_blank"><img src="image/icon-github-01.png"/></a>
-            </div>
-            <div class="Footer-policies">
-                <a href="policies.html">Policies</a>
-            </div>
-            <div id="footer-short-bio" class="Footer-ShortBio">
-                Hunor Kovács<br/>
-                software, computers<br/>
-                Romania
-            </div>
-            <div class="Footer-signature" onmouseover="fadeIn('footer-short-bio')"
-                 onmouseout="fadeOut('footer-short-bio')">
-                <img src="image/signature.png"/>
-            </div>
-            <div class="Footer-date">
-                14/07/2013
-            </div>
         </div>
     </div>
 </body>
