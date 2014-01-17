@@ -10,6 +10,12 @@ class PagesController < ActionController::Base
   def resume
   end
 
+  def technical
+  end
+
+  def video
+  end
+
   #def :'Who-Am-I-Comics'
   #  render :file => "/resume.html"
   #end

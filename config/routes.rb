@@ -6,6 +6,8 @@ HunorkovacsCom::Application.routes.draw do
   root :to => 'pages#home'
 
   get 'resume' => 'pages#resume'
+  get 'technical' => 'pages#technical'
+  get 'video' => 'pages#video'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
