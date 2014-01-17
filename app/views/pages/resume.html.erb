@@ -5,69 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
-
-    <!--<link rel="stylesheet" href="css/bootstrap-responsive.css" >-->
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen" />
 
     <link rel="stylesheet" href="css/resume.css"/>
 </head>
 <body>
-<div class="container-narrow">
-    <div class="row masthead">
-        <h3>Résumé</h3>
+<div class="container">
+    <div class="page-header">
+        <h1>Résumé</h1>
     </div>
-    <div class="row introduction">
-        <div class="col-md-7">
+    <div class="row">
+        <div class="col-md-10">
             <h1>Hunor Kovács</h1>
-            <h2>Software Engineer at Financial Times & IQuest</h2>
-        </div>
-        <div class="col-md-3 contact">
-            <p>kovacshuni@yahoo.com</p>
-            <p>phone: +40740834527</p>
-            <p>born: February 18, 1989</p>
-            <p>Cluj-Napoca, Romania</p>
+            <h3>Software Engineer at IQuest and Financial Times</h3>
+            <h2> </h2>
+            <div class="col-md-5">
+                <p><strong>email: </strong>kovacshuni@yahoo.com</p>
+                <p><strong>phone: </strong>+4(0)740 834 527</p>
+            </div>
+            <div class="col-md-7">
+                <p><strong>date of birth: </strong>February 18, 1989</p>
+                <p><b>current location: </b>Cluj-Napoca, Romania</p>
+            </div>
         </div>
         <div class="col-md-2">
-            <img class="thumbnail portrait" data-src="holder.js/200%x180"
-                 alt="portrait" src="image/id-02-600x800.jpg">
+            <img src="image/id-02-600x800.jpg" alt="portrait picture of me"
+                 class="img-rounded portrait pull-right"
+                 data-src="holder.js/200%x180">
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <h4>What I am looking for:</h4>
-        <p>A position in software development, Java programming
-            A challenging and interesting project, a large and complex web application integrating the latest technologies
-            Working on an international product that is used by a wide audience</p>
 
-        <h4>Related Working Experience:</h4>
-        <p>2011 – present
-            Java Software Developer at IQuest, Cluj-Napoca
-            Working for the Financial Times, ft.com</p>
+    <!--<div class="delimiter-line"></div>-->
+    <h4>What I am looking for:</h4>
+    <p>A position in software development, Java programming</p>
+    <p>A challenging and interesting project, a large and complex web application integrating the
+        latest technologies</p>
+    <p>Working on an international product that is used by a wide audience</p>
 
-        <h4>Related Skills:</h4>
-        <p>Worked in mixed offsite-onsite teams
-            Experience in Agile development methodology and in media-specific business domain.
-            Experience with large applications architectures, performance enhancements
-            web frameworks; content management systems; object relational mapping; application servers; content delivery networks, databases, automated functional tests
-            Git specialist/guru/evangelist</p>
+    <div class="delimiter-line"></div>
+    <h4>Related Working Experience:</h4>
+    <p>2011 – present<p>
+    <p>Software Developer at IQuest, Cluj-Napoca</p>
+    <p>Working for the Financial Times, ft.com</p>
 
-        <h4>Education:</h4>
-        <p>2007-2011
-            B.Sc. in Computer Science and Automation at the Technical University of Cluj-Napoca
-            2010-2011 Computer Science at University Carlos III of Madrid</p>
+    <div class="delimiter-line"></div>
+    <h4>Related Skills:</h4>
+    <p>Worked in mixed offsite-onsite teams</p>
+    <p>Experience in Agile development methodology and in media-specific business domain with large application architectures.</p>
+    <p>performance enhancements, web frameworks, content management systems; object relational
+        mapping; application servers, content delivery networks, databases, automated functional tests
+        Git specialist/guru/evangelist</p>
 
-        <h4>Languages:</h4>
-        <p>Level C2, fluent in English and Romanian, B2 in Spanish and A1 in German</p>
-        <h4>Personal interests:</h4>
-        <p>sports, travelling and music</p>
-    </div>
-    <hr>
-    <div class="footer">
-        <div class="row">
-            <p>&copy; Company 2013</p>
-        </div>
-    </div>
+    <div class="delimiter-line"></div>
+    <h4>Education:</h4>
+    <p>2007-2011</p>p>
+    <p>B.Sc. in Computer Science and Automation at the Technical University of Cluj-Napoca</p>
+    <p>2010-2011 Computer Science at University Carlos III of Madrid</p>
+
+    <div class="delimiter-line"></div>
+    <h4>Languages:</h4>
+    <dl class="dl-horizontal">
+        <dt>Hungarian</dt>
+        <dd>native</dd>
+        <dt>English, Romanian</dt>
+        <dd>level C2, fluent</dd>
+        <dt>Spanish</dt>
+        <dd>level B2</dd>
+        <dt>German</dt>
+        <dd>level A1</dd>
+    </dl>
+
+    <div class="delimiter-line"></div>
+    <h4>Personal interests:</h4>
+    <p>sports, travelling, filmmaking and music</p>
+
+    <div class="footer-line"></div>
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
