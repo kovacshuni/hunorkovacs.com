@@ -4,6 +4,7 @@
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    background-color: rgba(30, 30, 30, 0.5);
 }
 
 .navbar-brand-size {
@@ -17,9 +18,14 @@
     margin-bottom: 0;
 }
 
+.jumbotron {
+    background: rgba(0, 0, 0, 0);
+}
+
 .billboard-image {
-    background-image: url("../image/barcelona-large-02.jpg");
+    /*background-image: url("../image/barcelona-large-02.jpg");*/
     /*background-image: url("../image/wallpaper-1015511.jpg");*/
+    background-color: rgba(30, 30, 30, 0.1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 20%;
@@ -38,7 +44,7 @@
 }
 
 .jumbotron-footer {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 0.1em 0 0 0;
     margin: 0 0 0 0;
     text-align: center;

@@ -5,18 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="../../../public/font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen" />
 
-	<!--<link rel="stylesheet" href="css/bootstrap-responsive.css" >-->
-	<link rel="stylesheet" href="css/bootstrap.css" media="screen" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css"/>
 
-    <link rel="stylesheet" href="../../../public/css/resume.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/video.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 480px)" href="css/home-verysmall.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 480px) and (max-width: 992px)" href="css/home-small.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 992px) and (max-width: 1200px)" href="css/home-medium.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 1200px)" href="css/home-large.css" />
 </head>
 <body style="margin: 0;">
-    <video width="100%" autoplay>
+    <!--<div style="position: absolute; z-index: 1;">-->
+    <video id="bgvid" autoplay muted loop poster="image/wallpaper-1015511.jpg">
         <source src="https://dl.dropboxusercontent.com/u/12397651/fun.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <!--</div>-->
+    <!--<div style="position: relative; z-index: 2;">-->
+        <div class="navbar navbar-inverse header">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand navbar-brand-size">賀詞</div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron canvas-size">
+            <div class="container billboard-container">
+                <div class="jumbotron billboard-image billboard-size">
+                    <h1 id="fullname">Hunor Kovács</h1>
+                    <p>24, working with computers, software, love skiing, basketball, living in Romania.</p>
+                    <p><a class="btn btn-primary fixed-button-size" href="Who-Am-I-comics/1-hard-to-remember.html">Who Am I Comics &raquo;</a></p>
+                    <p><a class="btn btn-info fixed-button-size" href="resume">Read my resume &raquo;</a></p>
+                    <span class="indicator indicator-large">Large</span>
+                    <p class="indicator indicator-medium">Medium</p>
+                    <p class="indicator indicator-small">Small</p>
+                    <p class="indicator indicator-verysmall">Very Small</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-footer">
+            <div class="container container-narrow">
+                <div class="horizontal-line-top"></div>
+            </div>
+            <div class="container container-narrow">
+                <div class="social-icon"><a><i class="icon-envelope-alt" onclick="toggleEmail()"></i></a></div>
+                <div class="social-icon"><a href="http://www.facebook.com/kovacshuni" target="_blank"><i class="icon-facebook"></i></a></div>
+                <div class="social-icon"><a href="http://plus.google.com/u/0/111573385318001350295" target="_blank"><i class="icon-google-plus"></i></a></div>
+                <div class="social-icon"><a href="http://github.com/kovacshuni" target="_blank"><i class="icon-github"></i></a></div>
+                <div class="social-icon"><a href="http://www.youtube.com/user/kovacshuni" target="_blank"><i class="icon-youtube"></i></a></div>
+                <div class="social-icon"><a href="http://ro.linkedin.com/in/kovacshuni" target="_blank"><i class="icon-linkedin"></i></a></div>
+            </div>
+            <div class="container container-narrow">
+                <div class="horizontal-line-bottom"></div>
+            </div>
+        </div>
+    <!--</div>-->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
