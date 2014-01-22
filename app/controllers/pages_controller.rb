@@ -13,10 +13,4 @@ class PagesController < ActionController::Base
   def technical
   end
 
-  def video
-  end
-
-  #def :'Who-Am-I-Comics'
-  #  render :file => "/resume.html"
-  #end
 end
