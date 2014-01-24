@@ -6,7 +6,7 @@ function toggleEmail() {
         document.getElementById("fullname").innerHTML = "kovacshuni@yahoo.com";
         showingName = false;
     } else {
-        document.getElementById("fullname").innerHTML = "Hello World";
+        document.getElementById("fullname").innerHTML = "Hunor Kovács";
         showingName = true;
     }
 }
