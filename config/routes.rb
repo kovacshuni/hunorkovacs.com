@@ -7,7 +7,7 @@ HunorkovacsCom::Application.routes.draw do
 
   get 'resume' => 'pages#resume'
   get 'technical' => 'pages#technical'
-  get 'video' => 'pages#video'
+  get 'githelp' => 'pages#githelp'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

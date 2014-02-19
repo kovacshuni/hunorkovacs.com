@@ -13,4 +13,8 @@ class PagesController < ActionController::Base
   def technical
   end
 
+  def githelp
+    render(:content_type => 'text/plain', :file => "app/views/pages/githelp.txt")
+  end
+
 end
