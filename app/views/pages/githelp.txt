@@ -130,13 +130,36 @@ o---o---o---o---o  master
                            \
                             o---o---o  topic
 
-git rebase --onto master next topic							
+    git rebase --onto master next topic							
 							
 o---o---o---o---o  master
 	|            \
 	|             o'--o'--o'  topic
 	 \
-	  o---o---o---o---o  next						
+	  o---o---o---o---o  next		
+
+----------------------	  
+
+    I have the following graph:
+
+   800      9ff
+    v        v
+----o--o--o--o--o--o <-master
+              \
+               o--o--o <-feature  
+    And i want the following state after the command:
+
+   800      9ff
+    v        v
+----o--o--o--o--o--o <-master
+     \
+      o--o--o <-feature			   
+	  
+	So how do i rebase backwards on the same branch?
+	
+	git rebase --onto 800 9ff
+	
+--------------------------	
 	
 	
 Editor to be Notepad++ instead of oldboy Vim:	
