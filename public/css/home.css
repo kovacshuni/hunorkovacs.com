@@ -18,11 +18,10 @@
 }
 
 .billboard-image {
-    background-image: url("../image/barcelona-large-02.jpg");
-    /*background-image: url("../image/wallpaper-1015511.jpg");*/
+    background-image: url("../image/splash-large-02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40% 20%;
+    background-position: 50% 50%;
 }
 
 .billboard-size {

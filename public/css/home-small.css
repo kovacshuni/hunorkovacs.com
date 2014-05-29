@@ -12,9 +12,8 @@
 }
 
 .billboard-image {
-    background-image: url("../image/barcelona-medium-01.jpg");
-    /*background-image: url("../image/wallpaper-1015511.jpg");*/
-    background-position: 25% 0;
+    background-image: url("../image/splash-medium-02.jpg");
+    background-position: 25% 50%;
 }
 
 .horizontal-line-top {

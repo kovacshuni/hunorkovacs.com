@@ -1,28 +1,10 @@
-== README
+== hunorkovacs.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a personal, minimalistic HTML website. It was built for being deployed to Heroku as a very basic Rails app. There is no back-end logic nor database below, it's just a few static pages and redirects. Contains an animated comic book, built only with HTML5, CSS3 and small JavaScript, that part looks art-like and cool :)
+http://www.hunorkovacs.com
 
-Things you may want to cover:
+Get it running:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+install ruby 2.0, rails
+bundle install
+rails server
