@@ -48,3 +48,6 @@ end
 
 # For keeping the heroku app alive. (not fall asleep in every hour)
 gem 'newrelic_rpm'
+
+# ACTION REQUIRED: Potential security vulnerability in Ruby and YAML parsing
+gem 'psych', '~> 2.0.5'
