@@ -7,6 +7,12 @@ class PagesController < ActionController::Base
   def home
   end
 
+  def home2
+  end
+
+  def cover
+  end
+
   def resume
   end
 
