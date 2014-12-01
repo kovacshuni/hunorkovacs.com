@@ -36,21 +36,8 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.main {
-    margin-left: auto;
-    margin-right: auto;
-
-    height: 25em;
-    width: 70em;
-    /*background-color: rgba(50, 150, 10, 0.1);*/
-}
-
 .footer {
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 70em;
     /*background-color: rgba(250, 0, 10, 0.1);*/
 }
 
@@ -74,6 +61,7 @@ h1 {
 
 .lead {
     font-size: 14pt;
+    line-height: 25pt;
 }
 
 .btn-default {
@@ -119,4 +107,60 @@ h1 {
 @font-face {
     font-family: myriadpro-regular;
     src: local(myriadpro-regular), url('../font/MyriadPro-Regular.otf') format('opentype');
+}
+
+@media all and (max-width: 480px) {
+    .main {
+        min-width: 14em;
+        height: 28em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+
+    .footer {
+        min-width: 14em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 992px) {
+    .main {
+        min-width: 14em;
+        height: 20em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+
+    .footer {
+        min-width: 14em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .main {
+        width: 65em;
+        height: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .main {
+        width: 70em;
+        height: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        width: 70em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
