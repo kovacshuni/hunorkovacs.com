@@ -104,6 +104,11 @@ h1 {
     cursor: pointer;
 }
 
+.howareyou {
+    width: 20em;
+    margin-bottom: 1em;
+}
+
 @font-face {
     font-family: myriadpro-regular;
     src: local(myriadpro-regular), url('../font/MyriadPro-Regular.otf') format('opentype');
