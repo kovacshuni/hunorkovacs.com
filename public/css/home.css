@@ -1,106 +1,166 @@
-
-.header {
-    min-height: 2em;
-    margin-bottom: 0;
-    border: none;
-    border-radius: 0;
+a,
+a:focus,
+a:hover {
+    color: #fff;
 }
 
-.navbar-brand-size {
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
+html,
+body {
+    height: 100%;
+}
+body {
+    color: #fff;
+    text-align: left;
 }
 
-.canvas-size {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
+.centering-outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-.billboard-image {
-    background-image: url("../image/splash-large-02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+.centering-middle {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.billboard-size {
-    margin-top: 1.5em;
-    height: 25em;
-    padding: 1.5em 3em 3em 3em;
+.centering-inner {
 }
 
-.container-narrow {
-    max-width: 30em;
-    padding: 0 0 0 0;
-    line-height: 1.75em;
+.greeting {
+    width: 100%;
+    color: #eeeeee;
+    font-size: 12pt;
+    /*background-color: rgba(250, 150, 250, 0.1);*/
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.jumbotron-footer {
-    background-color: #ffffff;
-    padding: 0.1em 0 0 0;
-    margin: 0 0 0 0;
-    text-align: center;
+.footer {
+    text-align: left;
+    /*background-color: rgba(250, 0, 10, 0.1);*/
 }
 
-h1, p {
+.dotted {
+    background: url("../image/dots.png") repeat;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    text-shadow: 1px 1px #000000;
+}
+
+.longer {
+    padding: 0 1.5em 0 0.1em;
+}
+
+h1 {
+    margin-top: 0;
+    color: rgba(10, 10, 10, 0.9);
     font-family: myriadpro-regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28pt;
 }
 
-.fixed-button-size {
+.lead {
+    font-size: 14pt;
+    line-height: 25pt;
+}
+
+.btn-default {
+    color: #202020;
+    text-shadow: none;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.btn-default:hover {
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #db0909;
+    border: 1px solid #db0909;
+}
+.btn-default:focus {
+    text-shadow: none;
+}
+
+.fixed-size {
     width: 11em;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.horizontal-line-top {
-    border-top: 1px lightgray solid;
-    margin-top: 1em;
+.vala {
+    font-size: 1.2em;
+    background: url("../image/dots.png") repeat;
+    text-shadow: 1px 1px #000000;
+    padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
-.horizontal-line-bottom {
-    border-top: 1px lightgray solid;
-    margin-bottom: 1.25em;
-}
-
-
-.social-icon {
-    display: inline;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    width: 1em;
-}
-
-.social-icon a {
-    color: #1D0324;
+.vala:hover {
+    background: #db0909 none;
     text-decoration: none;
-    text-shadow: 0 0 0.05em rgba(0, 0, 0, 0.4);
 }
 
-.social-icon a :hover {
-    color: #F0F0F0;
-    text-shadow: 0 0 0.2em rgba(255, 255, 255, 1);
+.social-icon:hover {
+    background: #db0909 none;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    background-image: none;
+.hand {
+    cursor: pointer;
 }
-
-.indicator {
-    color: #17fb00;
-    text-shadow: 0 0 0.2em rgba(0, 0, 0, 1);
-}
-.indicator-large { display: none; }
-.indicator-medium { display: none; }
-.indicator-small { display: none; }
-.indicator-verysmall { display: none; }
 
 @font-face {
     font-family: myriadpro-regular;
     src: local(myriadpro-regular), url('../font/MyriadPro-Regular.otf') format('opentype');
 }
 
-@font-face {
-    font-family: myriadpro-light;
-    src: local(myriadpro-light), url('../font/MyriadPro-Light.otf') format('opentype');
+@media all and (max-width: 480px) {
+    .main {
+        min-width: 14em;
+        height: 28em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+
+    .footer {
+        min-width: 14em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 992px) {
+    .main {
+        min-width: 14em;
+        height: 20em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+
+    .footer {
+        min-width: 14em;
+        padding: 0.5em 1.5em 1em 1.5em;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    .main {
+        width: 65em;
+        height: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        width: 50em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .main {
+        width: 70em;
+        height: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        width: 70em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

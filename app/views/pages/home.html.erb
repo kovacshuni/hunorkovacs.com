@@ -1,65 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hunor Kovács's Personal Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hunor Kovács's Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" media="all" href="css/home.css" />
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 480px)" href="css/home-verysmall.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 480px) and (max-width: 992px)" href="css/home-small.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 992px) and (max-width: 1200px)" href="css/home-medium.css" />
-    <link rel="stylesheet" type="text/css" media="all and (min-width: 1200px)" href="css/home-large.css" />
+  <link href="css/home.css" rel="stylesheet">
 
-    <link rel="image_src" href="http://www.hunorkovacs.com/image/screenshot-02-640.jpg"/>
-    <meta property="og:title" content="Hunor Kovács's Personal Website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.hunorkovacs.com"/>
-    <meta property="og:image" content="http://www.hunorkovacs.com/image/screenshot-02-640.jpg"/>
-    <meta property="og:image:type" content="image/jpeg"/>
-    <meta property="og:image:width" content="640"/>
-    <meta property="og:image:height" content="340"/>
+  <link rel="image_src" href="http://www.hunorkovacs.com/image/screenshot-02-640.jpg"/>
+  <meta property="og:title" content="Hunor Kovács's Personal Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.hunorkovacs.com"/>
+  <meta property="og:image" content="http://www.hunorkovacs.com/image/screenshot-02-640.jpg"/>
+  <meta property="og:image:type" content="image/jpeg"/>
+  <meta property="og:image:width" content="640"/>
+  <meta property="og:image:height" content="340"/>
 </head>
 <body>
-<div class="navbar navbar-inverse header">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand navbar-brand-size">賀詞</div>
-        </div>
+
+<div class="centering-outer">
+  <div class="centering-middle">
+    <div class="centering-inner">
+      <div class="main">
+        <h1 id="fullname">Hunor Kovács</h1>
+        <p class="lead"><span class="dotted">age 25,</span> <span class="dotted">working with software,</span> <span class="dotted">love skiing,</span> <span class="dotted">travelling,</span> <span class="dotted">concerts,</span> <span class="dotted">born in Romania.</span></p>
+        <p><a href="resume" class="btn btn-sm btn-default fixed-size">Read my résumé &raquo;</a></p>
+        <p><a href="Who-Am-I-comics/1-hard-to-remember.html" class="btn btn-sm btn-default fixed-size">Who Am I Comics &raquo;</a></p>
+      </div>
+      <div class="footer">
+          <a class="vala hand"><i class="fa fa-at" onclick="toggleEmail()"></i></a><a href="https://www.facebook.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-facebook-square"></i></a><a href="https://www.facebook.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-twitter"></i></a><a href="https://github.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-github"></i></a><a href="https://www.youtube.com/user/kovacshuni" target="_blank" class="vala"><i class="fa fa-youtube-play"></i></a><a href="https://www.linkedin.com/in/kovacshuni" target="_blank" class="vala"><i class="fa fa-linkedin-square"></i></a>
+      </div>
     </div>
-</div>
-<div class="jumbotron canvas-size">
-    <div class="container billboard-container">
-        <div class="jumbotron billboard-image billboard-size">
-            <h1 id="fullname">Hunor Kovács</h1>
-            <p>age 25, working with software, love skiing, travelling, concerts, born in Romania.</p>
-            <p><a class="btn btn-primary fixed-button-size" href="resume">Read my resume &raquo;</a></p>
-            <p><a class="btn btn-info fixed-button-size" href="Who-Am-I-comics/1-hard-to-remember.html">Who Am I Comics &raquo;</a></p>
-        </div>
-    </div>
-</div>
-<div class="jumbotron jumbotron-footer">
-    <div class="container container-narrow">
-        <div class="horizontal-line-top"></div>
-    </div>
-    <div class="container container-narrow">
-        <div class="social-icon"><a><i class="icon-envelope-alt" onclick="toggleEmail()"></i></a></div>
-        <div class="social-icon"><a href="http://www.facebook.com/kovacshuni" target="_blank"><i class="icon-facebook"></i></a></div>
-        <div class="social-icon"><a href="http://plus.google.com/u/0/111573385318001350295" target="_blank"><i class="icon-google-plus"></i></a></div>
-        <div class="social-icon"><a href="http://github.com/kovacshuni" target="_blank"><i class="icon-github"></i></a></div>
-        <div class="social-icon"><a href="http://www.youtube.com/user/kovacshuni" target="_blank"><i class="icon-youtube"></i></a></div>
-        <div class="social-icon"><a href="http://ro.linkedin.com/in/kovacshuni" target="_blank"><i class="icon-linkedin"></i></a></div>
-    </div>
-    <div class="container container-narrow">
-        <div class="horizontal-line-bottom"></div>
-    </div>
+  </div>
 </div>
 
-<script src="js/home.js"></script>
 <script src="jquery/jquery-2.1.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="backstretch/jquery.backstretch.min.js"></script>
+<script src="js/home.js"></script>
+
 </body>
 </html>

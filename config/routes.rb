@@ -5,8 +5,6 @@ HunorkovacsCom::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => 'pages#home'
 
-  get 'home2' => 'pages#home2'
-  get 'cover' => 'pages#cover'
   get 'resume' => 'pages#resume'
   get 'technical' => 'pages#technical'
   get 'githelp' => 'pages#githelp'

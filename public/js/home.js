@@ -1,3 +1,4 @@
+$.backstretch("image/splash-original.jpg");
 
 var showingName = true;
 
