@@ -36,13 +36,47 @@ body {
 }
 
 .centering-inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70em;
-    background-color: rgba(0, 50, 255, 0.1);
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*width: 70em;*/
+    /*background-color: rgba(0, 50, 255, 0.1);*/
+}
+
+.greeting {
+    width: 100%;
+    color: #eeeeee;
+    font-size: 12pt;
+    /*background-color: rgba(250, 150, 250, 0.1);*/
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .main {
+    margin-left: auto;
+    margin-right: auto;
+
     height: 25em;
-    background-color: rgba(50, 150, 10, 0.1);
+    width: 70em;
+    /*background-color: rgba(50, 150, 10, 0.1);*/
+}
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 70em;
+    /*background-color: rgba(250, 0, 10, 0.1);*/
+}
+
+.dotted-longer {
+    background: url("../image/dots.png") repeat;
+    padding: 0 1.5em 0 0.1em;
+}
+
+.dotted {
+    background: url("../image/dots.png") repeat;
+    padding: 0 0.1em 0.1em 0.1em;
+}
+
+h1 {
+    margin-top: 0;
 }
