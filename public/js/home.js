@@ -26,7 +26,6 @@ app.controller('AskController', ['$scope', '$http', function($scope, $http) {
     $scope.send = function() {
         $scope.isSubmitting = true;
         console.log($scope.answer);
-        $scope.isSubmitting = false;
         $scope.result = 'success';
         $scope.answer = null;
     };
