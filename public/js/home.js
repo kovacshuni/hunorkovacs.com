@@ -11,3 +11,11 @@ function toggleEmail() {
         showingName = true;
     }
 }
+
+function largen() {
+    document.getElementById("theinput").style.width = "20em";
+}
+
+function smallen() {
+    document.getElementById("theinput").style.width = "9.5em";
+}

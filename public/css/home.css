@@ -105,8 +105,9 @@ h1 {
 }
 
 .howareyou {
-    width: 20em;
-    margin-bottom: 1em;
+    width: 9.5em;
+    margin-top: 1em;
+    animation: ease 5s infinite;
 }
 
 @font-face {
