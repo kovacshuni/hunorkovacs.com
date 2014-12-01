@@ -26,10 +26,6 @@ body {
 }
 
 .centering-inner {
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*width: 70em;*/
-    /*background-color: rgba(0, 50, 255, 0.1);*/
 }
 
 .greeting {
@@ -50,6 +46,7 @@ body {
 }
 
 .footer {
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 
@@ -73,7 +70,6 @@ h1 {
     font-family: myriadpro-regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 28pt;
-    /*letter-spacing: 1px;*/
 }
 
 .lead {
@@ -98,6 +94,26 @@ h1 {
 
 .fixed-size {
     width: 11em;
+}
+
+.vala {
+    font-size: 1.2em;
+    background: url("../image/dots.png") repeat;
+    text-shadow: 1px 1px #000000;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+.vala:hover {
+    background: #db0909 none;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #db0909 none;
+}
+
+.hand {
+    cursor: pointer;
 }
 
 @font-face {
