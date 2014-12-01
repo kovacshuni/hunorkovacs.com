@@ -8,7 +8,7 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
     color: #333;
-    text-shadow: none; /* Prevent inheritence from `body` */
+    text-shadow: none;
     background-color: #fff;
     border: 1px solid #fff;
 }
@@ -21,73 +21,4 @@ body {
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
-.site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-}
-
-.cover-container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.k {
-    display: table;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-}
-
-.site-wrapper-inner {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.cover {
-    /*height: 23em;*/
-    background-color: rgba(0, 0, 255, 0.2);
-    padding: 0 20px;
-}
-.cover .btn {
-    padding: 8px 15px;
-    font-weight: bold;
-}
-
-.masthead {
-    top: 0;
-}
-
-.mastfoot {
-    color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
-    text-align: center;
-    bottom: 0;
-}
-
-@media (min-width: 768px) {
-
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-}
-
-@media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 900px;
-    }
 }
