@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="home">
 <head>
   <title>Hunor Kovács's Personal Website</title>
   <meta charset="UTF-8">
@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="jquery/ng-bs-animated-button.css">
 
   <link href="css/home.css" rel="stylesheet">
 
@@ -30,10 +31,10 @@
         <p><a href="resume" class="btn btn-sm btn-default fixed-size">Read my résumé &raquo;</a></p>
         <p><a href="Who-Am-I-comics/1-hard-to-remember.html" class="btn btn-sm btn-default fixed-size">Who Am I Comics &raquo;</a></p>
         <form>
-          <div class="input-group input-group-sm howareyou">
-            <input id="theinput" type="text" class="form-control" onfocus="largen()" onblur="smallen()" placeholder="Who are you?">
+          <div class="input-group input-group-sm howareyou" ng-controller="AskController as ask">
+            <input type="text" class="form-control" ng-model="answer" placeholder="Who are you?">
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button"><i class="fa fa-angle-right"></i></button>
+              <jp-ng-bs-animated-button is-submitting="isSubmitting" result="result" options="options" ng-click="send(answer)"></jp-ng-bs-animated-button>
             </span>
           </div>
         </form>
@@ -44,10 +45,11 @@
     </div>
   </div>
 </div>
-
 <script src="jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="jquery/angular.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="backstretch/jquery.backstretch.min.js"></script>
+<script src="jquery/ng-bs-animated-button.js"></script>
 <script src="js/home.js"></script>
 
 </body>
