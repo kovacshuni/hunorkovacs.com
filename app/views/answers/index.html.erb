@@ -1,0 +1,15 @@
+<h1>Listing answers</h1>
+
+<table>
+  <tr>
+    <th>Answer</th>
+    <th>Created</th>
+  </tr>
+
+  <% @answers.each do |answer| %>
+      <tr>
+        <td><%= answer.answer %></td>
+        <td><%= answer.created_at %></td>
+      </tr>
+  <% end %>
+</table>

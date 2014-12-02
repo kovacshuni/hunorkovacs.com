@@ -1,16 +1,19 @@
-HunorkovacsCom::Application.routes.draw do
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  # root 'welcome#index'
   root :to => 'pages#home'
 
+  # Example of regular route:
+  #   get 'products/:id' => 'catalog#view'
   get 'resume' => 'pages#resume'
   get 'technical' => 'pages#technical'
   get 'githelp' => 'pages#githelp'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  post 'answer' => 'answers#create'
+  get 'answers' => 'answers#index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -43,7 +46,7 @@ HunorkovacsCom::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
