@@ -4,7 +4,7 @@ class AnswersController < ApplicationController
   def create
     @answer = Answer.new(:answer => request.body.read)
     @answer.save
-    head :created
+    head :created, :content_type => 'text/plain'
   end
 
   def index

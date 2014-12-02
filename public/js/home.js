@@ -25,9 +25,15 @@ var app = angular.module('home', ['jp.ng-bs-animated-button']);
 app.controller('AskController', ['$scope', '$http', function($scope, $http) {
     $scope.send = function() {
         $scope.isSubmitting = true;
-        console.log($scope.answer);
-        $scope.result = 'success';
-        $scope.answer = null;
+        $http.post('/answer', $scope.answer, {headers: {'Content-Type': 'text/plain'}}).
+            success(function(data, status, headers, config) {
+                $scope.result = 'success';
+                $scope.answer = null;
+            }).
+            error(function(data, status, headers, config) {
+                $scope.result = 'error';
+                $scope.answer = null;
+            });
     };
 
     $scope.answer = null;
