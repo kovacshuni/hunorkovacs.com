@@ -1,4 +1,16 @@
-$.backstretch("image/splash-original.jpg");
+
+function setBackStretch() {
+    var mq = window.matchMedia('(max-width: 992px)');
+    if(mq.matches) {
+        $.backstretch("image/splash-992x680.jpg");
+        console.log('kicsi');
+    } else {
+        $.backstretch("image/splash-original.jpg");
+        console.log('nagy');
+    }
+}
+
+setBackStretch();
 
 var showingName = true;
 
