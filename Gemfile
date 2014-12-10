@@ -44,3 +44,7 @@ gem 'newrelic_rpm'
 
 # Static assets on heroku
 gem 'rails_12factor', group: :production
+
+gem 'unicorn'
+
+gem 'rack-timeout'
