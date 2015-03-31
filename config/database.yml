@@ -11,8 +11,8 @@ default: &default
 development:
   <<: *default
   host: localhost
-  username: user
-  database: app-dev
+  username: hunor.kovacs
+  database: hunorkovacscom
   pool: 5
 
 # Warning: The database defined as "test" will be erased and
