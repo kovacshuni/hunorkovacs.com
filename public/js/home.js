@@ -1,11 +1,11 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 992px)').matches) {
-        $.backstretch("image/splash-992x680.jpg");
+        $.backstretch("image/away-992x605.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        $.backstretch("image/splash-1200x822.jpg");
+        $.backstretch("image/away-1347x822.jpg");
     } else {
-        $.backstretch("image/splash-original.jpg");
+        $.backstretch("image/away-original.jpg");
     }
 }
 
@@ -20,6 +20,14 @@ function toggleEmail() {
     } else {
         document.getElementById("fullname").innerHTML = "Hunor Kovács";
         showingName = true;
+    }
+}
+
+function stoppedTyping() {
+    if (this.value.length > 0) {
+        document.getElementById('answer_button').disabled = false;
+    } else {
+        document.getElementById('answer_button').disabled = true;
     }
 }
 
