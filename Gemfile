@@ -39,9 +39,6 @@ gem 'spring',        group: :development
 
 gem 'pg'
 
-# For keeping the heroku app alive. (not fall asleep in every hour)
-gem 'newrelic_rpm'
-
 # Static assets on heroku
 gem 'rails_12factor', group: :production
 
