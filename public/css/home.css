@@ -7,10 +7,8 @@ a:hover {
 html,
 body {
     height: 100%;
-}
-body {
     color: #fff;
-    text-align: left;
+    text-align: left
 }
 
 .centering-outer {
@@ -42,7 +40,6 @@ body {
 .dotted {
     background: url("../image/dots.png") repeat;
     padding: 0.2em 0.4em 0.2em 0.4em;
-    text-shadow: 1px 1px #000000;
 }
 
 .longer {
@@ -85,7 +82,6 @@ h1 {
 .vala {
     font-size: 1.2em;
     background: url("../image/dots.png") repeat;
-    text-shadow: 1px 1px #000000;
     padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
