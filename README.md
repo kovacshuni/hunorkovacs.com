@@ -17,4 +17,4 @@ Being inside the cloned repository.
 
 ## Deploy
 
-`appcfg.py --no_oauth2 update .`
+`appcfg.py update .`
