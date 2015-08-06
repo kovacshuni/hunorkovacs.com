@@ -8,6 +8,13 @@ Contains an animated comic book, built only with HTML5, CSS3 and small JavaScrip
 
 ## Spinup
 
+Being inside the cloned repository.
+
 * Install Go
 * Install Google Appengine Go Toolkit
 * `dev_appserver.py .`
+
+
+## Deploy
+
+`appcfg.py --no_oauth2 update .`
