@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="lib/ng-bs-animated-button.css">
 
   <link href="css/home.css" rel="stylesheet">
 
@@ -30,14 +29,6 @@
         <p class="lead"><span class="dotted">age 26,</span> <span class="dotted">working with software,</span> <span class="dotted">love skiing,</span> <span class="dotted">travelling,</span> <span class="dotted">concerts,</span> <span class="dotted">born in Romania.</span></p>
         <p><a href="resume" class="btn btn-sm btn-default fixed-size">Read my résumé &raquo;</a></p>
         <p><a href="Who-Am-I-comics/1-hard-to-remember.html" class="btn btn-sm btn-default fixed-size">Who Am I Comics &raquo;</a></p>
-        <form>
-          <div class="input-group input-group-sm howareyou" ng-controller="AskController as ask">
-            <input type="text" class="form-control" ng-model="answer" placeholder="Say hello!">
-            <span class="input-group-btn">
-              <jp-ng-bs-animated-button is-submitting="isSubmitting" result="result" options="options" ng-click="send(answer)"></jp-ng-bs-animated-button>
-            </span>
-          </div>
-        </form>
       </div>
       <div class="footer">
         <a class="vala hand"><i class="fa fa-at" onclick="toggleEmail()"></i></a><a href="https://www.facebook.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-facebook-square"></i></a><a href="https://twitter.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-twitter"></i></a><a href="https://github.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-github"></i></a><a href="https://www.youtube.com/user/kovacshuni" target="_blank" class="vala"><i class="fa fa-youtube-play"></i></a><a href="https://www.linkedin.com/in/kovacshuni" target="_blank" class="vala"><i class="fa fa-linkedin-square"></i></a>
@@ -49,7 +40,6 @@
 <script type="text/javascript" src="lib/angular.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="lib/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="lib/ng-bs-animated-button.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 
 </body>
