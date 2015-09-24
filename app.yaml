@@ -16,6 +16,10 @@ handlers:
   static_files: hunorkovacscom/resume.html
   upload: hunorkovacscom/resume.html
 
+- url: /akkastreams
+  static_files: hunorkovacscom/akkastreams.html
+  upload: hunorkovacscom/akkastreams.html
+
 - url: /
   static_dir: hunorkovacscom/static
 
