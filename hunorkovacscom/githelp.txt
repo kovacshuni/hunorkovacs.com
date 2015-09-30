@@ -1,0 +1,211 @@
+Don't let me Google that for you :P
+The Git reference: git checkout --help
+
+Pushing
+	Recommended pushing method
+		git push <remote> sourceBranch
+		example: git push origin master
+
+	Push current branch to the same name. It's ok. Make sure you're there, where you think.
+		git push origin HEAD
+
+	Explicit push.
+		git push <remote> sourceBranch:destinationBranch
+
+	Push to origin all the branches that are tracked. Not recommended :)
+		git push
+    or  git push <remote>
+
+	Deletes the toBeDeleted branch from origin.
+		git push origin :toBeDeleted
+
+	Forces to update the pointers on the remote. Warning.
+		git push -f
+
+Pulling
+	Recommended pulling method
+	on branch <branchname>!!> git pull origin :<branchname>
+	example: on branch master!!> git pull origin :master
+
+	Pulls every tracked branch from every remote. Not recommended.
+	git pull
+
+	git pull origin reposBranch:localBranch
+	git pull --rebase
+
+Aliases
+	[alias]
+		co = checkout
+		ci = commit
+		st = status
+		br = branch
+		hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+		lg = log --decorate
+		cl = clean -f -d .
+		rs = reset --hard HEAD
+		type = cat-file -t
+		dump = cat-file -p
+
+Sensitive logging
+	git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
+	git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	git log -SmethodePageUpdater --unified=3
+	git log origin/master..HEAD
+	git log b6b672a158c5 --unified=3 ft-methodeAdapter-api\src\main\java\com\ft\methodeadapter\domain\builder\MethodeSlideshowStoryBuilder.java
+	plus paramters: --pretty=oneline --max-count=2 --since='5 minutes ago' --until='5 minutes ago'
+	plus paramters: --author=Hun --all --decorate=full --not master --follow
+
+Displaying the contents of a commit
+	Shows the changes of the last commit (HEAD)
+		git show
+
+	Shows the changes of a specific commit
+		git show <hash>
+
+	Shows all details of a specific commit
+		git show --format=fuller <hash>
+
+	Shows only the filenames that changed
+		git show --name-only
+
+Reverting
+	git revert 783hf2
+	git revert 1290fj --no-commit
+	git revert HEAD~4 --no-edit
+
+Sharing
+	Anywhere on the sharing computer>
+		git daemon --verbose --export-all --base-path="c:"
+
+	Anywhere on the accessing compouter>
+		git ls-remote git://IP_orComputerName/Relative/path/to/dir/where/the/.git/is,/based/on/the/base-path/on/remote
+
+	Bundleing repo
+		git bundle create backup.bundle master
+
+	or u can try
+		git bundle create backup.bundle master --all --tags --remotes
+
+	Unbundle... unpack
+		git clone backup.bundle my-project
+
+Ignoring files
+	Long term ingore:
+		.gitignore file
+	Short term ignore, updates
+		git update-index --assume-unchanged file1.txt file2.txt
+		git update-index --no-assume-unchanged file1.txt file2.txt
+		git-ls-files
+		git ls-files -v --others
+	Long term ignore, locally only, not working
+		.git/config/exclude file
+
+Diffs
+	Changes in the working tree not yet staged for the next commit.
+		git diff
+
+	Changes between the index and your last commit; what you would be committing if you run "git commit" without "-a" option.
+		git diff --cached
+
+	Changes in the working tree since your last commit; what you would be committing if you run "git commit -a"
+		git diff HEAD
+
+	Changes between two random revisions for a specific file.
+	git diff RELEASE-2.34..master -- path/to/file
+
+
+Forcing a branch pointer to point to a commit. Do not use with shared objects.
+	git branch --force my-branch-name 7361f1fbh69
+
+Making a branch track a remote branch
+	git branch -u origin/master
+
+Rebasing
+	git rebase --interactive 69b79bb878fdae
+	git pull --rebase
+
+o---o---o---o---o  master
+         \
+          o---o---o---o---o  next
+                           \
+                            o---o---o  topic
+
+    git rebase --onto master next topic
+
+o---o---o---o---o  master
+	|            \
+	|             o'--o'--o'  topic
+	 \
+	  o---o---o---o---o  next
+
+----------------------
+
+    I have the following graph:
+
+   800      9ff
+    v        v
+----o--o--o--o--o--o <-master
+              \
+               o--o--o <-feature
+    And i want the following state after the command:
+
+   800      9ff
+    v        v
+----o--o--o--o--o--o <-master
+     \
+      o--o--o <-feature
+
+	So how do i rebase backwards on the same branch?
+
+	git rebase --onto 800 9ff
+
+--------------------------
+
+
+Editor to be Notepad++ instead of oldboy Vim:
+	[core]
+		editor = notepad++.exe -multiInst -notabbar -nosession -noPlugin
+	Have notepad++ in your path. (Make sure you reopen all cmd windows.)
+
+Blame
+	git blame -c config\mysql\staging\changes\2.12\492_insert_image_id_in_cc_image_format_mapping.sql
+
+Cleaning unversioned files:
+	git clean -f -d
+
+Amending
+	git commit --amend --date="Wed 12 Jun 2012 09:18 +0000" --author="Your Name <your.email@domain.com>"
+	git commit --amend --date="$(date -R)" ##in bash only
+
+Merging fast forward only:
+	git merge --ff-only <branchname>
+
+Recovering lost, detached commits:
+	git fsck --lost-found
+
+Showing diffs in stash:
+	git stash show -p stash@{0}
+
+Checking out (reverting to) a specific single file from a specific revision:
+	git checkout <hash> <path-to-file>
+	git checkout 8b8805a src/main/webapp/velocity/pageFragments/videoThumb.vm
+
+Patching
+	First, commit the changes you want to patch.
+	git format-patch -1
+	git apply filename.patch
+
+Storing credentials on your machine
+	git config credential.helper store
+	git push http://example.com/repo.git
+	Username: <type your username>
+	Password: <type your password>
+
+	[...several days later...]
+	git push http://example.com/repo.git
+	[your credentials are used automatically]
+
+Moving repositories
+	git clone --bare https://github.com/exampleuser/old-repository.git
+	cd old-repository.git
+	git push --mirror https://github.com/exampleuser/new-repository.git

@@ -1,0 +1,33 @@
+body {
+	background-image: url("../image/delta.jpg");
+	background-size: 100% auto;
+}
+
+h1 {
+	font-family: rosewood;
+	font-size: 72pt;
+	font-weight: bold;
+	color: #C5D60D;
+	text-shadow: 0 3pt 2pt rgba(20, 20, 20, 1);
+}
+
+.strip {
+}
+
+.header {
+	height: 200px;
+}
+
+.title {
+	text-align: center;
+	background-color: rgba(22, 32, 55, 0.75);
+}
+
+.blue {
+	background-color: rgba(22, 32, 55, 0.95);
+}
+
+@font-face {
+    font-family: rosewood;
+    src: local(rosewood), url('../font/rosewood.woff2') format('woff2');
+}
