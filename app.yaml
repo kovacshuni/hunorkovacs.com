@@ -16,7 +16,7 @@ handlers:
   static_files: hunorkovacscom/resume.html
   upload: hunorkovacscom/resume.html
 
-- url: /akkastreams
+- url: /reactivestreams
   script: _go_app
 
 - url: /
