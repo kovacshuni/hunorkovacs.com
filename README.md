@@ -13,6 +13,7 @@ Being inside the cloned repository.
 * Install Go
 * Install Google Appengine Go Toolkit
 * `dev_appserver.py .`
+* Go to [localhost:8080](http://localhost:8080)
 
 
 ## Deploy
