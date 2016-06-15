@@ -72,6 +72,12 @@ Reverting
 	git revert 783hf2
 	git revert 1290fj --no-commit
 	git revert HEAD~4 --no-edit
+	
+To revert to a specific commit (revert reset-ish) way before the master or other branch end.
+  git reset 56e05fced 
+  git reset --soft HEAD@{1}
+  git commit -m "Revert to 56e05fced"
+  git reset --hard
 
 Sharing
 	Anywhere on the sharing computer>
