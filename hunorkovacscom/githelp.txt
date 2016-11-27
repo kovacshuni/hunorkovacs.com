@@ -215,3 +215,12 @@ Moving repositories
 	git clone --bare https://github.com/exampleuser/old-repository.git
 	cd old-repository.git
 	git push --mirror https://github.com/exampleuser/new-repository.git
+
+Signing commits with your gpg key
+  git config --global user.signingkey F2C7AB29
+  git commit -S
+  always:
+  git config --global commit.gpgsign true
+  
+Show tag on HEAD
+  git describe --tag —always
