@@ -15,7 +15,7 @@ var showingName = true;
 
 function toggleEmail() {
     if (showingName) {
-        document.getElementById("fullname").innerHTML = "kovacshuni<wbr />@yahoo.com";
+        document.getElementById("fullname").innerHTML = "kovacshuni<wbr />@gmail.com";
         showingName = false;
     } else {
         document.getElementById("fullname").innerHTML = "Hunor Kovács";
