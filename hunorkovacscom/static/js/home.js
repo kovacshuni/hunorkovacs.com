@@ -1,11 +1,11 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 992px)').matches) {
-        $.backstretch("image/forest-992x744.jpg", {alignY: "bottom"});
+        $.backstretch("image/times-992x744.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        $.backstretch("image/forest-1347x1010.jpg", {alignY: "bottom"});
+        $.backstretch("image/times-1347x1010.jpg");
     } else {
-        $.backstretch("image/forest-bw.jpg", {alignY: "bottom"});
+        $.backstretch("image/times-bw.jpg");
     }
 }
 

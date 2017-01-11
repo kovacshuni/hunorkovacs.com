@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/kovacshuni
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hunorkovacs.com
+  * I am kovacshuni (https://keybase.io/kovacshuni) on keybase.
+  * I have a public key with fingerprint CD73 1BC4 48A4 3C60 32DB  2194 7266 0A64 2CD1 D6FA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ed926ee79d0659b98db357e8456e6ad419573b7618c6e6154a711ec840e938c20a",
+            "fingerprint": "cd731bc448a43c6032db219472660a642cd1d6fa",
+            "host": "keybase.io",
+            "key_id": "72660a642cd1d6fa",
+            "kid": "0101ed926ee79d0659b98db357e8456e6ad419573b7618c6e6154a711ec840e938c20a",
+            "uid": "0eba011bb6f1c089ad2bcf5f8dd9e019",
+            "username": "kovacshuni"
+        },
+        "service": {
+            "hostname": "hunorkovacs.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1484145470,
+    "expire_in": 157680000,
+    "prev": "0b7deeb50a061bfb20b355fbf6e49146bbf629e0371140b6abc885bf4161b9d1",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owGtUmtMFUcYvSCUcqFAkYfSSuLiIyDSnX3vDbVU8JFaaglBpA9hZ3cWlsfd6+7l
+AqVgUWPAkAr0FrRKBQGVJqgQ0qqpWBGfTRPUgFppjA02RRrKpdAG20J31f7rz86f
+mfm+c86c72TqXlhgsXppslWKvzH82OvbMWjZ6kpOKsegKpVhtnKsAD3ZUKGEdGd2
+gSJhNgwHOEASTzAIsbyEMzQPeU6CJM0ijqIZxAgSBXiaJSHLAE40CoCmBBYAJHIU
+jniSEwlcwOIxWbHnIs2hKXanIStKLAmgSFGcQJEig5OEBAnAUyzBMLjAUIQoAYmR
+TWKeqpsMwxwUdJSgqEbNuGQ/sfcf+P/Zd/FTOQQFHAAIGRmIOMcLEgFFmZY5SeIR
+DngTqCPNLhQh06vqEkQ9r9iuYBXxmFF3KSIyozVneYYxuqr2FJggqkWGgENTnaqo
+FppNp9Oh20yys8xhoksQzH6mkw0Vu2SEaTBcSNMV1Y7ZgIEUnYopDCiOAhRNsXg8
+hkodioayFRNBswyHG8t8B7nMkeD7rIQQpHEBZwCUIYEb8dAylBlE8YBioHEijOlI
+IxUKh4wARY6joUwBA85LADNH225XMRtl+BRyDU1dybULzmINYRXWGu+XfSxeVstz
+vt7mN7NY/UP+/Xs3jwfPvy6tTlkUdyhDDPf/rj+gfDx0Wcb1Qn5uZteZ6KyYiF/J
+axfi6M/3/1BJ7A09W8+MdDZv27Pj2CptxZdf1Fc37dvUOKw13VkS2dU8tS6xIXVl
+VbNiWdqoHzkx8cHBUndLvneKz8mZUzsfJf91gbTej/m+V2dbfFMp9/bpkKbJcxXL
+R9p1bTqnt73pwdm1rUNnYsftTelVhf5Y5VsDC9MdX/W2dR+9P1j/XvXgoEw36A+z
+xoMmLnY0/LLK6q7vm5jbf231hp7Lf7jDWj+WoiwLooO21ETXjX1dnzRKvva7z20p
+7Pzh1uo8ubumxFI139jf2LmucrqgMDncElxSeiu07pNLu8HJrX6ZpaOB2Ok3nW07
+ioM+/QnVTOWECfQUXRdUHtkT8eLfeyK6BjxVG8jLG3f5BdOznotSbc/Py1b+eCqo
+ozEly4UfCzg+OhuXuD7tm0U94YsfdI0ezlx7IPiVbZkJ82laml/UVa4FeXYuHmlb
+bl1yaPOJS+duzg1F3hpY89Krk6mu37Y8j9kiHl9NjO77LCkniouarDxwOn/puEfz
+Ol+hbooNIx79ufBgv1oWF5jfdidl4/Ww+M1v94XM7u6+kZeWGv5GZ0RGy77inlps
+xHFvhfNDuCdGQJ4ZcqyoowK/Euh9LzbdU/XRePXdNkf7+ttur+ErQwFHa9/xeXf4
+7pG6Nd0Pfd0p/wA=
+=i06/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kovacshuni
+
+==================================================================
