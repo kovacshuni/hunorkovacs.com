@@ -12,6 +12,7 @@ Being inside the cloned repository.
 
 * Install Go
 * Install Google Appengine Go Toolkit
+  - OS X: `brew install app-engine-go-64`
 * `dev_appserver.py .`
 * Go to [localhost:8080](http://localhost:8080)
 
