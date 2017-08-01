@@ -72,9 +72,9 @@ Reverting
 	git revert 783hf2
 	git revert 1290fj --no-commit
 	git revert HEAD~4 --no-edit
-	
+
 To revert to a specific commit (revert reset-ish) way before the master or other branch end.
-  git reset 56e05fced 
+  git reset 56e05fced
   git reset --soft HEAD@{1}
   git commit -m "Revert to 56e05fced"
   git reset --hard
@@ -221,6 +221,12 @@ Signing commits with your gpg key
   git commit -S
   always:
   git config --global commit.gpgsign true
-  
+
 Show tag on HEAD
   git describe --tag —always
+
+Reset branch to no history / empty branch.
+  git update-ref -d HEAD
+
+Make empty commit
+  git commit --allow-empty -m "A new repo is born"
