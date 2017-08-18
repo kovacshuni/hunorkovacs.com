@@ -11,14 +11,14 @@ body {
     text-align: left
 }
 
-.centering-outer {
+.vertical-centering-outer {
     display: table;
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-.centering-middle {
+.vertical-centering-middle {
     display: table-cell;
     vertical-align: middle;
 }
@@ -37,21 +37,34 @@ body {
     text-align: left;
 }
 
+.text-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 .dotted {
     background: url("../image/dots-02.png") repeat;
-    padding: 0.2em 0.4em 0.2em 0.4em;
+    padding: 0.1em 0.4em 0 0.4em;
+}
+
+.dotted:hover {
+    background: url("../image/dots-05.png") repeat;
 }
 
 .longer {
     padding: 0 1.5em 0 0.1em;
 }
 
+.less-padding {
+    padding: 0 0 0 0;
+}
+
 h1 {
     margin-top: 0;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(18, 23, 187, 1);
     font-family: proxima-nova-4, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-shadow: 0 0 1px rgba(20, 20, 20, 0.6);
-    font-size: 24pt;
+    /*text-shadow: 0 0 1px rgba(20, 20, 20, 0.6);*/
+    font-size: 18pt;
 }
 
 .lead {

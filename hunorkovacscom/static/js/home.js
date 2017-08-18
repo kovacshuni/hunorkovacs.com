@@ -22,3 +22,10 @@ function toggleEmail() {
         showingName = true;
     }
 }
+
+function hoverMainImage(element) {
+    element.setAttribute('src', 'image/header-04.jpg');
+}
+function unhoverMainImage(element) {
+    element.setAttribute('src', 'image/header-03.jpg');
+}
