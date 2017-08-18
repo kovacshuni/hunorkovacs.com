@@ -38,7 +38,7 @@ body {
 }
 
 .dotted {
-    background: url("../image/dots.png") repeat;
+    background: url("../image/dots-02.png") repeat;
     padding: 0.2em 0.4em 0.2em 0.4em;
 }
 
@@ -51,7 +51,7 @@ h1 {
     color: rgba(255, 255, 255, 1);
     font-family: proxima-nova-4, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-shadow: 0 0 1px rgba(20, 20, 20, 0.6);
-    font-size: 30pt;
+    font-size: 24pt;
 }
 
 .lead {
