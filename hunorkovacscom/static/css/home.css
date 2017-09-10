@@ -47,10 +47,6 @@ body {
     padding: 0.1em 0.4em 0 0.4em;
 }
 
-.dotted:hover {
-    background: url("../image/dots-05.png") repeat;
-}
-
 .longer {
     padding: 0 1.5em 0 0.1em;
 }
@@ -72,10 +68,13 @@ h1 {
     line-height: 25pt;
 }
 
-.mainn {
-    background-color: rgba(18, 23, 187, 1);
-}
 
+/*
+vivid blue 23 27 156
+calmer blue 18, 23, 187
+
+209, 16, 16
+*/
 .loop {
     position: absolute;
     top: 50%;

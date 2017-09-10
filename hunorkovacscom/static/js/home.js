@@ -5,7 +5,7 @@ function setBackStretch() {
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
         $.backstretch("image/times-1347x1010.jpg");
     } else {
-        $.backstretch("image/blimd.png");
+        $.backstretch("image/blid-02.jpg");
     }
 }
 
