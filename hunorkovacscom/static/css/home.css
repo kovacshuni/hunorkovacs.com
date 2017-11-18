@@ -75,26 +75,27 @@ calmer blue 18, 23, 187
 209, 16, 16
 */
 .loop {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .loopyloop {
-    max-width: 500px;
-    padding: 10px 10px 10px 10px;
-    background-color: rgba(18, 23, 187, 0.5);
-    width: 100%;
+  max-width: 500px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(18, 23, 187, 0.5);
+  width: 100%;
 }
 
 .retail {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    margin: 10px;
-    top: 0px;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 10px;
+  top: 0px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .nav {
@@ -107,27 +108,38 @@ calmer blue 18, 23, 187
 }
 
 .linky-top-left {
-    position: absolute;
-    top: 80px;
-    left: 80px;
+  position: absolute;
+  top: 80px;
+  left: 80px;
 }
 
 .linky-top-right {
-    position: absolute;
-    top: 80px;
-    right: 80px;
+  position: absolute;
+  top: 80px;
+  right: 80px;
 }
 
 .linky-bottom-left {
-    position: absolute;
-    bottom: 80px;
-    left: 80px;
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
 }
 
 .linky-bottom-right {
-    position: absolute;
-    bottom: 80px;
-    right: 80px;
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+}
+
+.email {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  width: 100%;
+  z-index: 10;
+  visibility: hidden;
 }
 
 .row {
@@ -180,7 +192,7 @@ calmer blue 18, 23, 187
     right: 0;
     font-family: proxima-nova-3, Helvetica, Arial, sans-serif;
     font-size: 0.8em;
-    color: gray
+    color: #555555;
 }
 
 @font-face {

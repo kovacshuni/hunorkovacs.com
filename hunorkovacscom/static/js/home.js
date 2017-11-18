@@ -15,10 +15,10 @@ var showingName = true;
 
 function toggleEmail() {
     if (showingName) {
-        document.getElementById("fullname").innerHTML = "kovacshuni<wbr />@gmail.com";
+        document.getElementById("theemail").style.visibility = "visible";
         showingName = false;
     } else {
-        document.getElementById("fullname").innerHTML = "Hunor Kovács";
+        document.getElementById("theemail").style.visibility = "hidden";
         showingName = true;
     }
 }
