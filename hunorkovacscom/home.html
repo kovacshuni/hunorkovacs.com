@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="home">
+<html lang="en">
 <head>
-  <title>Hunor Kovács's Personal Website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hunor Kovács</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-  <link href="css/home.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
 
   <link rel="image_src" href="image/beside-you-640"/>
   <meta property="og:title" content="Hunor Kovács's Personal Website" />
@@ -21,32 +18,34 @@
 </head>
 <body>
 
-<div class="centering-outer">
-  <div class="centering-middle">
-    <div class="centering-inner">
-      <div class="main">
-        <h1 id="fullname">Hunor Kovács</h1>
-        <p class="lead"><span class="dotted">age 28,</span> <span class="dotted">working with software,</span> <span class="dotted">love skiing,</span> <span class="dotted">travelling,</span><br />
-          <span class="dotted">concerts,</span> <span class="dotted">born in Romania.</span></p>
-        <p><a href="resume" class="btn btn-sm btn-default fixed-size">Read my résumé &raquo;</a></p>
-        <p><a href="Who-Am-I-comics/1-hard-to-remember.html" class="btn btn-sm btn-default fixed-size">Who Am I Comics &raquo;</a></p>
-      </div>
-      <div class="footer">
-        <a class="vala hand"><i class="fa fa-at" onclick="toggleEmail()"></i></a
-          ><a href="https://github.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-github"></i></a
-          ><a href="https://instagram.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-instagram"></i></a
-          ><a href="https://twitter.com/kovacshuni" target="_blank" class="vala"><i class="fa fa-twitter"></i></a
-          ><a href="https://www.youtube.com/user/kovacshuni" target="_blank" class="vala"><i class="fa fa-youtube-play"></i></a
-          ><a href="https://www.linkedin.com/in/kovacshuni" target="_blank" class="vala"><i class="fa fa-linkedin-square"></i></a
-          ><a href="kovacshuni@yahoo.com-gpg-public.key.txt" class="vala"><i class="fa fa-key"></i></a
-      </div>
-    </div>
+<div id="theemail" class="email"><img src="image/mail.jpg" class="img-fluid" /></div>
+<div class="loop">
+  <div class="loopyloop">
+    <img src="image/dive-14.jpg" class="img-fluid" />
   </div>
 </div>
-<div class="date">last updated on August 1, 2017</div>
-<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="lib/jquery.backstretch.min.js"></script>
+
+<div class="nav">
+  <a href="Who-Am-I-comics/1-hard-to-remember.html" class="linky-top-right">Who Am I Comics (2014) »</a>
+  <a href="https://hunorkovacs.wordpress.com" class="linky-bottom-left">Blog</a>
+  <a href="Where-Am-I-comics/01-teaser.html" class="linky-bottom-right">Where Am I Comics Teaser (2017) »</a>
+</div>
+
+<div class="retail">
+  <a class="hand" onclick="toggleEmail()">Mail</a>
+  <a href="https://github.com/kovacshuni" target="_blank" class="">Code</a>
+  <a href="https://instagram.com/kovacshuni" target="_blank" class="">Instagram</a>
+  <a href="https://twitter.com/kovacshuni" target="_blank" class="">Twitter</a>
+  <a href="https://www.youtube.com/user/kovacshuni" target="_blank" class="">YouTube</a>
+  <a href="kovacshuni@yahoo.com-gpg-public.key.txt" class="">GPG</a>
+</div>
+
+<div class="date">last updated on November 19, 2017</div>
+
+<script type="text/javascript" src="lib/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="lib/umdpopper-1.12.2.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/jquery.backstretch-2.1.16.min.js"></script>
 <script type="text/javascript" src="js/home.js"></script>
 
 </body>

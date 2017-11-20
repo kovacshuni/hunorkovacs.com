@@ -12,13 +12,6 @@ handlers:
   static_files: hunorkovacscom/githelp.txt
   upload: hunorkovacscom/githelp.txt
 
-- url: /resume
-  static_files: hunorkovacscom/resume.html
-  upload: hunorkovacscom/resume.html
-
-- url: /reactivestreams
-  script: _go_app
-
 - url: /
   static_dir: hunorkovacscom/static
 

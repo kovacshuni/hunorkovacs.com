@@ -1,11 +1,11 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 992px)').matches) {
-        $.backstretch("image/times-992x744.jpg");
+        $.backstretch("image/blid-992x744-01.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        $.backstretch("image/times-1347x1010.jpg");
+        $.backstretch("image/blid-1347x1010-01.jpg");
     } else {
-        $.backstretch("image/times-bw.jpg");
+        $.backstretch("image/blid-1920x1440-01.jpg");
     }
 }
 
@@ -15,10 +15,10 @@ var showingName = true;
 
 function toggleEmail() {
     if (showingName) {
-        document.getElementById("fullname").innerHTML = "kovacshuni<wbr />@gmail.com";
+        document.getElementById("theemail").style.visibility = "visible";
         showingName = false;
     } else {
-        document.getElementById("fullname").innerHTML = "Hunor Kovács";
+        document.getElementById("theemail").style.visibility = "hidden";
         showingName = true;
     }
 }
