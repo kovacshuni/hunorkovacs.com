@@ -1,79 +1,22 @@
-a,
+a {
+  color: black;
+  text-decoration: none;
+}
+
 a:focus,
 a:hover {
-    color: black;
+  color: black;
+  text-decoration: underline;
 }
 
 html,
 body {
-    height: 100%;
-    color: black;
-    text-align: left;
-    font-family: bebas-neue-regular, Arial, sans-serif;
+  height: 100%;
+  color: black;
+  text-align: left;
+  font-family: bebas-neue-regular, Arial, sans-serif;
 }
 
-.vertical-centering-outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.vertical-centering-middle {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.centering-inner {
-}
-
-.greeting {
-    width: 100%;
-    color: #eeeeee;
-    font-size: 12pt;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.footer {
-    text-align: left;
-}
-
-.text-bottom {
-  position: absolute;
-  bottom: 0;
-}
-
-.dotted {
-    background: url("../image/dots-02.png") repeat;
-    padding: 0.1em 0.4em 0 0.4em;
-}
-
-.longer {
-    padding: 0 1.5em 0 0.1em;
-}
-
-.less-padding {
-    padding: 0 0 0 0;
-}
-
-h1 {
-    margin-top: 0;
-    /*text-shadow: 0 0 1px rgba(20, 20, 20, 0.6);*/
-    font-size: 3em;
-}
-
-.lead {
-    font-size: 14pt;
-    line-height: 25pt;
-}
-
-
-/*
-vivid blue 23 27 156
-calmer blue 18, 23, 187
-
-209, 16, 16
-*/
 .loop {
   position: absolute;
   top: 50%;
@@ -141,136 +84,47 @@ calmer blue 18, 23, 187
   visibility: hidden;
 }
 
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.btn-default {
-    color: #202020;
-    text-shadow: none;
-    background-color: #fff;
-    border: 1px solid #fff;
-}
-.btn-default:hover {
-    color: #ffffff;
-    text-shadow: none;
-    background-color: #db0909;
-    border: 1px solid #db0909;
-}
-.btn-default:focus {
-    text-shadow: none;
-}
-
-.fixed-size {
-    width: 11em;
-}
-
-.vala {
-    font-size: 1.2em;
-    background: url("../image/dots.png") repeat;
-    padding: 0.2em 0.5em 0.2em 0.5em;
-}
-
-.vala:hover {
-    background: #db0909 none;
-    text-decoration: none;
-}
-
-.social-icon:hover {
-    background: #db0909 none;
-}
-
 .hand {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .date {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-family: proxima-nova-3, Helvetica, Arial, sans-serif;
-    font-size: 0.8em;
-    color: #555555;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.6em;
+  color: #555555;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 @font-face {
-    font-family: proxima-nova-2;
-    src: local(proxima-nova-2), url('../font/proxima-nova-2.otf') format('opentype');
-}
-
-@font-face {
-    font-family: proxima-nova-3;
-    src: local(proxima-nova-3), url('../font/proxima-nova-3.otf') format('opentype');
-}
-
-@font-face {
-    font-family: proxima-nova-4;
-    src: local(proxima-nova-4), url('../font/proxima-nova-4.otf') format('opentype');
-}
-
-@font-face {
-    font-family: bebas-neue-regular;
-    src: local(bebas-neue-regular), url('../font/bebas-neue-regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: bebas-neue-bold;
-    src: local(bebas-neue-bold), url('../font/bebas-neue-bold.otf') format('opentype');
+  font-family: bebas-neue-regular;
+  src: local(bebas-neue-regular), url('../font/bebas-neue-regular.otf') format('opentype');
 }
 
 @media all and (max-width: 480px) {
-    .main {
-        min-width: 14em;
-        height: 28em;
-        padding: 0.5em 1.5em 1em 1.5em;
-    }
-
-    .footer {
-        min-width: 14em;
-        padding: 0.5em 1.5em 1em 1.5em;
-    }
+  .nav {
+      font-size: 2em;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 992px) {
-    .main {
-        min-width: 14em;
-        height: 20em;
-        padding: 0.5em 1.5em 1em 1.5em;
-    }
-
-    .footer {
-        min-width: 14em;
-        padding: 0.5em 1.5em 1em 1.5em;
-    }
+  .nav {
+      font-size: 2em;
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1200px) {
-    .main {
-        width: 65em;
-        height: 25em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footer {
-        width: 65em;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .nav {
+      font-size: 2em;
+  }
 }
 
 @media all and (min-width: 1200px) {
-    .main {
-        width: 70em;
-        height: 35em;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    .footer {
-        width: 70em;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }

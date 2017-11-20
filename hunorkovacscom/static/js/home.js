@@ -1,11 +1,11 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 992px)').matches) {
-        $.backstretch("image/times-992x744.jpg");
+        $.backstretch("image/blid-992x744-01.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        $.backstretch("image/times-1347x1010.jpg");
+        $.backstretch("image/blid-1347x1010-01.jpg");
     } else {
-        $.backstretch("image/blid-02.jpg");
+        $.backstretch("image/blid-1920x1440-01.jpg");
     }
 }
 
@@ -21,11 +21,4 @@ function toggleEmail() {
         document.getElementById("theemail").style.visibility = "hidden";
         showingName = true;
     }
-}
-
-function hoverMainImage(element) {
-    element.setAttribute('src', 'image/header-04.jpg');
-}
-function unhoverMainImage(element) {
-    element.setAttribute('src', 'image/header-03.jpg');
 }
