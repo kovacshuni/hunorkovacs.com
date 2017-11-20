@@ -89,10 +89,10 @@ calmer blue 18, 23, 187
 }
 
 .retail {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 100%;
-  top: 0px;
+  bottom: 0px;
   text-align: center;
   font-size: 1.5em;
 }
