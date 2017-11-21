@@ -1,6 +1,8 @@
 
 function setBackStretch() {
-    if (window.matchMedia('(max-width: 992px)').matches) {
+    if (window.matchMedia('(max-width: 500px)').matches) {
+      $.backstretch("image/dive-14.jpg");
+    } else if (window.matchMedia('(max-width: 992px)').matches) {
         $.backstretch("image/blid-992x744-01.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
         $.backstretch("image/blid-1347x1010-01.jpg");
