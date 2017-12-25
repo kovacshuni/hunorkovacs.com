@@ -19,4 +19,11 @@ Being inside the cloned repository.
 
 ## Deploy
 
-`appcfg.py update .`
+`gcloud app deploy app.yaml`
+
+## From scratch
+
+* `gcloud projects create hunorkovacscom-123123`
+* `gcloud config list`
+* `gcloud app create`
+* `gcloud app deploy app.yaml`

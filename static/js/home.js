@@ -1,6 +1,6 @@
 
 function setBackStretch() {
-    if (window.matchMedia('(max-width: 500px)').matches) {
+    if (window.matchMedia('(max-width: 480px)').matches) {
       $.backstretch("image/dive-14.jpg");
     } else if (window.matchMedia('(max-width: 992px)').matches) {
         $.backstretch("image/blid-992x744-01.jpg");

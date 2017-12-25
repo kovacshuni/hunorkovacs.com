@@ -1,23 +1,22 @@
-application: hunorkovacscom
-version: 1
 runtime: go
 api_version: go1
 
 handlers:
 - url: /
-  static_files: hunorkovacscom/home.html
-  upload: hunorkovacscom/home.html
+  static_files: home.html
+  upload: home.html
 
 - url: /githelp
-  static_files: hunorkovacscom/githelp.txt
-  upload: hunorkovacscom/githelp.txt
+  static_files: githelp.txt
+  upload: githelp.txt
 
 - url: /
-  static_dir: hunorkovacscom/static
+  static_dir: static
 
-# - url: /.*
-#  script: _go_app
+- url: /somethingspecial123
+  script: _go_app
 
 skip_files:
 - ^\.idea(/.*)?
 - ^\.git(/.*)?
+- .*\.DS_Store
