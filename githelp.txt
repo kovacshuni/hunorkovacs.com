@@ -172,6 +172,9 @@ Editor to be Notepad++ instead of oldboy Vim:
 	[core]
 		editor = notepad++.exe -multiInst -notabbar -nosession -noPlugin
 	Have notepad++ in your path. (Make sure you reopen all cmd windows.)
+	
+Visual Studio Code
+        git config --global core.editor "code --wait"
 
 Blame
 	git blame -c config\mysql\staging\changes\2.12\492_insert_image_id_in_cc_image_format_mapping.sql
