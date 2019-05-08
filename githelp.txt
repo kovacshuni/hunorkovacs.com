@@ -233,3 +233,7 @@ Reset branch to no history / empty branch.
 
 Make empty commit
   git commit --allow-empty -m "A new repo is born"
+
+Revert a Git repository to a specific version, previous commit
+	git revert --no-commit 0766c053..HEAD
+	git commit
