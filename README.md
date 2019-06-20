@@ -6,24 +6,26 @@ Contains an animated comic book, built only with HTML5, CSS3 and small JavaScrip
 
 [http://www.hunorkovacs.com](http://www.hunorkovacs.com)
 
-## Spinup
-
-Being inside the cloned repository.
+## From scratch
 
 * Install Go
-* Install Google Appengine Go Toolkit
-  - OS X: `brew install app-engine-go-64`
-* `dev_appserver.py .`
-* Go to [localhost:8080](http://localhost:8080)
-
-
-## Deploy
-
-`gcloud app deploy app.yaml`
-
-## From scratch
+* Install Google Cloud SDK
+  - OS X: `brew cask install google-cloud-sdk`
+* Install app-engine components: 
+  - `gcloud components install app-engine-go`
+  - `gcloud components install app-engine-python`
+* `gcloud init`, pay attention which account you sign in with.
 
 * `gcloud projects create hunorkovacscom-123123`
 * `gcloud config list`
 * `gcloud app create`
 * `gcloud app deploy app.yaml`
+
+## Development
+
+* Run local server: `dev_appserver.py .`
+* Go to [localhost:8080](http://localhost:8080)
+
+## Deploy to live
+
+`gcloud app deploy app.yaml`

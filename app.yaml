@@ -6,10 +6,6 @@ handlers:
   static_files: home.html
   upload: home.html
 
-- url: /githelp
-  static_files: githelp.txt
-  upload: githelp.txt
-
 - url: /
   static_dir: static
 
