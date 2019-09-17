@@ -1,0 +1,18 @@
+runtime: go
+api_version: go1
+
+handlers:
+- url: /
+  static_files: home.html
+  upload: home.html
+
+- url: /
+  static_dir: static
+
+- url: /somethingspecial123
+  script: _go_app
+
+skip_files:
+- ^\.idea(/.*)?
+- ^\.git(/.*)?
+- .*\.DS_Store
