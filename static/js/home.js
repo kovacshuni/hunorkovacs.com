@@ -1,7 +1,7 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 480px)').matches) {
-      $.backstretch("image/DSC06870-04.jpg");
+      $.backstretch("image/2019-09-18 01.23.48-01.jpg");
     } else if (window.matchMedia('(max-width: 992px)').matches) {
         $.backstretch("image/blid-992x744-01.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
