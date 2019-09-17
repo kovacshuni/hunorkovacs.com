@@ -1,17 +1,17 @@
 a {
-  color: black;
+  color: #EEEEEE;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: black;
+  color: #EEEEEE;
   text-decoration: underline;
 }
 
 html,
 body {
-  color: black;
+  color: #EEEEEE;
   text-align: left;
   font-family: bebas-neue-regular, Arial, sans-serif;
   margin: 0;
@@ -61,7 +61,8 @@ img {
   letter-spacing: 1pt;
   font-family: bebas-neue-regular, Arial, sans-serif;
   font-size: 2.5em;
-  color: black;
+  font-weight: bold;
+  color: #EEEEEE;
 }
 
 .linky-top-left {
@@ -138,8 +139,9 @@ img {
   }
 
   .linky-top-right {
-    margin-left: 40px;
-    right: 40px;
+    margin-right: 40px;
+    top: 220px;
+    left: 40px;
   }
 
   .linky-bottom-left {
@@ -149,8 +151,9 @@ img {
   }
 
   .linky-bottom-right {
-    margin-left: 40px;
-    right: 40px;
+    bottom: 100px;
+    margin-right: 40px;
+    left: 40px;
   }
 
   .loop {
@@ -158,11 +161,12 @@ img {
 	}
 
   .retail {
+    font-size: 1.3em;
     bottom: 10px;
   }
 
   .retail a {
-    color: #BBBBBB;
+    color: #EEEEEE;
   }
 }
 
