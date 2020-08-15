@@ -1,4 +1,4 @@
-package hunorkovacscom
+package main
 
 import (
     "net/http"
