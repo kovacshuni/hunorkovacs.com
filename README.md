@@ -4,8 +4,6 @@ This is a minimalistic, personal HTML website.
 
 [http://www.hunorkovacs.com](http://www.hunorkovacs.com)
 
-It was built for being deployed to Google App Engine as a very basic Go app. 
-
 ## Install dependencies
 
 * Install Go
