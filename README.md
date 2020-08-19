@@ -13,9 +13,8 @@ Contains an animated comic book, built only with HTML5, CSS3 and small JavaScrip
   - OS X: `brew cask install google-cloud-sdk`
 * Install app-engine components: 
   - `gcloud components install app-engine-go`
-  - `gcloud components install app-engine-python`
 * `gcloud init`, pay attention which account you sign in with.
-* add `google-cloud-sdk/bin` to PATH
+* add `google-cloud-sdk/bin` to PATH in order for `dev_appserver.py` to work
 
 * `gcloud projects create hunorkovacscom-123123`
 * `gcloud config list`

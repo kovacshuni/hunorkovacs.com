@@ -39,6 +39,19 @@ img {
   max-height: 480px;
 }
 
+.centerdiv {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-family: bebas-neue-regular, Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #EEEEEE;
+  width: 100%;
+  margin-top: 50px;
+}
+
 .loopyloop {
   max-width: 500px;
   padding: 10px 10px 10px 10px;
