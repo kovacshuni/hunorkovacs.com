@@ -1,13 +1,13 @@
 
 function setBackStretch() {
     if (window.matchMedia('(max-width: 480px)').matches) {
-      $.backstretch("static/image/huji.jpg");
+      $.backstretch("static/image/DSC09388-03.jpg");
     } else if (window.matchMedia('(max-width: 992px)').matches) {
-        $.backstretch("static/image/blid-992x744-01.jpg");
+        $.backstretch("static/image/ylid-992x744-01.jpg");
     } else if (window.matchMedia('(max-width: 1200px)').matches) {
-        $.backstretch("static/image/blid-1347x1010-01.jpg");
+        $.backstretch("static/image/ylid-1347x1010-01.jpg");
     } else {
-        $.backstretch("static/image/blid-1920x1440-01.jpg");
+        $.backstretch("static/image/ylid-1920x1440-01.jpg");
     }
 }
 

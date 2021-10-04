@@ -1,11 +1,11 @@
 a {
-  color: #EEEEEE;
+  color: #4d4d4d;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #EEEEEE;
+  color: #727272;
   text-decoration: underline;
 }
 
@@ -33,10 +33,10 @@ img {
   transform: translate(-50%, -50%);
   border-style: solid;
   border-width: 10px 10px 10px 10px;
-  border-color: rgba(18, 23, 187, 0.5);
+  border-color: rgba(151, 177, 5, 0.5);
   width: 100%;
-  max-width: 480px;
-  max-height: 480px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .centerdiv {
