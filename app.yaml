@@ -9,6 +9,10 @@ handlers:
     static_files: home.html
     upload: home.html
 
+  - url: /THEVASTATLANTIC
+    static_files: thevastatlantic.html
+    upload: thevastatlantic.html    
+
   - url: /error
     static_files: error.html
     upload: error.html

@@ -11,7 +11,7 @@ a:hover {
 
 html,
 body {
-  color: #EEEEEE;
+  color: #4d4d4d;
   text-align: left;
   font-family: bebas-neue-regular, Arial, sans-serif;
   margin: 0;
@@ -37,6 +37,28 @@ img {
   width: 100%;
   max-width: 600px;
   max-height: 600px;
+}
+
+.vasttext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: rgba(151, 177, 5, 0.5);
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+p {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .centerdiv {
