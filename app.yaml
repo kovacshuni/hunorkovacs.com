@@ -11,7 +11,11 @@ handlers:
 
   - url: /THEVASTATLANTIC
     static_files: thevastatlantic.html
-    upload: thevastatlantic.html    
+    upload: thevastatlantic.html
+
+  - url: /HUNORIIKOVACSPFA
+    static_files: hunoriikovacspfa.html
+    upload: hunoriikovacspfa.html
 
   - url: /error
     static_files: error.html

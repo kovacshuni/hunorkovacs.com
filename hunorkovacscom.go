@@ -10,6 +10,7 @@ func main() {
     http.HandleFunc("/", handler)
     http.HandleFunc("/somethingspecial123", handler)
 	http.HandleFunc("/THEVASTATLANTIC", handler)
+	http.HandleFunc("/HUNORIIKOVACSPFA", handler)
 
     port := os.Getenv("PORT")
 	if port == "" {
