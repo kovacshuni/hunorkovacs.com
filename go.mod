@@ -1,3 +1,3 @@
 module github.com/kovacshuni/hunorkovacs.com
 
-go 1.15
+go 1.19
