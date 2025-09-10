@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow - Hunor Kovács</title>
+    
+    <meta name="description" content="Snow Easter Egg - Hunor Kovács">
+    <meta property="og:title" content="Snow - Hunor Kovács">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hunorkovacs.com/snow">
+    <meta property="og:image" content="https://www.hunorkovacs.com/static/images/snowboarding-01.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <style>
+        body {
+            background: #2a3440; /* Darker base color for snow effect */
+            overflow: hidden; /* Hide scrollbars for full immersion */
+        }
+        .container {
+            justify-content: center;
+            align-items: center;
+        }
+        .snow-content {
+            text-align: center;
+            z-index: 100;
+            position: relative;
+        }
+        .snow-title {
+            font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 1rem;
+            text-transform: lowercase;
+        }
+        .snow-subtitle {
+            font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+        .home-link {
+            font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: none;
+            border: 1px solid #fff;
+            cursor: pointer;
+            transition: background 0.1s;
+            text-transform: lowercase;
+        }
+        .home-link:hover {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="snow-content">
+            <a href="/" class="home-link">escape</a>
+        </div>
+    </main>
+    
+    <script src="/static/js/diamond-animation-base.js"></script>
+    <script src="/static/js/snow.js"></script>
+</body>
+</html>

@@ -7,10 +7,15 @@ import (
 )
 
 func main() {
-    http.HandleFunc("/", handler)
+    // Serve static files
+    http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+    
+    // Serve specific HTML pages
+    http.HandleFunc("/", serveHome)
+    http.HandleFunc("/THEVASTATLANTIC", serveVastAtlantic)
+    http.HandleFunc("/HUNORIIKOVACSPFA", serveHunorPFA)
+    http.HandleFunc("/snow", serveSnow)
     http.HandleFunc("/somethingspecial123", handler)
-	http.HandleFunc("/THEVASTATLANTIC", handler)
-	http.HandleFunc("/HUNORIIKOVACSPFA", handler)
 
     port := os.Getenv("PORT")
 	if port == "" {
@@ -20,6 +25,26 @@ func main() {
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func serveHome(w http.ResponseWriter, r *http.Request) {
+    if r.URL.Path != "/" {
+        http.NotFound(w, r)
+        return
+    }
+    http.ServeFile(w, r, "index.html")
+}
+
+func serveVastAtlantic(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "thevastatlantic.html")
+}
+
+func serveHunorPFA(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "hunoriikovacspfa.html")
+}
+
+func serveSnow(w http.ResponseWriter, r *http.Request) {
+    http.ServeFile(w, r, "snow.html")
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {

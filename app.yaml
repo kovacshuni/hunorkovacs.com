@@ -1,4 +1,8 @@
-runtime: go119
+runtime: go123
+
+automatic_scaling:
+  max_instances: 1
+  min_instances: 0
 
 handlers:
   - url: /favicon\.ico
@@ -6,8 +10,8 @@ handlers:
     upload: static/favicon.ico
 
   - url: /
-    static_files: home.html
-    upload: home.html
+    static_files: index.html
+    upload: index.html
 
   - url: /THEVASTATLANTIC
     static_files: thevastatlantic.html
@@ -17,9 +21,9 @@ handlers:
     static_files: hunoriikovacspfa.html
     upload: hunoriikovacspfa.html
 
-  - url: /error
-    static_files: error.html
-    upload: error.html
+  - url: /snow
+    static_files: snow.html
+    upload: snow.html
 
   - url: /40371A0ABB29EBF6A9A8AA1AB35209D6EF228B00
     static_files: static/40371A0ABB29EBF6A9A8AA1AB35209D6EF228B00

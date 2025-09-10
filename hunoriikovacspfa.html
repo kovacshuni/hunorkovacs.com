@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HUNOR I. I. KOVACS PFA</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-
-  <link rel="stylesheet" href="static/css/home.css">
-
-  <link rel="image_src" href="static/image/beside-you-640"/>
-  <meta property="og:title" content="Hunor Kovács's Personal Website" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.hunorkovacs.com"/>
-  <meta property="og:image" content="http://www.hunorkovacs.com/image/beside-you-640.jpg"/>
-  <meta property="og:image:type" content="image/jpeg"/>
-  <meta property="og:image:width" content="640"/>
-  <meta property="og:image:height" content="640"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUNOR I. I. KOVACS PFA</title>
+    
+    <meta name="description" content="HUNOR I. I. KOVACS PERSOANA FIZICA AUTORIZATA - Software Development Services">
+    <meta property="og:title" content="HUNOR I. I. KOVACS PFA">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hunorkovacs.com/HUNORIIKOVACSPFA">
+    <meta property="og:image" content="https://www.hunorkovacs.com/static/images/snowboarding-01.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/pages.css">
 </head>
 <body>
-
-<div id="theemail" class="email"><img src="static/image/mail.jpg" class="img-fluid" /></div>
-<div class="vasttext">
-  <p>HUNOR I. I. KOVACS PERSOANA FIZICA AUTORIZATA</p>
-  <p>I do software analysis, design, architecture, development for startups. Build your product with us.</p>
-</div>
-
-<div class="retail">
-  <a class="hand" onclick="toggleEmail()">Email</a>
-</div>
-
-<div class="date">last updated on January 30, 2023</div>
-
-<script type="text/javascript" src="static/lib/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" src="static/lib/umdpopper-1.12.2.min.js"></script>
-<script type="text/javascript" src="static/lib/jquery.backstretch-2.1.16.min.js"></script>
-<script type="text/javascript" src="static/js/home.js"></script>
-
+    <main class="container">
+        <div class="content">
+            <div class="text-content">
+                <h1>HUNOR I. I. KOVACS</h1>
+                <h2>PERSOANA FIZICA AUTORIZATA</h2>
+                <p>I do software analysis, design, architecture, development for startups. Build your product with us.</p>
+            </div>
+        </div>
+        
+        <nav class="bottom-nav">
+            <a href="/" class="home-link blue-button">Home</a>
+            <button class="email-toggle" onclick="toggleEmail()">Email</button>
+        </nav>
+        
+        <div class="last-updated">
+            last updated on September 10, 2025
+        </div>
+    </main>
+    
+    <div id="email-popup" class="email-popup" onclick="toggleEmail()">
+        <div class="email-content">
+            <img src="/static/images/mail.jpg" alt="Email" class="email-image">
+        </div>
+    </div>
+    
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/diamond-animation-base.js"></script>
+    <script src="/static/js/canvas-diamonds.js"></script>
 </body>
 </html>

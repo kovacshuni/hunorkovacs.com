@@ -1,0 +1,269 @@
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS Custom Properties */
+:root {
+  --bg-overlay: rgba(255, 223, 0, 0.15);
+  --text-color: #333;
+  --text-light: #666;
+  --text-white: #fff;
+  --border-color: rgba(255, 255, 255, 0.3);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --transition: all 0.3s ease;
+}
+
+/* Temporary: CSS background disabled for JS experiment */
+body {
+  background: #a8b8c8;
+}
+
+/* Main Layout */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.center-image {
+  max-width: 600px;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+}
+
+.center-image {
+  border: 3px solid rgba(80, 80, 80, 0.8);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  z-index: 10;
+}
+
+.bottom-nav a,
+.email-toggle {
+  color: var(--text-white);
+  text-decoration: none;
+  font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  text-transform: lowercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bottom-nav a:hover,
+.email-toggle:hover {
+  background: #333;
+}
+
+.bottom-nav a:active,
+.email-toggle:active {
+  transform: translateY(0);
+}
+
+/* Blue buttons override - only for PFA/SRL pages */
+body:has(.text-content) a.blue-button,
+body:has(.text-content) button.blue-button {
+  background: rgba(0, 100, 200, 0.3) !important;
+  border: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+}
+
+body:has(.text-content) a.blue-button:hover,
+body:has(.text-content) button.blue-button:hover {
+  background: rgba(0, 100, 200, 0.5) !important;
+  border: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+}
+
+/* Last Updated */
+.last-updated {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 0.6rem;
+  color: var(--text-light);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.25rem 0.5rem;
+  backdrop-filter: blur(5px);
+}
+
+/* Email Popup */
+.email-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.email-popup.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.email-content {
+  max-width: 300px;
+  width: 90%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transform: scale(0.9);
+  transition: var(--transition);
+}
+
+.email-popup.visible .email-content {
+  transform: scale(1);
+}
+
+.email-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .center-image {
+    max-width: 95%;
+    border-width: 5px;
+  }
+  .bottom-nav {
+    bottom: 1rem;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .bottom-nav a,
+  .email-toggle {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    width: 70px;
+  }
+  .last-updated {
+    font-size: 0.7rem;
+    bottom: 0.25rem;
+    right: 0.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+  .center-image {
+    border-width: 3px;
+    border-radius: 6px;
+  }
+  .bottom-nav {
+    bottom: 0.5rem;
+    gap: 0.5rem;
+  }
+  .bottom-nav a,
+  .email-toggle {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --bg-overlay: rgba(255, 255, 0, 0.3);
+    --border-color: rgba(255, 255, 255, 0.8);
+  }
+  .bottom-nav a,
+  .email-toggle {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
