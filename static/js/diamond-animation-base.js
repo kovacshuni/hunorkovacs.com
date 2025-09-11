@@ -89,14 +89,31 @@ class DiamondAnimationBase {
     }
     
     createCanvas() {
-        // Remove any existing canvas
-        const existingCanvas = document.getElementById('diamond-canvas') || 
-                              document.getElementById('snow-canvas');
-        if (existingCanvas) existingCanvas.remove();
+        // Remove any existing canvases
+        const existingStatic = document.getElementById('diamond-canvas-static');
+        const existingAnimated = document.getElementById('diamond-canvas-animated');
+        if (existingStatic) existingStatic.remove();
+        if (existingAnimated) existingAnimated.remove();
         
-        // Create canvas
+        // Create static background canvas (behind content)
+        this.staticCanvas = document.createElement('canvas');
+        this.staticCanvas.id = 'diamond-canvas-static';
+        this.staticCanvas.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        `;
+        
+        // Create animated frames canvas (above content)
         this.canvas = document.createElement('canvas');
-        this.canvas.id = 'diamond-canvas';
+        this.canvas.id = 'diamond-canvas-animated';
         this.canvas.style.cssText = `
             position: fixed;
             top: 0;
@@ -110,24 +127,61 @@ class DiamondAnimationBase {
             image-rendering: crisp-edges;
         `;
         
-        // Set canvas size
-        this.canvas.width = window.innerWidth;
-        this.canvas.height = window.innerHeight;
+        // Set canvas sizes
+        this.staticCanvas.width = this.canvas.width = window.innerWidth;
+        this.staticCanvas.height = this.canvas.height = window.innerHeight;
         
-        // Get context
+        // Get contexts
+        this.staticCtx = this.staticCanvas.getContext('2d');
+        this.staticCtx.imageSmoothingEnabled = this.config.canvas.imageSmoothingEnabled;
         this.ctx = this.canvas.getContext('2d');
         this.ctx.imageSmoothingEnabled = this.config.canvas.imageSmoothingEnabled;
         
+        document.body.appendChild(this.staticCanvas);
         document.body.appendChild(this.canvas);
+    }
+    
+    calculateViewportScale() {
+        // Calculate scaling factor based on viewport size
+        const viewportArea = window.innerWidth * window.innerHeight;
+        const baseArea = 1920 * 1080; // Full HD as baseline
+        
+        // Scale factor with limits to prevent too sparse or too dense
+        let scaleFactor = viewportArea / baseArea;
+        
+        // Mobile detection (viewport width < 768px)
+        if (window.innerWidth < 768) {
+            // More aggressive scaling for mobile
+            scaleFactor = scaleFactor * 0.3; // 30% density on mobile
+        } else if (window.innerWidth < 1024) {
+            // Tablet scaling
+            scaleFactor = scaleFactor * 0.5;
+        }
+        
+        // Clamp scale factor to reasonable range
+        const finalScale = Math.max(0.15, Math.min(scaleFactor, 2.0));
+        
+        return finalScale;
     }
     
     generateStaticDiamonds() {
         this.diamonds = [];
         const { sizeMin, sizeMax, colorDistribution } = this.config.staticDiamonds;
         
+        // Calculate viewport-based scaling
+        const scaleFactor = this.calculateViewportScale();
+        
+        // Scale the counts based on viewport
+        const scaledDistribution = {
+            blueGray: Math.floor(colorDistribution.blueGray * scaleFactor),
+            pink: Math.floor(colorDistribution.pink * scaleFactor),
+            neon: Math.floor(colorDistribution.neon * scaleFactor),
+            white: Math.floor(colorDistribution.white * scaleFactor)
+        };
+        
         // Generate diamonds with sophisticated color distribution
         // Blue-gray diamonds
-        for (let i = 0; i < colorDistribution.blueGray; i++) {
+        for (let i = 0; i < scaledDistribution.blueGray; i++) {
             this.diamonds.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
@@ -137,7 +191,7 @@ class DiamondAnimationBase {
         }
         
         // Pink diamonds
-        for (let i = 0; i < colorDistribution.pink; i++) {
+        for (let i = 0; i < scaledDistribution.pink; i++) {
             this.diamonds.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
@@ -147,7 +201,7 @@ class DiamondAnimationBase {
         }
         
         // Neon diamonds
-        for (let i = 0; i < colorDistribution.neon; i++) {
+        for (let i = 0; i < scaledDistribution.neon; i++) {
             this.diamonds.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
@@ -157,7 +211,7 @@ class DiamondAnimationBase {
         }
         
         // White diamonds
-        for (let i = 0; i < colorDistribution.white; i++) {
+        for (let i = 0; i < scaledDistribution.white; i++) {
             this.diamonds.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
@@ -196,38 +250,34 @@ class DiamondAnimationBase {
         return Math.floor(this.randomInRange(min, max));
     }
     
-    drawDiamond(x, y, size, color) {
+    drawDiamond(x, y, size, color, context = null) {
+        const ctx = context || this.ctx;
         const halfSize = size / 2;
         
-        this.ctx.fillStyle = color;
-        this.ctx.save();
-        this.ctx.translate(x, y);
-        this.ctx.rotate(Math.PI / 4); // 45 degrees
-        this.ctx.fillRect(-halfSize, -halfSize, size, size);
-        this.ctx.restore();
+        ctx.fillStyle = color;
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(Math.PI / 4); // 45 degrees
+        ctx.fillRect(-halfSize, -halfSize, size, size);
+        ctx.restore();
     }
     
     renderStaticBackground() {
-        // Clear canvas
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        // Clear static canvas
+        this.staticCtx.clearRect(0, 0, this.staticCanvas.width, this.staticCanvas.height);
         
         // Shuffle diamonds for random draw order
         const shuffledDiamonds = [...this.diamonds].sort(() => Math.random() - 0.5);
         
-        // Draw all static diamonds
+        // Draw all static diamonds to the static canvas
         for (const diamond of shuffledDiamonds) {
-            this.drawDiamond(diamond.x, diamond.y, diamond.size, diamond.color);
+            this.drawDiamond(diamond.x, diamond.y, diamond.size, diamond.color, this.staticCtx);
         }
-        
-        // Save the static background
-        this.staticBackground = this.ctx.getImageData(0, 0, this.canvas.width, this.canvas.height);
     }
     
     render() {
-        // Restore static background
-        if (this.staticBackground) {
-            this.ctx.putImageData(this.staticBackground, 0, 0);
-        }
+        // Clear only the animated canvas (static background stays on its own canvas)
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
     
     startAnimation() {
@@ -241,9 +291,14 @@ class DiamondAnimationBase {
         const { initialFrameCount, frameLifetime, tilesPerFrame } = this.config.frameSpawning;
         const frameCount = this.randomIntInRange(initialFrameCount.min, initialFrameCount.max + 1);
         
+        // Get scale factor for tile counts
+        const scaleFactor = this.calculateViewportScale();
+        
         for (let i = 0; i < frameCount; i++) {
             const colorArray = this.buildColorArray();
-            const tileCount = this.randomIntInRange(tilesPerFrame.min, tilesPerFrame.max + 1);
+            // Scale tile count based on viewport
+            const baseTileCount = this.randomIntInRange(tilesPerFrame.min, tilesPerFrame.max + 1);
+            const tileCount = Math.max(1, Math.floor(baseTileCount * scaleFactor));
             const lifetime = this.randomInRange(frameLifetime.min, frameLifetime.max);
             const randomAge = Math.random() * lifetime * 0.7;
             
@@ -274,7 +329,10 @@ class DiamondAnimationBase {
             const colorArray = this.buildColorArray();
             const { frameSpawning, tiles } = this.config;
             
-            const tileCount = this.randomIntInRange(frameSpawning.tilesPerFrame.min, frameSpawning.tilesPerFrame.max + 1);
+            // Scale tile count based on viewport
+            const scaleFactor = this.calculateViewportScale();
+            const baseTileCount = this.randomIntInRange(frameSpawning.tilesPerFrame.min, frameSpawning.tilesPerFrame.max + 1);
+            const tileCount = Math.max(1, Math.floor(baseTileCount * scaleFactor));
             const frameLifetime = this.randomInRange(frameSpawning.frameLifetime.min, frameSpawning.frameLifetime.max);
             
             const frame = {
@@ -372,8 +430,10 @@ class DiamondAnimationBase {
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimeout);
             resizeTimeout = setTimeout(() => {
-                this.canvas.width = window.innerWidth;
-                this.canvas.height = window.innerHeight;
+                // Resize both canvases
+                this.staticCanvas.width = this.canvas.width = window.innerWidth;
+                this.staticCanvas.height = this.canvas.height = window.innerHeight;
+                this.staticCtx.imageSmoothingEnabled = this.config.canvas.imageSmoothingEnabled;
                 this.ctx.imageSmoothingEnabled = this.config.canvas.imageSmoothingEnabled;
                 this.generateStaticDiamonds();
                 this.renderStaticBackground();
@@ -384,6 +444,9 @@ class DiamondAnimationBase {
     destroy() {
         if (this.canvas) {
             this.canvas.remove();
+        }
+        if (this.staticCanvas) {
+            this.staticCanvas.remove();
         }
         this.diamonds = [];
         this.frames = [];

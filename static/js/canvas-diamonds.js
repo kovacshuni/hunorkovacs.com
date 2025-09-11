@@ -13,13 +13,19 @@ class CanvasDiamondBackground extends DiamondAnimationBase {
                 white: 0  // No white on main pages
             },
             
-            // Calm frame spawning
+            // Heavier rain - more frequent and denser frames
             frameSpawning: {
-                initialFrameCount: { min: 2, max: 4 },  // 2-3 initial frames
-                frameSpawnInterval: { min: 1500, max: 4000 },  // 1.5-4 seconds between frames
-                tilesPerFrame: { min: 3, max: 11 },  // 3-10 tiles per frame
+                initialFrameCount: { min: 3, max: 6 },  // 3-5 initial frames
+                frameSpawnInterval: { min: 800, max: 2500 },  // 0.8-2.5 seconds between frames (faster spawning)
+                tilesPerFrame: { min: 5, max: 18 },  // 5-17 tiles per frame (more tiles)
                 frameLifetime: { min: 3000, max: 9000 },  // 3-9 seconds per frame
                 fadeTime: 3000  // 3 second fade
+            },
+            
+            // Canvas on top of everything including images
+            canvas: {
+                imageSmoothingEnabled: false,
+                zIndex: 100  // Above all page content
             }
         };
         

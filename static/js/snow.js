@@ -36,10 +36,10 @@ class SnowBlizzard extends DiamondAnimationBase {
                 fadeTime: 5000  // 5 second fade
             },
             
-            // Canvas settings
+            // Canvas settings - snowflakes on top
             canvas: {
                 imageSmoothingEnabled: false,
-                zIndex: -1
+                zIndex: 100  // Above all page content for true snow effect
             }
         };
         
