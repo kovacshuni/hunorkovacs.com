@@ -1,0 +1,14 @@
+{
+  "name": "hunorkovacs-com",
+  "version": "1.0.0", 
+  "description": "BMW X3 image processing",
+  "scripts": {
+    "resize-images": "node scripts/resize-images.js",
+    "upload-images": "node scripts/upload-to-gcs.js",
+    "build": "npm run resize-images && npm run upload-images"
+  },
+  "dependencies": {
+    "sharp": "^0.34.4",
+    "@google-cloud/storage": "^7.7.0"
+  }
+}

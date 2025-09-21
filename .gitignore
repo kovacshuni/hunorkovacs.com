@@ -19,3 +19,5 @@
 .DS_Store
 hunorkovacs.com
 static/images/bmw-x3/
+static/images/bmw-x3-processed/
+node_modules/

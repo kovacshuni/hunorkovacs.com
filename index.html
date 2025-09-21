@@ -9,7 +9,7 @@
     <meta property="og:title" content="Hunor Kovács's Personal Website">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.hunorkovacs.com">
-    <meta property="og:image" content="https://www.hunorkovacs.com/static/images/snowboarding-01.jpg">
+    <meta property="og:image" content="https://storage.googleapis.com/main-site-images/snowboarding-01-large.jpg">
     <meta property="og:image:type" content="image/jpeg">
     
     <link rel="icon" href="/static/favicon.ico">
@@ -19,7 +19,10 @@
     <main class="container">
         <div class="content">
             <div class="center-image">
-                <img src="/static/images/snowboarding-01.jpg" alt="Hunor Kovács" class="profile-image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="https://storage.googleapis.com/main-site-images/snowboarding-01-medium.jpg">
+                    <img src="https://storage.googleapis.com/main-site-images/snowboarding-01-large.jpg" alt="Hunor Kovács" class="profile-image">
+                </picture>
             </div>
         </div>
         
